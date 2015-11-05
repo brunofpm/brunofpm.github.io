@@ -1,0 +1,150 @@
+#corpo {
+	height: 3613px;
+	width: 700px;
+	margin-left: -350px;
+	position: absolute;
+	left: 50%;
+	top: 25px;
+	border: 7px solid #000000;
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+.fase {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+#abcriacao {
+	position: absolute;
+	left: 656px;
+	top: 3660px;
+}
+
+.dezoito_pixels {
+	font-size: 18px;
+}
+
+
+#calendario {
+	position: absolute;
+	height: 753px;
+	width: 694px;
+	top: 680px;
+	color: #999999;
+	left: 9px;
+}
+.brasil {
+	color: #0033FF;
+	background-color: #FFFF66;
+	font-weight: bold;
+}
+
+
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	
+}
+#grupos {
+	position: absolute;
+	width: 699px;
+	top: 312px;
+}
+.grupo {
+	font-weight: bold;
+	background-color: #FF6633;
+}
+#logo {
+	position: absolute;
+	left: 5px;
+	top: 8px;
+	height: 293px;
+	width: 694px;
+	background-color: #333333;
+}
+#trata {
+	position: absolute;
+	height: 16px;
+	width: 594px;
+	left: 16%;
+	top: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+}
+
+#contato {
+	position: absolute;
+	height: 15px;
+	width: 127px;
+	right: 15%;
+	top: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.fundo2 {
+	background-color: #666666;
+}
+.craque {
+	font-weight: bold;
+	color: #FF6633;
+	font-size: 12px;
+}
+.selecao {
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 36px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	font-weight: bold;
+}
+
+.corte {
+	text-decoration: line-through;
+}
+#coluna {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	width: 35%;
+	text-align: justify;
+	position: absolute;
+	left: 10px;
+	top: 110px;
+	background-color: #003366;
+	padding: 7px;
+	border: 1px solid #FFFF33;
+}
+h1 {
+	font-size: 24px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+}
+#coluna2 {
+	width: 50%;
+	right: 10px;
+	position: absolute;
+	top: 110px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	text-align: justify;
+}

@@ -1,0 +1,168 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #f1f3e9;
+}
+
+#top {
+	height: 137px;
+	top: 0px;
+	background-image: url(../images/top_bg.png);
+	background-repeat: repeat-x;
+}
+#top img {
+	position: absolute;
+	height: 137px;
+	width: 750px;
+	left: 50%;
+	top: 0px;
+	margin-left: -375px;
+}
+
+
+#website_body {
+	position: absolute;
+	height: auto;
+	width: 768px;
+	top: 135px;
+	margin-left: -384px;
+	left: 50%;
+}
+#website_body #line {
+	position: absolute;
+	height: 255px;
+	width: 1px;
+	left: 190px;
+	top: 28px;
+	z-index: 10;
+	background-color: #CCCCCC;
+}
+
+#website_body #content {
+	width: 540px;
+	top: -255px;
+	height: 600px;
+	position: relative;
+	left: 228px;
+}
+#website_body #content #section_image {
+	position: relative;
+	height: 133px;
+	width: 509px;
+	top: 28px;
+	background-color: #006666;
+}
+#website_body #left_menu {
+	width: 200px;
+	top: 28px;
+	position: relative;
+	left: 0px;
+}
+#website_body #content #homepage_text {
+	position: relative;
+	width: 485px;
+	top: 70px;
+	background-image: url(../images/box_bg.png);
+	background-repeat: repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 22px;
+	color: #666666;
+	letter-spacing: 0.1em;
+	height: auto;
+	padding-top: 9px;
+	padding-right: 15px;
+	padding-bottom: 9px;
+	padding-left: 15px;
+}
+
+#website_body #content #homepage_products {
+	position: relative;
+	width: 580px;
+	top: 100px;
+	left: -60px;
+	height: auto;
+}
+#website_body #content #homepage_products img {
+	padding-left: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+
+#left_menu ul
+{
+list-style: none;
+margin: 0;
+padding: 0;
+border: none;
+}
+
+#left_menu li
+{
+	
+}
+
+#left_menu #company {
+	background-image: url(../images/menu_company.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu #company a:hover {
+	background-image: url(../images/menu_company_over.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu #services {
+	background-image: url(../images/menu_services.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu #services a:hover {
+	background-image: url(../images/menu_services_over.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu #products {
+	background-image: url(../images/menu_products.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu #products a:hover {
+	background-image: url(../images/menu_products_over.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu #brazil {
+	background-image: url(../images/menu_brazil.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu #brazil a:hover {
+	background-image: url(../images/menu_brazil_over.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu #contactus {
+	background-image: url(../images/menu_contactus.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu #contactus a:hover {
+	background-image: url(../images/menu_contactus_over.png);
+	background-repeat: no-repeat;
+}
+
+#left_menu li a
+{
+	display: block;
+	height: 51px;
+	width: 179px;
+}
+
+html>body #left_menu li a { width: auto; }
+
+#left_menu li a:hover
+{
+
+}

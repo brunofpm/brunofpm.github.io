@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>MyHANZO : My Mobile Services</title>	
+	
+	<meta http-equiv="Cache-control" content="no-cache" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+	<link type="text/css" href="files/styles_v2.css" rel="stylesheet" />
+	<link href="files/hanzo.ico" rel="shortcut icon" />
+	
+	
+	
+	
+	<script type="text/javascript" src="files/prototype.js"></script>
+	<script type="text/javascript" src="files/validator.js"></script>
+	<script type="text/javascript" src="files/resizer.js"></script>
+	<script type="text/javascript" src="files/scriptaculous.js"></script><script type="text/javascript" src="files/effects.js"></script>
+	<script type="text/javascript">
+<!--
+function show_news() {
+			new Effect.Appear('news_background', { duration: 0.6, from: 0.0, to: 0.9 });
+			new Effect.SlideDown('news', { duration: 1.5 });
+		}
+		function hide_news() {
+			new Effect.SlideUp('news');
+			new Effect.Fade('news_background', { duration: 1.5 });
+		}
+
+//-->
+</script>
+	<!-- END MACRO VELOCITY "HEAD" ================================================ -->
+	
+	
+<script type="text/javascript" src="files/jquery.js"></script>
+<script type="text/javascript" src="files/interface.js"></script>	
+	
+	
+<style type="text/css">
+.fisheye{
+	position: absolute;
+	width: 100%;
+	top: 210px;
+	left: -10px;
+
+}
+
+#fisheye2
+{
+	position: absolute;
+	width: 100%;
+	top: 450px;
+	left: -10px;
+}
+
+a.fisheyeItem
+{
+	text-align: center;
+	color: #FF0066;
+	font-weight: bold;
+	text-decoration: none;
+	width: 70px;
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	
+}
+a.fisheyeItem2
+{
+	text-align: center;
+	color: #FF0066;
+	font-weight: bold;
+	text-decoration: none;
+	width: 60px;
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	
+}
+.fisheyeItem img
+{
+	border: none;
+	margin: 8px auto 0 auto;
+	width: 100%;
+}
+.fisheyeItem2 img
+{
+	border: none;
+	margin: 8px auto 0 auto;
+	width: 100%;
+}
+.fisheyeItem span,
+.fisheyeItem2 span
+{
+	
+	
+}
+
+.fisheyeItem2 .description {
+visibility:hidden;	
+}
+
+.fisheyeItem2 .description:hover {
+visibility:visible;	
+}
+
+.fisheyeContainter
+{
+	
+	height: 50px;
+	width: 200px;
+	left: 300px;
+	_left: 300px;
+	position: absolute;
+}
+
+
+
+
+</style>	
+	
+</head>
+	
+<body>
+
+
+<!-- START MACRO VELOCITY "newsHTML": renders the containers that will display latest news -->
+<!-- START NEWS DIV: This DIV displays the platform updates ===== -->
+
+<div id="news_background" style="display: none; height: 1010px; width: 1008px;" onclick="hide_news();">&nbsp;</div>
+
+<div id="news" style="display: none;" onclick="hide_news();">
+	
+	<div>
+		<p class="no_content">Não houve mudanças recentes nesse produto.</p>
+	</div>
+
+	<a href="javascript:hide_news();" title="Clique para fechar"><img class="close" src="files/delete_magenta.gif"></a>
+
+</div>
+
+<!-- END MACRO VELOCITY "newsHTML" ============================================ -->
+
+<!-- START LEFT DIV: This DIV displays the contextual menu of the page ======== -->
+
+<div id="left">
+
+	<!-- START MACRO VELOCITY "permanentLinks": renders the top left links, same for every page -->
+	
+	<!-- START LOGOUT AND SUGGESTIONS: On everypage (expect the login page) ==== -->
+		<div id="permanent">
+	
+			<!-- START TRIAL BLOCK: if this is a TRIAL ACCOUNT, show these elements ==== -->
+									<!-- END TRIAL BLOCK ==== -->
+			
+			<a href="login.html" title="Sair">&lt;&lt;&nbsp;Logout</a>
+			<a href="#" title="Sugestões">&lt;&lt;&nbsp;Suggestions</a>
+			<a href="javascript:show_news();" title="Latest News">Latest News&nbsp;<b>!</b></a>
+	
+		</div>
+	<!-- END LOGOUT AND SUGGESTIONS ============================================ -->
+
+	<!-- END MACRO VELOCITY "permanentLinks" =================================== -->
+
+</div>
+<!-- END LEFT DIV ============================================================== -->
+
+<!-- START MIDDLE DIV: This DIV displays the main content of the page  ========= -->
+<div id="middle">
+
+	<!-- START MACRO VELOCITY "HEADER": 2 variables. If empty, use "". Variable 1: <Page Header>. Variable 2: <Page Sub-Header> ===== -->
+	
+<!-- START HEADER: This DIV display HANZO logo and headers' text  ========== -->
+	<div id="header">	
+		<img src="files/hanzologo_rgb_120px.gif" alt="HANZO Logo" />
+		<h1>MyHANZO : My Mobile Services</h1>
+				
+			<!-- START ERROR REPORT: This velocity macro prints any server-side errors   -->
+		
+		
+		<!-- END ERROR REPORT  ===================================================== -->
+	</div>
+		<!-- END CHANNELS REPORTS LINKS ============================================ -->
+	<div id="grid">
+		
+		<div id="fisheye" class="fisheye">
+
+		<div class="fisheyeContainter">
+			<a href="launch pad floating.html" class="fisheyeItem" title="Go to MyHANZO Homepage"><img src="files/home_launchpad_big_magenta_border.gif" width="30" /><span>Home</span><div class="description"><span>Go to MyHANZO Homepage</span></div></a>
+			<a href="launch pad floating.html" class="fisheyeItem" title="Create and manage Content Channels"><img src="files/channel_launchpad_big_magenta_border.gif" width="30" /><span>CMT</span><div class="description"><span>Create and manage Content Channels</span></div></a>
+			<a href="launch pad floating.html" class="fisheyeItem" title="Publish content in your Channels"><img src="files/channel_launchpad_big_magenta_border.gif" width="30" /><span>CPT</span><div class="description"><span>Publish content in your Channels</span></div></a>
+			<a href="launch pad floating.html" class="fisheyeItem" title="Create and manage Chats"><img src="files/chat_launchpad_big_magenta_border.gif" width="30" /><span>ChatMT</span><div class="description"><span>Create and manage Chats</span></div></a>		</div>
+</div>
+<div id="fisheye2" class="fisheye">
+		<div class="fisheyeContainter">
+			<a href="launch pad floating.html" class="fisheyeItem2" title="Create, manage and follow-up Feedback Campaigns"><img src="files/feedback_launchpad_big_magenta_border.gif" width="30" /><span>FMT</span><div class="description"><span>Create, manage and follow-up Feedback Campaigns</span></div></a>
+			<a href="launch pad floating.html" class="fisheyeItem2" title="Create and manage Quizzes or Tests"><img src="files/quiz_test_launchpad_big_magenta_border.gif" width="30" /><span>QTMT</span><div class="description"><span>Create and manage Quizzes or Tests</span></div></a>
+			<a href="launch pad floating.html" class="fisheyeItem2" title="Follow-up your products results"><img src="files/report_launchpad_big_magenta_border.gif" width="30" /><span>QRPT</span><div class="description"><span>Follow-up your products results</span></div></a>
+			<a href="launch pad floating.html" class="fisheyeItem2" title="Create and manage Elections"><img src="files/voting_launchpad_big_magenta_border.gif" width="30" /><span>VMT</span><div class="description"><span>Create and manage Elections</span></div></a>		</div>
+</div>
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#fisheye').Fisheye(
+				{
+					maxWidth: 50,
+					items: 'a',
+					itemsText: '.description',
+					container: '.fisheyeContainter',
+					itemWidth: 160,
+					proximity: 50,
+					alignment : 'left',
+					valign: 'bottom',
+					halign : 'center'
+				}
+			)
+			$('#fisheye2').Fisheye(
+				{
+					maxWidth: 50,
+					items: 'a',
+					itemsText: '.description',
+					container: '.fisheyeContainter',
+					itemWidth: 160,
+					proximity: 50,
+					alignment : 'left',
+					valign: 'bottom',
+					halign : 'center'
+				}
+			)
+		}
+	);
+
+</script>
+
+
+
+		
+</div>
+    
+	
+	
+	
+	
+
+	<!-- START CHAT REPORTS LINKS ============================================== -->
+<!-- START MACRO VELOCITY "COPYRIGHT". It contains "MIDDLE" div closure, the white slashed on the top and the copyright itself ===== -->
+
+<!-- START RIGHT SLASH GIF: This white image represents the slash in the vertical railroad tracks  -->
+<img class="rightslash" src="files/slash.gif" />
+<!-- END RIGHT SLASH GIF ========================================================================== -->
+</div>
+
+<!-- START COPYRIGHT: This velocity macro prints the Copyright content ===== -->
+<div id="copyright">
+
+	<p class="links">
+		| <a href="http://www.hanzo.com.br" target="_blank">About HANZO</a> | <a href="#">Bokuto: the Mobile Services Platform</a> |
+	</p>
+	
+	<p>© Copyright 2007, HANZO.</p>
+	
+</div>
+<!-- END COPYRIGHT ========================================================= -->
+
+<!-- START LEFT SLASH GIF: This white image represents the slash in the vertical railroad tracks  -->
+<img class="leftslash" src="files/slash.gif" />
+<!-- END LEFT SLASH GIF ========================================================================== -->
+
+<!-- END MACRO VELOCITY "COPYRIGHT" ============================================ -->
+
+</body></html>

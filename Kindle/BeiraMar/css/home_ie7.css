@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#content-1.home #content-1-1 #title_home .flag_001{float:right}
+div#content-1.home #content-1-1 #title_home .flag_002{float:left; margin:0px 0 0 -37px;}
+
+div#content-1.home #content-1-1 #dImage #destaque img{margin-top:13px;}
+
+div#content-1.home #content-1-1 #home_ticket{position:absolute; display:block; margin:-157px 0 0 495px; padding:0; width:241px; height:597px; background:url(../img/bg_home_ticket.png) no-repeat}
+
+div#content-1.home #content-1-1 #home_ticket p.txtValor{margin:352px 0 0 25px;}
+div#content-1.home #content-1-1 #home_ticket p.txtEconomia{margin:352px 0 0 140px;}
+
+div#content-1.home #content-1-1 #home_ticket div#nPessoas{margin-top:417px; display:block; height:40px;}
+div#content-1.home #content-1-1 #home_ticket div#nPessoas p.p1{margin:0; display:block; margin-left:5px;}
+div#content-1.home #content-1-1 #home_ticket div#nPessoas p.p2{margin:0; display:block; margin-right:25px;}

@@ -1,0 +1,384 @@
+body {
+	margin: 0px;
+	background-color: #EBEBEB;
+	background-image: url(imagens/bg.jpg);
+	background-repeat: repeat;
+}
+
+#corpo {
+	position: absolute;
+	width: 760px;
+	background-color: #000000;
+	margin-left: -380px;
+	border-right-width: 10px;
+	border-left-width: 10px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #66aa00;
+	border-left-color: #66aa00;
+	height: 1500px;
+	top: 0px;
+	left: 50%;
+}
+
+
+
+#flash {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#colunawf {
+	position: absolute;
+	left: 27px;
+	top: 275px;
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 1.0em;
+	color: #EEEEEE;
+	font-weight: normal;
+  overflow: hidden;
+}
+
+#colunawf img {
+  margin-bottom: 50px;
+  border: 2px solid #333333;
+}
+
+#colunawf a {
+	color: #CCCCCC;
+	font-weight: bold;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+#colunawf a:hover {
+  border-bottom: 1px dotted #FFFFFF;
+}
+
+.titulowf {
+  color: #CCCCCC;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+div.gototop {
+  text-align: right;
+}
+
+#coluna1 {
+	position: absolute;
+	width: 215px;
+	left: 10px;
+	top: 275px;
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 0.7em;
+	color: #EEEEEE;
+	font-weight: normal;
+	background-color: #333333;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	height: 1050px;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+.letra_grande {
+	font-size: 2.3em;	
+}
+
+#sites {
+	position: absolute;
+	width: 155px;
+	left: 261px;
+	top: 275px;
+	text-align: center;
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 0.6em;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #333333;
+	padding-bottom: 15px;
+	height: 1050px;
+	padding-top: 0px;
+}
+#emailmkt {
+	position: absolute;
+	width: 155px;
+	left: 432px;
+	top: 275px;
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 0.6em;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	background-color: #333333;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	height: 1050px;
+}
+#banners {
+	position: absolute;
+	width: 150px;
+	top: 275px;
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 0.6em;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #333333;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	right: 10px;
+	height: 1050px;
+	
+	text-align: center;
+}
+
+#coluna1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#coluna1 a:hover {
+  border-bottom: 1px dotted #FFFFFF;
+}
+
+#sites a {
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+#emailmkt a {
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+#banners a {
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+#sites a:hover {
+	display: block;
+	color: #333333;
+	font-weight: bold;
+	background-color: #FFFFFF;
+}
+
+#emailmkt a:hover {
+	background-color: #ffffff;
+	display: block;
+	color: #333333;
+	font-weight: bold;
+}
+
+#banners a:hover {
+	background-color: #ffffff;
+	display: block;
+	color: #333333;
+	font-weight: bold;
+}
+
+
+#menu {
+	position: absolute;
+	right: 0px;
+	top: 185px;
+	_top: 200px;
+}
+#menu dt {
+	display: inline;
+}
+#menu dt a {
+	font-family: "Trebuchet MS", Verdana;
+	color: #FFFFFF;
+	background-color: #66AA00;
+	padding-right: 7px;
+	padding-left: 7px;
+	font-size: 12px;
+	text-decoration: none;
+	border: 0px solid #CCCCCC;
+	font-weight: bold;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+#menu dt a:hover {
+	color: #66AA00;
+	background-color: #FFFFFF;
+}
+
+
+#top {
+	position: absolute;
+	right: 5px;
+	top: 1300px;
+}
+
+#top dt a {
+	font-family: "Trebuchet MS", Verdana;
+	color: #FFFFFF;
+	background-color: #66AA00;
+	padding-right: 7px;
+	padding-left: 7px;
+	font-size: 12px;
+	text-decoration: none;
+	border: 0px solid #CCCCCC;
+	font-weight: bold;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+
+#top dt a:hover {
+	color: #66AA00;
+	background-color: #FFFFFF;
+}
+
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 2em;
+	padding-top: 0px;
+	margin-top: 0px;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 1.3em;
+	letter-spacing: 0.1em;
+	padding-top: 0px;
+	margin-top: 0px;
+	background-color: #CCCCCC;
+	color: #FFFFFF;
+}
+
+
+
+
+.portfolio_online {
+	font-size: 0.8em;
+	color: #999999;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+#content {
+	position: absolute;
+	width: 740px;
+	padding: 10px;
+}
+
+
+.maranhao {
+	color: #99ff00;
+}
+
+fieldset {
+	border: 3px solid #FFFFFF;
+	background-color: #336699;
+}
+
+
+legend {
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #003366;
+	background-color: #FFFFFF;
+	padding-top: 2px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+}
+.imagens {
+	border: 2px solid #FFFFFF;
+}
+
+
+
+#banners a:hover {
+	background-color: #ffffff;
+	display: block;
+	color: #336699;
+	font-weight: bold;
+}
+
+
+
+#link_banner a {
+	color: #FFFFFF;
+	font-size: 1.6em;
+	text-decoration: none;
+	display: block;
+}
+#link_banner a:hover {
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+#bottom {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+input {
+	font-size: 12px;
+	border: 2px solid #CBCBCB;
+	font-family: "Trebuchet MS", Verdana;
+	color: #006633;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+textarea {
+	font-size: 12px;
+	border: 2px solid #CBCBCB;
+	font-family: "Trebuchet MS", Verdana;
+	color: #006633;
+	font-weight: bold;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+.bt_form {
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #66AA00;
+	font-weight: bold;
+}
+#ass {
+	position: absolute;
+	z-index: 10;
+	right: 5px;
+	bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	width: 355px;
+	letter-spacing: 1px;
+}
+
+p.justificado a {
+  border-bottom: 1px dotted #FFFFFF;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+p.justificado a:hover {
+  border-bottom: 0px dotted #FFFFFF;
+  text-decoration: none;
+}

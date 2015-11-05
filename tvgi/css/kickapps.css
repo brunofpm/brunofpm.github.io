@@ -1,0 +1,276 @@
+/* Styles from the KickApps Site Styler, last saved {1 Minute ago} */
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif; text-align: center; color: #666666; background:url(http://www.kindle.com.br/tvgi/images/clube-bg.jpg) left top repeat-x; margin:0; background-color:#F0EFF4 !important;
+}
+#ka_mainContainer {
+	background-color: transparent !important;
+	padding: auto;
+	width: 995px; margin:35px auto 0; text-align:left;
+	z-index:9999;
+}
+* html #ka_mainContainer {margin:200px auto 0 !important; top:0 !important;}
+*+html #ka_mainContainer {margin:200px auto 0 !important; top:0 !important;}
+
+div#ka_contentContainer h2,div#ka_contentContainer h3 {
+	color: #fff !important;
+	font-family: Verdana;
+	font-size:16px !important;
+	background-color:#178cd9 !important;
+	padding:4px 8px !important;
+}
+ul#ka_commentList h4 strong {
+	color: auto !important;
+}
+div.ka_createForm h1 {
+	color: auto !important;
+}
+ul.ka_sideList li,ul.ka_myHomeList li {
+	color: auto !important;
+}
+legend,label {
+	color: auto !important;
+}
+
+h2#ka_topHeaderName {
+	color: #fff !important;
+	font-family: Arial;
+	padding: 70px 0 0 15px;
+}
+h2#ka_topHeaderName {
+	margin-top: 0px !important;
+	display: block;
+	padding-bottom: 0px !important;
+	padding-right: 0px !important;
+}
+h2#ka_topHeaderName a {
+	color: #fff !important;
+}
+a,a:visited {
+	color: #383838 !important;
+}
+
+div#ka_getActive h3 {
+	color: #178CD9 !important;
+	border: none !important;
+	border-color: transparent !important;
+	font-size: 12px;
+	font-family: Arial;
+	background-color: #FFF !important;
+	background-image: undefined;
+	background-repeat: undefined;
+	background-position: undefined;
+}
+span#ka_since {
+	color: #222 !important;
+	font-family: Arial;
+	font-size: 12px;
+}
+span#ka_since {
+	border: none !important;
+	margin-top: 5px;
+}
+.ka_bumperTop span {
+	font-size: 12px;
+}
+body#ka_profilePage div.ka_profileSegHeader h5 {
+	font-family: Arial;
+}
+div#ka_manageSubNav ul li span,div#ka_manageSubNav ul li a {
+	background-color: #C0EBBC !important;
+	background-image: undefined;
+	background-repeat: undefined;
+	background-position: undefined;
+	color: #222 !important;
+	border: 1px solid transparent !important;
+	border-color: transparent !important;
+}
+div#ka_manageSubNav ul li span,div#ka_manageSubNav ul li a {
+	border-bottom: none !important;
+}
+div#ka_manageSubNav span.ka_mkplink a {
+	background-color: none !important;
+	background-image: none !important;
+	border-width: 0px !important;
+}
+div#ka_manageSubNav {
+	border: 1px solid transparent !important;
+	border-color: transparent !important;
+}
+div#ka_manageSubNav {
+	border-width: 0px 0px 1px 0px !important;
+}
+
+.ka_allItemsContainer {
+	border: none !important;
+}
+ol#ka_audioList div.ka_null {
+	font-size: 12px;
+}
+h4 a  {
+}
+.ka_contentBody a {
+}
+.searchLetterBox {
+	width: 132px !important;
+}
+.ka_list {
+	width: 144px !important;
+}
+div.ka_createForm h1 {
+	color: #000 !important;
+}
+ul.ka_sideList li,ul.ka_myHomeList li {
+	color: #000 !important;
+}
+
+#ka_headerTopNav {
+	background-image: none;
+	background-repeat: no-repeat;
+	padding: auto;
+	height: 20px;
+	background-color: transparent !important;
+	background-position: top left;
+}
+#ka_headerTopNav_ul li a:hover {
+	background-image: none;
+	background-color: transparent;
+	color: #1a5176 !important;
+}
+#ka_headerTopNav_ul li.current a {
+	background-image: url(http://media.kickstatic.com/kickapps/images/templateimages/nav-selected-arrow-white.png);
+	color: #238ed5 !important;
+	font-weight: bold;
+	background-color: transparent !important;
+	background-position: bottom center;
+	background-repeat: no-repeat !important;
+}
+#ka_headerTopNav_ul li a {
+	color: #1F4F1A !important;
+}
+#ka_headerSubNav {
+	background-image: none;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding: auto;
+	height: 30px;
+	margin-top: 10px;
+}
+#ka_headerSubNav_list li a:hover {
+	color: #178cd9 !important;
+}
+#ka_headerSubNav_list li.current a {
+	background-image: none;
+	color: #178cd9!important;
+}
+#ka_headerSubNav_list li a {
+	color: #fff !important;
+	font-family: Trebuchet MS;
+}
+body.ka_bodyAdWide {
+	background-image: url(http://media.kickstatic.com/kickapps/images/templateimages/w_bg-content-t5-light.png) !important;
+}
+div#ka_footer {
+	background-image: url(http://media.kickstatic.com/kickapps/images/templateimages/w_bg-footer-pocket.png) !important !important;
+}
+
+
+/*----FOOTER-----*/
+
+#ka_footer { position:absolute !important; display:block !important; width:1000px !important; left:50% !important; margin:0 0 0 -500px !important; padding:0; height:179px !important; background:url(http://www.kindle.com.br/tvgi/images/clube-footer-bg.png) center top no-repeat !important; border:0 !important; }
+#footer ul.menu {margin:105px 0 0 0;}
+#footer ul.menu li {display:inline; color:#0667a5;}
+#footer ul.menu li a {color:#0667a5; margin:0 10px; letter-spacing:-0.5px; font-weight:bold;}
+#footer ul.menu li a:hover {text-decoration:underline;}
+#ka_footer ul#footerUser {display:block; width:215px; margin:80px auto 0 !important;}
+#ka_footer ul#footerUser li {margin:0 !important;}
+#ka_footer ul#footerUser li#ka_footerPowered {display:none;}
+#ka_footer ul#footerUser li#ka_footerTerms a,
+#ka_footer ul#footerUser li#ka_footerHelp a {color:#0667a5 !important; margin:0 10px; letter-spacing:-0.5px; font-size:13px; font-weight:bold; text-decoration:none;}
+#ka_footer ul#footerUser li#ka_footerTerms a:hover,
+#ka_footer ul#footerUser li#ka_footerHelp a:hover {text-decoration:underline;}
+
+
+/*----MODIFICADOS-----*/
+
+#bg-topo {background:url(http://www.kindle.com.br/tvgi/images/ka_clube-bg-topo.jpg) top no-repeat; width:100%; height:816px; position:absolute; margin:0; z-index:-999; clear:both; left:0; top:0;}
+body.ka_messageBoards .ka_contentTitle {background-color:#FFF !important; padding:5px 0 5px 12px; color:#41aee2 !important; font-size:18px; font-family:Verdana, Geneva, sans-serif; font-weight:bold; }
+h3.ka_contentTitle {background-color:#FFF !important; padding:5px 0 5px 12px; color:#41aee2 !important; font-size:18px; font-family:Verdana, Geneva, sans-serif; font-weight:bold; }
+#ka_headerTopNav_ul { position:absolute; margin:161px 0 0 -393px !important; top:0 !important; font-size:16px !important; width:880px !important; left:50%;}
+#ka_headerTopNav_ul ul {left:118px !important;}
+#ka_headerTopNav_ul li {}
+#ka_headerTopNav_ul li a {color:#238ed5 !important; padding:4px 5px 8px !important; font-weight:bold !important;}
+#ka_le_headercont span img {display:none !important;}
+#ka_le_headercont span {background:url(http://www.kindle.com.br/tvgi/images/clube-logo.png) left top no-repeat; width:306px; height:204px; position:absolute; margin:7px 0 0 21px; padding:0; z-index:1000 !important; display:none !important;}
+#ka_topHeaderName a {display:none;}
+#ka_contentContainer {margin:36px 0 30px !important; top:0 !important; padding:0; width:970px !important; }
+div#ka_leftColumn {width:620px !important; margin:0 !important;}
+div#ka_rightColumn {width:335px !important;}
+
+body#ka_playPage .ka_contentTitle,body#ka_listPage .ka_contentTitle,body#ka_homepage .ka_contentTitle,body#ka_myhome .ka_contentTitle,body#ka_profilePage .ka_contentTitle,body#ka_groups .ka_contentTitle,body.ka_pageBuilder .ka_contentTitle,body.ka_messageBoards .ka_contentTitle {background-color:#FFFFFF !important; padding:5px 0 5px 12px !important; color:#41aee2 !important; font-size:17px !important; font-family:Verdana, Geneva, sans-serif !important; font-weight:bold !important; letter-spacing:-1.1px !important; margin:0 0 4px !important;}
+
+body#ka_playPage .ka_contentBody,ul#ka_relatedTabs li a.active,#ka_relatedTabs a.active:hover,body#ka_listPage .ka_contentBody,body#ka_listPage li.ka_list,body.ka_myhome_pages li.ka_list,body#ka_homepage .ka_contentBody,body#ka_myhome .ka_contentBody,body#ka_profilePage .ka_contentBody,body#ka_groups .ka_contentBody,body.ka_pageBuilder .ka_contentBody,body.ka_messageBoards .ka_contentBody,.ka_bubble blockquote,.ka_popup,.ka_popUpDiv,#ka_ProgressBarDiv {background-image: none; color: #000 !important; background-color: #fff !important;	font-size: 12px; font-family:Verdana, Geneva, sans-serif !important; color:#666666 !important; border:8px solid #FFF !important;}
+
+a div.logo_tvgi {background:url(http://www.kindle.com.br/tvgi/images/clube-logo.png) left top no-repeat; width:275px; height:75px; position:absolute; margin:60px 0 0 -406px; top:0; padding:0; z-index:1001 !important; left:50%; }
+a div.logo_tvgi span {display:none;}
+
+#ka_headerLogin ul {margin:0 0 0 520px !important; top:0 !important;}
+#ka_headerLogin ul li a {color:#FFF !important;}
+#ka_headerSearch {margin:-28px 12px 0 0 !important; top:0 !important; display:none !important;}
+
+ul#ka_login_area li {color:#FFF !important;}
+li.ka_login_auth a {background:url(http://www.kindle.com.br/tvgi/images/login_1.png) left top no-repeat; width:56px; height:26px; display:block; float:left; text-indent:-11900px;}
+li.ka_login_auth a:hover { background:url(http://www.kindle.com.br/tvgi/images/login.png) left top no-repeat;}
+li.ka_join_auth a {background:url(http://www.kindle.com.br/tvgi/images/cadastrese_1.png) left top no-repeat; width:96px; height:26px; display:block; float:left; text-indent:-11900px;}
+li.ka_join_auth a:hover { background:url(http://www.kindle.com.br/tvgi/images/cadastrese.png) left top no-repeat;}
+li.ka_forgot_pass a {background:url(http://www.kindle.com.br/tvgi/images/esqueci_1.png) left top no-repeat; width:172px; height:26px; display:block; float:left; text-indent:-11900px;}
+li.ka_forgot_pass a:hover { background:url(http://www.kindle.com.br/tvgi/images/esqueci.png) left top no-repeat;}
+
+
+#ka_headerBtmNav {margin:0 0 0 -462px !important; position:absolute; left:157px; width:960px; left:50%; top:0 !important; padding:125px 0 0 !important;}
+
+.ka_adminControl {border:0 !important; color:#666666 !important;}
+
+#ka_videoPlayer, #ka_discussionModule, #ka_groupModule { margin:0 0 10px; padding:0; width:335px!important; }
+div.ka_tagCloud {width:305px!important;}
+
+#clube-webdoor {position:absolute; width:622px; margin:225px 0 0 -500px; z-index:9999; left:50%;}
+
+
+#ka_mainContainer h3 {border:0 !important; font-family:Verdana !important;}
+
+#ka_headerSubNav ul {margin:218px 0 0 !important; top:0 !important;}
+* html #ka_headerSubNav ul {margin:25px 0 0 !important; top:0 !important;}
+*+html #ka_headerSubNav ul {margin:25px 0 0 !important; top:0 !important;}
+
+#ka_tagModule {width:319px !important;}
+
+.publicidade-home-header {position:absolute; margin:20px 0 0 25px; left:50%; top:0;}
+
+ul#ka_headerTopNav_ul li#ka_homeTab {margin:0 175px 0 0 !important;}
+
+#ka_mainContainer h2 {margin:0 !important;}
+
+.ka_messageBoards div.ka_allItemsContainer {margin:90px 0 0 !important; top:0 !important;}
+ul#ka_breadcrumbs {margin: 105px 0 0 280px !important; text-indent:-9999px !important;}
+
+.ka_searchList {margin:7px 0 0 !important; top:0; width:960px !important;}
+#ka_searchSortBy {margin:-66px 0 0 !important;}
+a#ka_search_advanced {color:#118FE1 !important;}
+
+#ka_adminConsole {margin:125px 0 0 !important; top:0 !important;}
+.ka_adminStyle {border:0 !important;}
+
+#ka_manageContent { margin:270px 0 0 !important; width:970px !important;}
+
+#ka_searchSortBy ul {top:0 !important;}
+
+form#ka_loginPopup,
+#ka_loginPopup {background-color:none !important; background:none !important; border:0 !important; width:940px !important; height:715px !important;}
+div#ka_headerLoginInputs { background:url(../images/bg-login.png) left top no-repeat !important; height:100%; margin:-38px 0 0 !important;}
+div#ka_headerLoginInputs fieldset {margin:215px 0 0 30px !important; padding:0.7em 1.2em 1.2em !important; position:absolute !important; width:380px !important;}
+
+fieldset#ka_fieldLogin h3,
+fieldset#ka_fieldLogin p {display:none !important;}
+.destaque-home {margin:-30px 0 0 -117px; display:block; background:url(http://www.kindle.com.br/tvgi/images/destaque-home.png) left top no-repeat; width:1245px; height:533px;}
+
+#ka_audioTab {display:none !important;}

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+*{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; margin:0; padding:0; list-style:none; outline:none;}
+body{background-color: #ca6d06; width: 100%; text-align: center;}
+
+hr{display:none;}
+
+#area-4{background:url(../images/bgall.jpg) repeat-x center top;}
+#hsptfrio-1{background:url(../images/bg01.jpg) no-repeat center top;}
+#hsptfrio-1-1{ height:515px; margin:0 auto;}
+#hsptfrio-1-1, #hsptfrio-2-1, #hsptfrio-3-1 {width:980px; margin:0 auto; padding:0; text-align: left;}
+#hsptfrio-1-1 span{display:none;}
+
+h1 span { display: none;}
+h2 span { display: none;}
+p span { display: none;}
+ul li { display: none;}
+
+a {position: absolute; clear: both; }
+#hsptfrio-1-1 .comprar {display: block; background: #fff; height: 38px; width: 227px; margin-top: 458px; text-indent: -6000px; margin-left: 190px; opacity: .0; }
+
+#hsptfrio-1-3{width:1010px; margin:0 auto; padding:60px 0 50px 0;}
+#hsptfrio-1-3 p{text-align:justify; font-size:10px; color:#890b0b;}
+

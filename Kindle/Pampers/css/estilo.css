@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+img { border:none;}
+
+body { margin:0; padding:0; background-image:url(../images/bg.jpg); background-position: center top; background-repeat:no-repeat; height:1000px; width:100%; position:static; background-color:#03a89d;}
+
+.clear {clear:both;}
+
+h1, p {text-indent:-99999px; position:absolute;}
+
+div#area-4 { margin:145px auto; padding:0; width:950px; height:900px;}
+
+#coluna-esq {display:block; width:189px; height:979px; float:left; background:url("../images/bg-coluna-esq.png") no-repeat left top;}
+#webdoor {display:block; height:268px; width:744px; float:right; background:url("../images/webdoor.png") no-repeat left top;}
+#conteudo {display:block; height:700px; width:744px; float:right; background:url("../images/bg-conteudo.png") no-repeat left top; margin:15px 0 0;}
+
+
+#coluna-esq .produtos {margin:87px 0 0;}
+#coluna-esq .produtos li {display:block; list-style:none; width:110px; height:50px; margin:0 0 19px; text-indent:-99999px;}
+#coluna-esq .produtos li a {display:block; width:110px; height:50px;}
+
+#coluna-esq .tamanho {margin:62px 0 0 -30px;}
+#coluna-esq .tamanho li {display:block; list-style:none; width:38px; height:30px; margin:0 2px 5px; text-indent:-99999px; float:left}
+#coluna-esq .tamanho li a {display:block; width:38px; height:30px;}
+
+#coluna-esq .peso {margin:62px 0 0 -23px;}
+#coluna-esq .peso li {display:block; list-style:none; width:74px; height:22px; margin:0 11px 7px 0; text-indent:-99999px; float:left}
+#coluna-esq .peso li a {display:block; width:74px; height:22px;}
+
+#coluna-esq .beneficio {margin:60px 0 0 -20px;}
+#coluna-esq .beneficio li {display:block; list-style:none; width:150px; height:30px; margin:0 0 5px; text-indent:-99999px;}
+#coluna-esq .beneficio li a {display:block; width:150px; height:30px;}
+
+
+#webdoor .imagem-01 {background:url("../images/webdoor-img-01.png") no-repeat left top; width:733px; height:232px; display:block; margin:5px;}
+#webdoor .imagem-02 {background:url("../images/webdoor-img-01.png") no-repeat left top; width:733px; height:232px; display:block; margin:5px; display:none;}
+#webdoor .imagem-03 {background:url("../images/webdoor-img-01.png") no-repeat left top; width:733px; height:232px; display:block; margin:5px; display:none;}
+#webdoor ul {margin: -3px 0 0 602px;}
+#webdoor ul li {display:block; float:left; width:20px; height:20px; margin:0 9px 0 0;}
+#webdoor ul li a {display:block; width:20px; height:20px;}
+
+
+#conteudo p{text-indent:-99999px;}
+#conteudo a.leia-mais-1 {margin:264px 0 0 229px; width:115px; height:40px; display:block; text-indent:-99999px; position:absolute;}
+#conteudo a.leia-mais-2 {margin:264px 0 0 604px; width:115px; height:40px; display:block; text-indent:-99999px; position:absolute;}
+#conteudo a.leia-mais-3 {margin:545px 0 0 252px; width:115px; height:40px; display:block; text-indent:-99999px; position:absolute;}
+#conteudo a.leia-mais-4 {margin:553px 0 0 586px; width:115px; height:40px; display:block; text-indent:-99999px; position:absolute;}

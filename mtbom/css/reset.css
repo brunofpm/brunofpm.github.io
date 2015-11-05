@@ -1,0 +1,87 @@
+/*@font-face {
+     font-family: "Frutiger";
+     src: url("FrutigerLTStd-Light.otf");
+}
+@font-face {
+     font-family: "Frutiger";
+     src: url("FrutigerLTStd-Bold.otf");
+	 font-weight:bold;
+}*/
+
+
+@font-face {
+	/* This declaration targets Internet Explorer */
+	font-family: "Frutiger";
+	src: url("frutigerltstd-bold-webfont.eot");
+	font-weight: bold;
+}
+
+@font-face {
+	/* This declaration targets everything else */
+	font-family: "Frutiger";
+	src: url(//:) format("no404"), url("frutigerltstd-bold-webfont.woff") format("woff"), url("frutigerltstd-bold-webfont.ttf") format("truetype"), url("frutigerltstd-bold-webfont.svg#webfontPP78ikFI") format("svg");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	/* This declaration targets Internet Explorer */
+	font-family: "Frutiger";
+	src: url("frutigerltstd-light-webfont.eot");
+}
+
+@font-face {
+	/* This declaration targets everything else */
+	font-family: "Frutiger";
+	src: url(//:) format("no404"), url("frutigerltstd-light-webfont.woff") format("woff"), url("frutigerltstd-light-webfont.ttf") format("truetype"), url("frutigerltstd-light-webfont.svg#webfontenUWRzYL") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: "Frutiger", arial, helvetica, serif;
+    /*font-weight: inherit;*/
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+	display: none;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+input::-moz-focus-inner{
+	border: 0; 
+}
+input:focus{
+	outline:none; 
+}

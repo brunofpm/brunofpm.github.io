@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Restaurante Gibraltar | Cozinha Mediterrânea</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="shortcut icon" href="img/favicon.ico" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+
+<style type="text/css">
+<!--
+#final {
+	height: 700px;
+}
+
+#mainDiv {
+	height: 620px;
+}
+
+#mainDiv #content {
+	height: 520px;
+}
+
+#mainDiv #content #footer {
+	top: 40px;
+	_top: 50px;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="final">
+<!--<div id="idiomas">
+	<a href="index.html"><img src="img/bandeiraBrasil.gif" alt="Portugu&ecirc;s" /></a>
+	<a href="index_en.html"><img src="img/bandeiraEstUnidos.gif" alt="Portugu&ecirc;s" /></a>
+</div>-->
+
+<div id="mainDiv">
+
+	<div id="header">
+		<div id="logo"><a href="index.html"><img src="img/logoGibraltar.jpg" alt="Restaurante Gibraltar" border="0" /></a></div>
+		<div id="menu">
+			<ul>
+				<li id="menu1"><a href="restaurante.html"></a></li>
+				<li id="menu2"><a href="cardapio.html"></a></li>
+				<li id="menu3"><a href="estreito.html"></a></li>
+				<li id="menu4"><a href="imprensa.html"></a></li>
+				<li id="menu5"><a href="localizacao.html"></a></li>
+				<li id="menu6"><a href="contato.html"></a></li>
+			</ul>
+	  </div>
+		<div id="languages"></div>
+	</div>
+	
+	<div id="content">
+		<div id="box1Loca">
+			<p class="breadcrumb">>> localização</p>
+			<h2>Localização</h2>
+			<p>Endereço: Rua Nuta James, 65 - Lojas I, J e K - Condado de Cascais | Telefone: (21) 2483-6275<br />Barra da Tijuca - Rio de Janeiro</p>	
+		</div>
+		
+		<div id="box2Loca">
+			<p>Via Zona Sul
+            <br />
+            <a href="img/gibraLocal_ZS_big.jpg" title="Chegando ao Gibraltar via Zona Sul" rel="imagebox"><img src="img/gibraViaZS.jpg" /></a>
+            </p>
+		
+		</div>
+		
+		
+		<div id="box3Loca">
+			<p>Via Recreio
+            <br />
+            <a href="img/gibraLocal_REC_big.jpg" title="Chegando ao Gibraltar via Recreio dos Bandeirantes" rel="imagebox"><img src="img/gibraViaREC.jpg" /></a>
+            </p>
+			
+		</div>
+		
+		
+		<div id="box4Loca">
+			<p>Mapa interativo</p>
+			<!--<p><a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=108046847486447245277.00000112a12e39bcf1f6b&ll=-23.006002,-43.313556&spn=0.008592,0.014591&z=16&om=1" target="_blank">Clique aqui</a> para acessar o mapa interativo (Google Maps).</p>-->
+			<p><a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=108046847486447245277.00000112a12e39bcf1f6b&ll=-23.00612,-43.312472&spn=0.004296,0.007296&t=k&z=17&om=1" target="_blank">Clique aqui</a> para acessar o mapa interativo (Google Maps).</p>
+		</div>
+		
+
+		<div id="footer"><p>Restaurante Gibraltar - Todos os Direitos Reservados<br />
+		               Rua Nuta James, 65 - Lojas I, J e K - Condado de Cascais - Barra da Tijuca - Rio de Janeiro, RJ | Telefone: (21) 2483-6275</p><div>
+					  
+	</div>
+	
+</div>
+
+<!--<script type="text/javascript">
+
+$("#box1").mouseover( function() { $("#box1").css({ background: "#bfbcac" }); } );
+$("#box1").mouseout( function() { $("#box1").css({ background: "#ccc8b5" }); } );
+
+$("#box2").mouseover( function() { $("#box2").css({ background: "#bfbcac" }); } );
+$("#box2").mouseout( function() { $("#box2").css({ background: "#ccc8b5" }); } );
+
+$("#box3").mouseover( function() { $("#box3").css({ background: "#ccc8b5" }); } );
+$("#box3").mouseout( function() { $("#box3").css({ background: "#bfbcac" }); } );
+
+$("#box4").mouseover( function() { $("#box4").css({ background: "#ccc8b5" }); } );
+$("#box4").mouseout( function() { $("#box4").css({ background: "#bfbcac" }); } );
+
+</script>
+-->
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$.ImageBox.init(
+			{
+				loaderSRC: 'img/imagebox/loading.gif',
+				closeHTML: '<img src="img/imagebox/fechar.gif" />'
+			}
+		);
+	}
+);
+</script>
+
+</div>
+
+</body>
+</html>

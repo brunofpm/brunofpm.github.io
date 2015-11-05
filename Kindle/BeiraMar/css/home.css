@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* TITLE */
+div#content-1.home #content-1-1{}
+div#content-1.home #content-1-1 #title_home{margin:0; width:540px;}
+div#content-1.home #content-1-1 #title_home h1{font-size:16pt; text-transform:uppercase; color:#ffffff; line-height:22pt; font-weight:normal;}
+div#content-1.home #content-1-1 #title_home h1 span{background-color:#ec1c24; padding:1px 4px;}
+div#content-1.home #content-1-1 #title_home h1 span.cYellow{color:#ffcd00}
+div#content-1.home #content-1-1 #title_home .flag_001{float:right}
+div#content-1.home #content-1-1 #title_home .flag_002{float:left; margin:22px 0 0 -37px;}
+
+/* Img Destaque */
+div#content-1.home #content-1-1 #dImage{margin:15px 0 0 0;}
+div#content-1.home #content-1-1 #dImage #destaque{margin:0; padding:0; width:470px; height:312px; background:url(../img/Home_bg_img_slider.png) no-repeat; display:table-cell; vertical-align:middle; text-align:center}
+div#content-1.home #content-1-1 #dImage #destaque img{border:none; max-width:440px; max-height:286;}
+div#content-1.home #content-1-1 #dImage #destaque img.newfadeIn{display:none}
+div#content-1.home #content-1-1 #dImage #thumbs{margin:10px 0 0 0; padding:0; display:block; vertical-align:top; width:470px;}
+div#content-1.home #content-1-1 #dImage #thumbs .item{margin:0 2px 2px 2px; padding:0; float:left; border:5px solid #ffffff; background-color:#FFFFFF;}
+div#content-1.home #content-1-1 #dImage #thumbs .item.video{margin:0 5px 0 0; padding:0; float:left; border:5px solid #ffffff; background-color:#FFFFFF; width:155px; height:95px;}
+div#content-1.home #content-1-1 #dImage #thumbs .item a:link,
+div#content-1.home #content-1-1 #dImage #thumbs .item a:visited{text-decoration:none; display:block}
+div#content-1.home #content-1-1 #dImage #thumbs .item img{border:none; width:58px;}
+div#content-1.home #content-1-1 #dImage div#compartilhe{display:block; margin:0 0 30px 0; padding:5px 0; width:470px; height:20px;}
+div#content-1.home #content-1-1 #dImage div#compartilhe a,
+div#content-1.home #content-1-1 #dImage div#compartilhe span{float:right}
+div#content-1.home #content-1-1 #dImage div#compartilhe a{display:block; margin:0 3px; padding:0; text-decoration:none; background:url(../img/compartilhe_icons.png) no-repeat; width:21px; height:20px;}
+div#content-1.home #content-1-1 #dImage div#compartilhe a.mail{background-position:-81px 0;}
+div#content-1.home #content-1-1 #dImage div#compartilhe a.twitter{background-position:-55px 0;}
+div#content-1.home #content-1-1 #dImage div#compartilhe a.facebook{background-position:-27px 0;}
+div#content-1.home #content-1-1 #dImage div#compartilhe a.orkut{background-position:0 0;}
+div#content-1.home #content-1-1 #dImage div#compartilhe span{font-size:10pt; margin-top:2px; color:#700d11;}
+
+/* TICKET da HOME */
+div#content-1.home #content-1-1 #home_ticket{position:absolute; display:block; margin:-150px 0 0 495px; padding:0; width:241px; height:597px; background:url(../img/bg_home_ticket.png) no-repeat}
+div#content-1.home #content-1-1 #home_ticket div.porcento_destaque{position:absolute; display:block; margin:210px 0 0 0; padding:0; width:241px; font-family:Georgia, "Times New Roman", Times, serif; font-weight:normal; font-size:22pt; font-style:italic; text-align:center;}
+div#content-1.home #content-1-1 #home_ticket div.porcento_destaque p{text-align:center}
+div#content-1.home #content-1-1 #home_ticket div.porcento_destaque sup{font-size:14pt}
+div#content-1.home #content-1-1 #home_ticket a.bt_comprar{display:block; position:absolute; margin:250px 0 0 20px; padding:0; width:200px; height:40px;}
+div#content-1.home #content-1-1 #home_ticket a.bt_comprar span{display:none}
+div#content-1.home #content-1-1 #home_ticket p.porcento_destaque2{position:absolute; display:block; margin:285px 0 0 40px; padding:0; font-family:Georgia, "Times New Roman", Times, serif; font-weight:bold; font-size:50pt; color:#FFFFFF}
+div#content-1.home #content-1-1 #home_ticket p.txtValor{position:absolute; display:block; margin:362px 0 0 25px; padding:0; font-family:Georgia, "Times New Roman", Times, serif; font-weight:bold; font-size:16pt; color:#61583b; text-align:center}
+div#content-1.home #content-1-1 #home_ticket p.txtValor span{font-size:10pt;}
+div#content-1.home #content-1-1 #home_ticket p.txtEconomia{position:absolute; display:block; margin:362px 0 0 140px; padding:0; font-family:Georgia, "Times New Roman", Times, serif; font-weight:bold; font-size:16pt; color:#61583b; text-align:center}
+div#content-1.home #content-1-1 #home_ticket p.txtEconomia span{font-size:10pt}
+div#content-1.home #content-1-1 #home_ticket div#nPessoas{position:absolute; display:block; margin:418px 0 0 0; padding:0; width:241px; font-family:Georgia, "Times New Roman", Times, serif; font-weight:normal; font-style:italic; text-align:center; color:#FFFFFF}
+div#content-1.home #content-1-1 #home_ticket div#nPessoas p.p1{margin:0; float:left; font-size:24pt; margin-left:10px; text-align:right; width:95px;}
+div#content-1.home #content-1-1 #home_ticket div#nPessoas p.p2{margin:0; margin-right:30px; padding-top:5px; float:right; font-size:14pt; line-height:11pt;}
+div#content-1.home #content-1-1 #home_ticket div#nPessoas_progress{position:absolute; display:block; margin:460px 0 0 0; padding:0; width:241px; height:20px; background:url(../img/bg_nPessoas_progress.png) no-repeat center;}
+div#content-1.home #content-1-1 #home_ticket div#nPessoas_progress div#bar_wrap{display:block; width:152px; height:14px; margin:3px 0 0 40px;}
+div#content-1.home #content-1-1 #home_ticket div#nPessoas_progress div#bar{display:block; width:50%; height:14px; background:url(../img/bg_nPessoas_progress_bar.jpg) repeat-x top left;}
+div#content-1.home #content-1-1 #home_ticket div#ofertaStats{position:absolute; display:block; margin:495px 0 0 0; padding:0; width:241px; font-family:Georgia, "Times New Roman", Times, serif; font-weight:bold; font-size:7.6pt; color:#61583b; font-style:italic; letter-spacing:0pt; text-align:center; }
+div#content-1.home #content-1-1 #home_ticket span#countH{position:absolute; display:block; width:28px; height:27px; margin:545px 0 0 45px; padding:2px 0 0 0; text-align:center; color:#FFFFFF; font-family:Georgia, "Times New Roman", Times, serif; font-size:16pt;}
+div#content-1.home #content-1-1 #home_ticket span#countM{position:absolute; display:block; width:28px; height:27px; margin:545px 0 0 107px; padding:2px 0 0 0; text-align:center; color:#FFFFFF; font-family:Georgia, "Times New Roman", Times, serif; font-size:16pt;}
+div#content-1.home #content-1-1 #home_ticket span#countS{position:absolute; display:block; width:28px; height:27px; margin:545px 0 0 172px; padding:2px 0 0 0; text-align:center; color:#FFFFFF; font-family:Georgia, "Times New Roman", Times, serif; font-size:16pt;}
+
+/* BLOCO 002  LISTAS */
+div#content-1.home #content-1-1 #bloco002{}
+div#content-1.home #content-1-1 #bloco002 #ul001{margin:0; padding:0; float:left; width:350px;}
+div#content-1.home #content-1-1 #bloco002 #ul002{margin:0 0 0 20px; padding:0; float:left; width:350px;}
+
+div#content-1.home #content-1-1 #bloco002 ul{margin:15px 0 0 0; padding:0 0 0 25px; list-style-image:url(../img/list_img_dotted.png); font-size:10pt; color:#700d11}
+div#content-1.home #content-1-1 #bloco002 ul li{margin:2px 0}
+
+/* BLOCO 003  */
+div#content-1.home #content-1-1 #bloco003{margin:10px 0 0 0; padding:0;}
+div#content-1.home #content-1-1 #bloco003 a:link,
+div#content-1.home #content-1-1 #bloco003 a:visited{text-decoration:none;}
+div#content-1.home #content-1-1 #bloco003 img{border:none}
+div#content-1.home #content-1-1 #bloco003 p{margin:10px 0 10px 25px; padding:0; font-size:10pt; line-height:11pt; color:#700d11}

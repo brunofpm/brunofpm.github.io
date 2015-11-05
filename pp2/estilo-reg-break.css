@@ -1,0 +1,166 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    vertical-align:baseline;
+    font-family: 'Dosis', sans-serif;
+}
+
+body * {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a {text-decoration:none;}
+
+img {border:0;}
+
+.clearboth {clear:both;}
+
+body {
+    background-color: #ffffff;
+    min-height: 454px;
+}
+
+.link {cursor: pointer;}
+
+.reg-break-div {
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.reg-break-div .people {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.reg-break-div .reg {
+    border-radius: 14px;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    background-color: #FFFFFF;
+    border: 2px solid #D6D6D5;
+    left: 50%;
+    margin-left: -43%;
+    padding-bottom: 16px;
+    position: absolute;
+    top: 22px;
+    width: 86%;
+    border: 2px solid rgb(214, 214, 213);
+    border: 2px solid rgba(0, 0, 0, .2);
+}
+
+.logo-index {
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0;
+    padding: 2px 0;
+    text-align: center;
+    background: url('images/bg-menu.png?260413') repeat-x left bottom #ffffff;
+}
+
+.reg .crie-seu-perfil {
+    color: #6D6E71;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.reg .line {
+    display: block;
+    float: left;
+    margin: 6px 8%;
+    width: 84%;
+}
+
+.reg .item {
+    float: left;
+}
+
+.reg .item.right {
+    float: right;
+}
+
+.reg .one-col .item {
+    width: 100%;
+}
+
+.reg .two-col .item {
+    width: 46%;
+}
+
+.reg .two-col .item.menor {
+    width: 32%;
+}
+
+.reg .two-col .item.maior {
+    width: 60%;
+}
+
+.reg label {
+    color: #3C3C3C;
+    display: block;
+    font-family: Verdana;
+    font-size: 12px;
+    margin: 0;
+}
+
+.reg select {
+    border: 1px solid #999999;
+    color: #999999;
+    font-family: Verdana;
+    font-size: 12px;
+    margin: 3px 0 0;
+    padding: 3px;
+    width: 100%;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+}
+
+.reg option {
+    color: #999999;
+    font-family: Verdana;
+    font-size: 12px;
+    letter-spacing: -1px;
+}
+
+.reg .bt-experimente {
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 6px 0 0;
+    padding: 6px 0 9px;
+    text-align: center;
+    text-shadow: 1px 1px 4px #6B994D;
+    width: 100%;
+    background: -webkit-gradient(linear, center top, center bottom, from(#a9cb6d), to(#98c150));
+    background: -webkit-linear-gradient(#a9cb6d, #98c150);
+    background: -moz-linear-gradient(#a9cb6d, #98c150);
+    background: -o-linear-gradient(#a9cb6d, #98c150);
+    background: -ms-linear-gradient(#a9cb6d, #98c150);
+    background: linear-gradient(#a9cb6d, #98c150);
+}
+
+.reg .ja-tenho  {
+    color: #666666;
+    display: block;
+    font-family: Verdana;
+    font-size: 12px;
+    margin: 8px 0;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%;
+}

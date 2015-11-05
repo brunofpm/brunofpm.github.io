@@ -1,0 +1,479 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	/*@font-face {
+     font-family: "Frutiger";
+     src: url("FrutigerLTStd-Light.otf");
+	}
+	@font-face {
+	     font-family: "Frutiger";
+	     src: url("FrutigerLTStd-Bold.otf");
+		 font-weight:bold;
+	}*/
+
+
+	@font-face {
+		/* This declaration targets Internet Explorer */
+		font-family: "Frutiger";
+		src: url("frutigerltstd-bold-webfont.eot");
+		font-weight: bold;
+	}
+
+	@font-face {
+		/* This declaration targets everything else */
+		font-family: "Frutiger";
+		src: url(//:) format("no404"), url("frutigerltstd-bold-webfont.woff") format("woff"), url("frutigerltstd-bold-webfont.ttf") format("truetype"), url("frutigerltstd-bold-webfont.svg#webfontPP78ikFI") format("svg");
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		/* This declaration targets Internet Explorer */
+		font-family: "Frutiger";
+		src: url("frutigerltstd-light-webfont.eot");
+	}
+
+	@font-face {
+		/* This declaration targets everything else */
+		font-family: "Frutiger";
+		src: url(//:) format("no404"), url("frutigerltstd-light-webfont.woff") format("woff"), url("frutigerltstd-light-webfont.ttf") format("truetype"), url("frutigerltstd-light-webfont.svg#webfontenUWRzYL") format("svg");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	body {
+		background-color: #f6f6f6;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	/* ---------- TOPO ----------- */
+
+	.topo {
+	    background-color: #FFFFFF;
+	    border: 1px solid #DDDBDB;
+	    border-radius: 14px 14px 14px 14px;
+	    height: 112px;
+	    margin: 20px 0;
+	    padding: 20px 30px;
+	    display: block;
+	}
+
+	.topo .logo {
+		float: left;
+		margin: 12px 0 0;
+	}
+
+	.topo .fotos {
+		float: right;
+	}
+
+	.topo-mobile {
+		display: none;
+	}
+
+
+	/* ---------- MENU CATEGORIAS ----------- */
+
+	nav .abrir-categorias {
+	    display: none;
+	}
+
+	nav .menu-categorias {
+	    margin: 0 0 20px;
+	    display: block;
+	    
+	}
+
+	nav .menu-categorias li {
+		color: #879E45;
+	    display: inline;
+	    font-size: 13px;
+	    list-style: none outside none;
+	}
+
+	nav .menu-categorias li a {
+		color: #879E45;
+	    font-size: 12px;
+	    padding: 5px 9px;
+	    text-decoration: none;
+	}
+
+	nav .menu-categorias li a:hover {
+		color: #ffffff;
+	    background-color: #879E45;
+	    border-radius: 6px;
+	}
+
+
+
+	/* ---------- BARRA LATERAL ----------- */
+
+	.area-da-barra-lateral .box-1 {
+	    border: 1px solid #DDDBDB;
+	    border-radius: 8px 8px 8px 8px;
+	    width: 224px;
+	}
+
+	.area-da-barra-lateral .box-1 .tit {
+	    color: #A8CF45;
+	    font-size: 40px;
+	    font-weight: bold;
+	    letter-spacing: -1px;
+	    line-height: 31px;
+	    margin: 13px;
+	}
+
+	.area-da-barra-lateral .box-1 .tit span {
+	    color: #839946;
+	    display: block;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.area-da-barra-lateral .box-1 .texto {
+	    color: #839946;
+	    font-size: 14px;
+	    line-height: 17px;
+	    margin: 0 auto;
+	    width: 188px;
+	}
+
+	.area-da-barra-lateral .box-1 .botao-ferramenta {
+	    background: url("../imagens/bg-bot-ferramentas1.jpg") repeat-x scroll left top transparent;
+	    border: 1px solid #CCDF9C;
+	    color: #576E1F !important;
+	    display: block;
+	    font-size: 12px;
+	    height: 42px;
+	    line-height: 15px;
+	    margin: 10px 0 0 16px;
+	    padding: 5px 8px;
+	    text-decoration: none;
+	    width: 162px;
+	}
+
+	.area-da-barra-lateral .box-1 .botao-ferramenta:hover {
+	    background-color: #FFFFFF;
+	    background-image: none;
+	}
+
+	.area-da-barra-lateral .box-1 .botao-ferramenta.primeira {
+		margin: 25px 0 0 16px;
+	}
+
+	.area-da-barra-lateral .box-1 .botao-ferramenta img {
+	    float: left;
+	    margin: 0 0 0 7px;
+	    width: 40px;
+	}
+
+	.area-da-barra-lateral .box-1 .botao-ferramenta span {
+	    display: block;
+	    float: left;
+	    margin: 6px 0 0 18px;
+	}
+
+	.area-da-barra-lateral .box-1 .orama-com-br {
+	    display: block;
+	    margin: 24px auto;
+	}
+
+	.area-da-barra-lateral .box-1 .icones-redes-sociais {
+	    margin: 18px 12px;
+	    text-align: center;
+	}
+
+	.area-da-barra-lateral .box-1 .icones-redes-sociais a {
+	    padding: 10px 0px !important;
+	    text-decoration: none;
+	}
+
+
+
+
+	.area-da-barra-lateral .box-2 {
+	    border: 1px solid #DDDBDB;
+	    border-radius: 8px 8px 8px 8px;
+	    width: 224px;
+	    margin: 24px 0 0;
+	}
+
+	.area-da-barra-lateral .box-2 .categorias .tit {
+		color: #839946;
+	    display: block;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
+	.area-da-barra-lateral .box-2 .categorias ul {
+	    list-style-image: url("../imagens/bullet.png");
+	    padding-left: 2.5em;
+	}
+
+	.area-da-barra-lateral .box-2 .categorias ul li a {
+	    color: #83A130;
+	    text-decoration: none;
+	}
+
+	.area-da-barra-lateral .box-2 .categorias ul li {
+		font-size: 13px;
+	}
+
+
+
+	/* ---------- SEGMENTADOS ALVARO ----------- */
+
+	.area-dos-posts .alvaro {
+		border: 1px solid #8D9C2E;
+	}
+	.area-dos-posts .alvaro .cima {
+		background: url("../imagens/topo-post-cores.png") no-repeat 0 0;
+		width: 302px;
+		height: 126px;
+	}
+	.area-dos-posts .alvaro .cima .data {
+		color: #839845;
+	}
+	.area-dos-posts .alvaro .baixo a {
+	    color: #8D9C2E;
+	}
+	.area-dos-posts .alvaro .baixo a .seta {
+	    background-color: #8D9C2E;
+	}
+
+
+
+	/* ---------- POSTS ----------- */
+
+	.area-dos-posts {
+	    float: left;
+	    width: 80%
+	}
+
+	.area-da-barra-lateral {
+	    float: right;
+	    width: 224px;
+	}
+
+	.area-dos-posts .card {
+	    border-radius: 15px 15px 15px 15px;
+	    width: 302px;
+	    overflow: hidden;
+	    margin: 0 24px 24px 0;
+	    float: left;
+	    height: 389px;
+	}
+
+	.area-dos-posts .card .cima {
+	    position: relative;
+	}
+
+	.area-dos-posts .card .cima h2 {
+	    color: #FFFFFF;
+	    font-size: 35px;
+	    line-height: 35px;
+	    margin: 0 auto;
+	    padding: 25px 0 0;
+	    text-align: center;
+	    width: 220px;
+	}
+
+	.area-dos-posts .card .cima .autor {
+	    color: #F0FF9F;
+	    font-size: 11px;
+	    margin: 10px auto 0;
+	    text-align: center;
+	    width: 220px;
+	}
+
+	.area-dos-posts .card .cima .data {
+	    background: url("../imagens/balao-data.png") no-repeat scroll 0 0 transparent;
+	    font-size: 11px;
+	    height: 47px;
+	    left: -1px;
+	    line-height: 13px;
+	    position: absolute;
+	    text-align: center;
+	    top: -3px;
+	    width: 47px;
+	    font-weight: bold;
+	}
+
+	.area-dos-posts .card .cima .data div {
+	    margin: 7px 0 0;
+	}
+
+	.area-dos-posts .card .cima .data div span {
+	    font-size: 17px;
+	    display: block;
+	}
+
+	.area-dos-posts .card .meio .texto-resumo {
+	    color: #666666;
+	    font-size: 14px;
+	    line-height: 17px;
+	    margin: 15px auto 5px;
+	    width: 274px;
+	}
+
+	.area-dos-posts .alvaro .baixo a {
+	    float: right;
+	    font-size: 14px;
+	    margin: 10px;
+	    text-decoration: none;
+	}
+
+	.area-dos-posts .card .baixo a .seta {
+	    border-radius: 4px 4px 4px 4px;
+	    color: #FFFFFF;
+	    display: block;
+	    float: left;
+	    font-size: 17px;
+	    line-height: 13px;
+	    padding: 0 4px 2px;
+	    margin: 1px 0 0 5px;
+	}
+
+	.area-dos-posts .card .baixo a .texto {
+		float: left;
+	}
+	
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+
+	.topo-mobile {
+	    background-color: #FFFFFF;
+	    border: 1px solid #DDDBDB;
+	    border-radius: 14px 14px 14px 14px;
+	    display: block;
+	    height: 150px;
+	    margin: 20px 10px;
+	    padding: 5px 20px;
+	}
+
+	.topo-mobile .logo {
+		float: left;
+		margin: 12px 0 0;
+	}
+
+	.topo-mobile .fotos {
+		float: left;
+		clear: both;
+	}
+
+	.topo {
+		display: none;
+	}
+
+
+
+	/* ---------- MENU CATEGORIAS MOBILE ----------- */
+
+
+	nav .abrir-categorias {
+	    background-color: #7D9634;
+	    border-radius: 6px 6px 6px 6px;
+	    color: #FFFFFF;
+	    cursor: pointer;
+	    float: left;
+	    margin: 0 5px 15px 13px;
+	    padding: 2px 8px;
+	    width: 284px;
+	    display: block;
+	}
+
+	nav .menu-categorias {
+	    margin: -5px 0 20px 11px !important;
+	    display: none;
+	    float: left;
+	}
+
+	nav .menu-categorias li {
+		border-bottom: 1px solid #879E45;
+	    color: #879E45;
+	    display: block;
+	    font-size: 13px;
+	    list-style: none outside none;
+	    width: 302px;
+	}
+
+	nav .menu-categorias li.divisao {
+		display: none;
+	}
+
+	nav .menu-categorias li a {
+		color: #879E45;
+	    display: block;
+	    font-size: 12px;
+	    padding: 5px 9px;
+	    text-decoration: none;
+	    width: 285px;
+	}
+
+	nav .menu-categorias li a:hover {
+		color: #ffffff;
+	    background-color: #879E45;
+	    border-radius: 0px;
+	}
+
+
+	/* ---------- POSTS MOBILE ----------- */
+
+	.area-dos-posts {
+	    float: left;
+	    width: 100%
+	}
+
+	.area-dos-posts .card {
+	    border-radius: 15px 15px 15px 15px;
+	    width: 302px;
+	    overflow: hidden;
+	    margin: 0 10px 20px 10px;
+	    float: left;
+	}
+
+	.area-da-barra-lateral {
+	    clear: both;
+	    float: none;
+	    margin: 20px 0 0 10px;
+	    width: 302px;
+	}
+
+	.area-da-barra-lateral .box-1 {
+	    border: 1px solid #DDDBDB;
+	    border-radius: 8px 8px 8px 8px;
+	    width: 302px;
+	}
+
+	.area-da-barra-lateral .box-1 .texto {
+	    color: #839946;
+	    font-size: 14px;
+	    line-height: 17px;
+	    margin: 0 auto;
+	    width: 270px;
+	}
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}

@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'HoboStdRegular';
+    src: url('../font/hobostd-webfont.eot');
+    src: url('../font/hobostd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/hobostd-webfont.woff') format('woff'),
+         url('../font/hobostd-webfont.ttf') format('truetype'),
+         url('../font/hobostd-webfont.svg#HoboStdRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GloriaHallelujahRegular';
+    src: url('../font/gloriahallelujah-webfont.eot');
+    src: url('../font/gloriahallelujah-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/gloriahallelujah-webfont.woff') format('woff'),
+         url('../font/gloriahallelujah-webfont.ttf') format('truetype'),
+         url('../font/gloriahallelujah-webfont.svg#GloriaHallelujahRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body.bg-branco {
+    background-color: #FFFFFF;
+    background: url("../images/bg-paper.jpg") repeat;
+}	
+body.bg-vermelho {
+    background-color:#c30a0a;
+}	
+
+.clear { clear:both;}
+
+html, body {
+    height: 100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    font: bold 12px/16px verdana,arial;
+}
+#mtbom {
+    font: 12px/16px arial,helvetica;
+    height: auto !important;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+/* HOME */
+
+#home {
+	height:100%;
+	width:100%;
+	
+}
+
+#home h1 {
+	background: url("../images/logo-mtbom-grande.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 68px;
+    margin: 25px auto;
+    text-indent: -9999px;
+    width: 206px;
+}
+
+#home .conectar-facebook {
+	background: url("../images/conectar-facebook.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 31px;
+    margin: 30px auto 0;
+    text-indent: -9999px;
+    width: 257px;
+}
+
+#home form {
+	margin: 12px auto;
+	width: 195px;
+}
+
+#home form label {
+	color:#f3f3f2;
+	font-size:13px;
+	margin:0 0 0 5px;
+}
+
+#home form input[type=text] {
+	/*background: url("../images/bg-textbox.png") no-repeat scroll left top transparent;*/
+	background-color: #F0F1F1;
+    border: 1px solid #C9CFCF;
+    border-radius: 8px 8px 8px 8px;
+    color: #AA0A0A;
+    font-size: 13px;
+    font-weight: bold;
+    height: 48px;
+    margin: 4px 0 12px;
+    padding: 0 15px;
+    width: 170px;
+}
+
+#home form input[type=button] {
+	background: url("../images/botao-enviar.png") no-repeat scroll left top transparent;
+    border: 0 none;
+    color: #EDEBEB;
+    float: right;
+    font-size: 14px;
+    height: 46px;
+    margin: 6px 0 0;
+    width: 83px;
+}
+#home form a.entrar {
+	background: url("../images/botao-enviar.png") no-repeat scroll left top transparent;
+    border: 0 none;
+    color: #EDEBEB;
+    float: right;
+    font-size: 14px;
+    height: 33px;
+    margin: 6px 0 0;
+    padding: 13px 0 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 83px;
+}
+#home form a.entrar:hover {
+	background-position:bottom;
+}
+
+
+
+/* interna */
+
+#interna {
+	height:100%;
+	width:100%;
+}
+
+#interna .topo {
+	height:56px;
+	background-color: #c30a0a;
+	margin:0;
+	display:block;
+}
+
+#interna .topo h1 {
+	background: url("../images/logo-mtbom-pequena.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 41px;
+    margin: 9px 0 0 16px;
+    text-indent: -9999px;
+    width: 116px;
+	float:left;
+}
+#interna .topo .voltar {
+	background: url("../images/seta-back.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 26px;
+    margin: 14px 16px 0 0;
+    text-indent: -9999px;
+    width: 26px;
+	float:right;
+}
+
+ul.lista1 li {
+	background: url("../images/linha1.png") repeat-x scroll left bottom transparent;
+	padding:16px;
+} 
+ul.lista1 li:hover {
+	background-color:#e5e5e5;
+}
+
+ul.lista1 li a {
+    background-image: url("../images/seta1.png");
+    background-position: right center !important;
+    background-repeat: no-repeat !important;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+	font-size:16px;
+	color:#454545;
+	font-style:italic;
+}
+
+ul.lista1 li a .achar-proximos {
+	background: url("../images/ico-mapa.png") no-repeat scroll left top transparent;
+    height: 30px;
+    padding: 7px 0 0 41px;
+}
+ul.lista1 li a .buscar-nome {
+	background: url("../images/ico-lupa.png") no-repeat scroll left top transparent;
+    height: 30px;
+    padding: 7px 0 0 41px;
+}
+ul.lista1 li a .ver-rankings {
+	background: url("../images/ico-medalha.png") no-repeat scroll left top transparent;
+    height: 30px;
+    padding: 7px 0 0 41px;
+}
+
+.votacao h2 {
+	color: #852323;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 38px;
+    margin: 12px;
+}
+
+.votacao .avaliacao {
+	margin: 10px;
+}
+
+.votacao .avaliacao .positivos {
+	background: url("../images/carinha-avaliacao.png") no-repeat scroll left top transparent;
+    border: 1px solid #CAA704;
+    border-radius: 12px 12px 12px 12px;
+    color: #A7A7A7;
+    font-size: 11px;
+    height: 18px;
+    padding: 0 0 0 24px;
+    width: 60px;
+	margin:0 12px 0 0;	
+	float:left;
+}
+.votacao .avaliacao .negativos {
+	background: url("../images/carinha-avaliacao.png") no-repeat scroll left bottom transparent;
+    border: 1px solid #CAA704;
+    border-radius: 12px 12px 12px 12px;
+    color: #A7A7A7;
+    font-size: 11px;
+    height: 18px;
+    padding: 0 0 0 24px;
+    width: 60px;
+	float:left;
+}
+
+.votacao .dados-do-estabelecimento {
+	color: #696867;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 20px 22px 20px 12px;	
+}
+
+.votacao .separacao {
+	background: url("../images/linha1.png") repeat-x scroll left bottom transparent;
+	margin:14px 0;
+	height:5px;
+	width:100%;
+}
+
+.votacao .voce-foi-bem-atendido {
+	background: url("../images/voce-foi-bem-atendido.png") no-repeat scroll left bottom transparent;
+    float: left;
+    height: 24px;
+    margin: 0 12px 15px;
+    text-indent: -9999px;
+    width: 230px;
+}
+
+.votacao .votos {
+	margin:15px 0 0 12px;
+}
+
+.votacao .votos .gostei {
+	background: url("../images/voto-gostei.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 116px;
+    margin: 0 20px 0 0;
+    text-indent: -9999px;
+    width: 116px;
+	float:left;
+}
+.votacao .votos .gostei:hover {
+	background-position:bottom;
+	height:115px;
+}
+
+.votacao .votos .nao-gostei {
+	background: url("../images/voto-nao-gostei.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 116px;
+    margin: 0 20px 0 0;
+    text-indent: -9999px;
+    width: 116px;
+	float:left;
+}
+.votacao .votos .nao-gostei:hover {
+	background-position:bottom;
+	height:115px;
+}
+
+
+
+/* LANDING */
+
+#landing {
+    margin: 0 auto;
+    width: 650px;
+}
+
+#landing h1 {
+	background: url("../images/logo-mtbom-landing.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 194px;
+    margin: 50px 0;
+    text-indent: -9999px;
+    width: 591px;
+}
+
+#landing .texto {
+	margin:20px 0;
+}
+
+#landing p {
+	font-family: 'HoboStdRegular';
+	font-size:18px;
+	line-height:28px;
+    display: block;
+    margin: 20px auto;
+    width:648px;
+	color:#ffffff;
+}
+
+#landing form {
+	margin: 30px auto;
+	width: 895px;
+	float:left;
+}
+
+#landing form label {
+	color:#f3f3f2;
+	font-size:13px;
+	margin:0 0 0 5px;
+}
+
+#landing form input[type=text] {
+	/*background: url("../images/bg-textbox.png") no-repeat scroll left top transparent;*/
+	background-color: #F0F1F1;
+    border: 1px solid #C9CFCF;
+    border-radius: 8px 8px 8px 8px;
+    color: #AA0A0A;
+    font-size: 13px;
+    font-weight: bold;
+    height: 48px;
+    margin: 4px 0 12px;
+    padding: 0 15px;
+    width: 170px;
+}
+
+#landing form input[type=button] {
+	background: url("../images/botao-enviar.png") no-repeat scroll left top transparent;
+    border: 0 none;
+    color: #EDEBEB;
+    float: left;
+    font-size: 14px;
+    height: 46px;
+    margin: 24px 0 0;
+    width: 83px;
+}
+#landing form a.enviar {
+	background: url("../images/botao-enviar.png") no-repeat scroll left top transparent;
+    border: 0 none;
+    color: #EDEBEB;
+    float: left;
+    font-size: 14px;
+    height: 33px;
+    margin: 24px 0 0;
+    padding: 13px 0 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 83px;
+}
+#landing form a.entrar:hover {
+	background-position:bottom;
+}
+
+#landing form .box {
+	display:block;
+	float:left;
+	width:245px;
+}

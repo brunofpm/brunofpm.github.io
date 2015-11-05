@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+*{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; margin:0; padding:0; list-style:none; outline:none;}
+body{ background:url(../images/bg.jpg) left top repeat-x #FFF; width: 100%; text-align: center;}
+
+hr{display:none;}
+
+#hsptfrio-1{background:url(../images/bg-01.jpg) no-repeat center top; height:758px;}
+#hsptfrio-1-1, #hsptfrio-2-1, #hsptfrio-3-1 {width:970px; margin:0 auto; padding:0; text-align: left;}
+#hsptfrio-1-1 span,
+#hsptfrio-1-1 p {display:none;}
+#hsptfrio-1-1 a.compre-agora {display:block; text-indent:-9999px; width:108px; height:70px; margin:252px 0 0 771px; position:absolute;}
+#hsptfrio-1-1 .video {position:absolute; margin:473px 0 0 37px;}
+
+h1 span { display: none;}
+h2 span { display: none;}
+
+#hsptfrio-2-1{ width:970px; height:680px; margin:0 auto; text-align: left;}
+#hsptfrio-2-1 span {display:none;}
+
+#hsptfrio-2-1 div {margin:0 0 20px -26px; width:970px; height:207px;}
+#hsptfrio-2-1 div p {font-family:Verdana, Geneva, sans-serif; font-size:12px; line-height:20px;}
+#hsptfrio-2-1 div p.referencia {font-size:10px; font-style:italic; line-height:16px;}
+#hsptfrio-2-1 h3 {font-size:15px; font-weight:bold; color:#950e7e; margin-bottom:15px;}
+#hsptfrio-2-1 .recurso-01 { background:url(../images/recursos-01.jpg) left top no-repeat; }
+#hsptfrio-2-1 .recurso-01 div {margin:35px 0 0 350px; display:block; width:515px; position:absolute;}
+#hsptfrio-2-1 .recurso-02 { background:url(../images/recursos-02.jpg) left top no-repeat; }
+#hsptfrio-2-1 .recurso-02 div {margin:24px 0 0 350px; display:block; width:540px; position:absolute;}
+#hsptfrio-2-1 .recurso-03 { background:url(../images/recursos-03.jpg) left top no-repeat; }
+#hsptfrio-2-1 .recurso-03 div {margin:45px 0 0 50px; display:block; width:515px; position:absolute;}
+#hsptfrio-2-1 .recurso-04 { background:url(../images/recursos-04.jpg) left top no-repeat; }
+#hsptfrio-2-1 .recurso-04 div {margin:45px 0 0 350px; display:block; width:515px; position:absolute;}
+#hsptfrio-2-1 .recurso-05 { background:url(../images/recursos-05.jpg) left top no-repeat; }
+#hsptfrio-2-1 .recurso-05 div {margin:55px 0 0 50px; display:block; width:515px; position:absolute;}
+#hsptfrio-2-1 .recurso-06 { background:url(../images/recursos-06.jpg) left top no-repeat; }
+#hsptfrio-2-1 .recurso-06 div {margin:55px 0 0 350px; display:block; width:515px; position:absolute;}
+#hsptfrio-2-1 .recurso-07 { background:url(../images/recursos-07.jpg) left top no-repeat; }
+#hsptfrio-2-1 .recurso-07 div {margin:55px 0 0 50px; display:block; width:515px; position:absolute;}
+
+#hsptfrio-2-1 a.compre-agora-footer { background:url(../images/bt_compre-mais-footer.jpg) left top no-repeat; display:block; text-indent:-9999px; width:98px; height:24px; margin:0 0 0 782px; position:absolute;}
+#hsptfrio-2-1 a.topo {background:url(../images/bt_topo.jpg) left top no-repeat; display:block; text-indent:-9999px; width:49px; height:24px; margin:0 0 0 890px; position:absolute;}
+
+
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #FFF;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 40%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #FFF;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #fff; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
+#lightbox-image-details-currentNumber {color:#2295D2;}

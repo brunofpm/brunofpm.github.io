@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+	  <link rel="shortcut icon" href="imagens/favicon.png" />
+	  <title>Site de relacionamento,  encontros e namoro online  - ParPerfeito</title>
+	  
+	  <meta property="og:image" content="http://images.parperfeito.com.br/images/logos/parperfeito.com.br/logo_ftime.png"/>
+	  <meta property="og:title" content="Site de relacionamento,  encontros e namoro online  - ParPerfeito" />
+	  
+      <meta name="title" content="Site de relacionamento,  encontros e namoro online  - ParPerfeito" />
+      <meta name="description" content="Comece um namoro, encontre um namorado, namorada ou um amigo no maior site de relacionamento e encontros do Brasil. Faça um cadastro gratuito e comece um relacionamento já." />
+      <meta name="keywords" content="amor, namorada, namorado, namoro, relacionamento, encontros, site relacionamento, ParPerfeito" />
+	  <meta name="author" content="ParPerfeito" />
+
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	  <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+	  <script type="text/javascript" src="jquery.jqtransform.js"></script>
+	  <script src="js.js" type="text/javascript"></script>
+	  <script src="custom-form.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+	  <link rel="stylesheet" type="text/css" href="jqtransform.css" media="screen" />
+	  <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+	  
+	 
+	  
+	  <script type="text/javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1);}
+	  </script>
+
+	
+  </head>
+  <body>
+  	
+  	
+  	
+  	<div>
+  	
+  	
+	  	<!-- LOGO BAR -->
+	  	<h1 id="site-logo" class="logo-bar">
+	  		<img id="img-site-logo" class="sitelogo" border="0" src="images/logo-parperfeito-beta.png" alt="{{i18n app.parperfeitoTitle}}" title="{{i18n app.parperfeitoTitle}}" width="156px" height="22px" {{action goToMain on="onClick"}}/>
+	  		<!-- TOP MENU -->
+	  		<div id="div-menu-closed" class="top-menu-closed" {{action toggleMenu on="onClick"}}>
+	  			<div class="top-menu-closed-photo"><img src="http://images.parperfeito.com.br/pictures/thumbnail/{{model.attributes.mainPhoto.name}}" alt="" width="29px" height="29px" /></div>
+	  			<div class="top-menu-closed-arrow-down"></div>
+	  		</div>
+	  		<div id="user-menu" class="top-menu" {{action toggleMenu on="onClick"}}>
+	  			<div id="user-menu-top"  class="top-menu-header" >
+	  				<div class="top-menu-photo"><img src="http://images.parperfeito.com.br/pictures/thumbnail/{{model.attributes.mainPhoto.name}}" alt="" width="29px" height="29px" /></div>
+	  				<div class="top-menu-midarea">
+	  					<span class="top-menu-name"></span>
+	  					<span class="top-menu-plan {{call planTypeClass}}">{{call planType}}</span>
+	  				</div>
+	  				<div class="top-menu-arrow-up"></div>
+	  			</div>
+	  			<ul class="top-menu-list">
+	  				<li><div id="botaoShowMyProfile" class="link"{{action showMyProfile on="onClick"}}>{{i18n app.viewProfile}}</div></li>
+	  				<li><div class="link" {{action goToSuggestion on="onClick"}}>{{i18n suggestions.suggestions}}<span class="beta">beta</span></div></li>
+	  				<li class="last"><div id="botaoLogoff" class="link" {{action logoff on="onClick"}}>{{i18n app.logoff}}</div></li>
+	  			</ul>
+	  		</div>
+	  		<!-- fim TOP MENU -->
+	  	</h1>
+	  	<!-- FIM LOGO BAR -->
+	  	
+	  	
+	  	<!-- NAVEGACAO PRINCIPAL -->
+	  	<nav id="menuNavigation" class="nav-bar">
+	  		<ul class="menu-principal">
+				<li id="menuBusca" class="busca" {{action goToSearch on="onClick"}}>
+					<div id="menuBuscaLink" class="link active">
+						<span id="buscaIcone" class="icone"></span>
+					</div>
+				</li>
+				<li id="menuCorreio" class="correio" {{action goToMessages on="onClick"}}>
+					<div id="menuCorreioLink" class="link">
+					<span id="correioIcone" class="icone"></span>
+					
+						<span id="messagesCount" class="numero">4</span>
+					
+					</div>
+				</li>
+				<li id="menuAtividades" class="atividades" {{action toggleActivities on="onClick"}}>
+					<div id="menuAtividadesLink" class="link">
+						<span id="atividadesIcone" class="icone"></span>
+						
+						<span id="notificationsCount" class="numero">11</span>
+						
+					</div>
+					<!-- POP ATIVIDADES NOVO -->
+					<div id="activitiesMenu" class="content-sub-menu-atividade pop-menu-principal">
+						<div class="sub-menu-arrow"></div>
+						<div class="atividade-sub-menu-transp">
+							<div class="atividade-sub-menu">
+								<ul>
+									<li class="head">
+										<div>{{i18n activities.activity}}</div>
+									</li>
+									<li  {{action goToProfileViewed on="onClick"}}>
+										<div class="link2">
+											<span class="icone quem-me-viu"></span>
+											<span class="texto">{{i18n activities.whoLookedAtMe}}</span>
+											{{#if viewsCount}}
+											<span id="viewsCount" class="dado">{{viewsCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+									<li {{action goToWinks on="onClick"}}>
+										<div class="link2">
+											<span class="icone piscadinhas"></span>
+											<span class="texto">{{i18n activities.winks}}</span>
+											{{#if winksCount}}
+											<span id="winksCount" class="dado">{{winksCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+									<li {{action goToFavorites on="onClick"}}>
+										<div class="link2">
+											<span class="icone prediletos"></span>
+											<span class="texto">{{i18n activities.myFavorites}}</span>
+											{{#if favoritesCount}}
+											<span class="dado">{{favoritesCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- FIM POP ATIVIDADES NOVO -->
+				</li>
+				
+			</ul>
+	  	</nav>
+	  	<!-- FIM NAVEGAÃ‡ÃƒO PRINCIPAL -->
+	  	
+	  	
+	  	<div class="billing">
+
+	  		<!-- NAVEGAÇÃO CONTEXTUAL -->
+	  		<div class="nav-bar-billing">
+		  		Minha assinatura
+		  	</div>
+
+		  	<div class="resignation">
+
+				<h3 class="tit">Gostaríamos de entender seus motivos:</h3>
+
+				<p class="subtit">Por que você deseja cancelar sua renovação de plano?</p>
+
+				<div class="fake-group">
+					<div class="fake-select">Selecione<i></i></div>
+					
+					<div class="box-radios resignation-select">
+						<label for="select-principal-1">
+							<div class="box-input">
+								<input type="radio" id="select-principal-1" name="select-principal">
+							</div>
+							<div class="txt">Os e-mails que recebi não foram de pessoas que tenham me interessado</div>
+						</label>
+						<label for="select-principal-2">
+							<div class="box-input">
+								<input type="radio" id="select-principal-2" name="select-principal">
+							</div>
+							<div class="txt">Não encontrei ninguém interessante</div>
+						</label>
+						<label for="select-principal-3">
+							<div class="box-input">
+								<input type="radio" id="select-principal-3" name="select-principal">
+							</div>
+							<div class="txt">Aparentemente meu perfil não atraiu muita gente</div>
+						</label>
+						<label for="select-principal-4">
+							<div class="box-input">
+								<input type="radio" id="select-principal-4" name="select-principal">
+							</div>
+							<div class="txt">Eu não recebi respostas suficientes aos e-mails ou chamadas de Chat que fiz</div>
+						</label>
+						<label for="select-principal-5">
+							<div class="box-input">
+								<input type="radio" id="select-principal-5" name="select-principal">
+							</div>
+							<div class="txt">Eu encontrei alguém</div>
+						</label>
+						<label for="select-principal-6">
+							<div class="box-input">
+								<input type="radio" id="select-principal-6" name="select-principal">
+							</div>
+							<div class="txt">Eu não estou satisfeito com as funcionalidades do site</div>
+						</label>
+						<label for="select-principal-7">
+							<div class="box-input">
+								<input type="radio" id="select-principal-7" name="select-principal">
+							</div>
+							<div class="txt">Estou enfrentando problemas técnicos</div>
+						</label>
+						<label for="select-principal-8">
+							<div class="box-input">
+								<input type="radio" id="select-principal-8" name="select-principal">
+							</div>
+							<div class="txt">Eu não recebi a ajuda que precisava do suporte ao cliente</div>
+						</label>
+					</div>
+				</div>
+
+				
+
+				<!-- RESPOSTA DEFAULT -->
+				<div class="opts opt0 starthidden">
+					<div class="btn disabled">Desativar renovação</div>
+				</div>
+
+				<!-- RESPOSTA 1 -->
+				<div class="opts opt1 starthidden">
+					<p class="txt">Você não precisa ficar esperando que as pessoas lhe escrevam. Seja proativo e aumente suas chances.</p>
+					<p class="txt">Que tal começar adicionando alguém à sua lista de prediletos. A pessoa  receberá uma mensagem avisando que foi adicionado e poderá assim visitar seu perfil.</p>
+					<div class="btn red">Desativar renovação</div>
+					<div class="btn green">Voltar a manter meus benefícios</div>
+				</div>
+
+				<!-- RESPOSTA 2 -->
+				<div class="opts opt2 starthidden">
+					<p class="txt">São mais de 30 milhões de cadastrados, ou seja, as possibilidades de encontrar alguém do seu jeito é enorme. Não desista!</p>
+					<p class="txt">A dica é caprichar no seu perfil com foto e enviar várias mensagens. Fazer buscas, variando nos critérios, pode ajudar também a conhecer quem você não havia visto antes.</p>
+					<div class="btn red">Desativar renovação</div>
+					<div class="btn green">Voltar a manter meus benefícios</div>
+				</div>
+
+				<!-- RESPOSTA 3 -->
+				<div class="opts opt3 starthidden">
+					<p class="txt">Você preencheu seu perfil com os campos de texto? Colocou sua melhor foto?</p>
+					<p class="txt">Complete agora. Capriche! Sabia que perfis com fotos atraem até 10 vezes mais a atenção dos nossos usuários?</p>
+					<div class="btn red">Desativar renovação</div>
+					<div class="btn green">Voltar a manter meus benefícios</div>
+				</div>
+
+				<!-- RESPOSTA 4 -->
+				<div class="opts opt4 starthidden">
+					<p class="txt">Se ligue! Um perfil bem preenchido passa credibilidade e faz com que o usuário tenha uma boa primeira impressão de você.</p>
+					<p class="txt">Sabia que perfis com fotos são até 10 vezes mais visitados? E que tal escrever mensagens criativas e bem sinceras?</p>
+					<div class="btn red">Desativar renovação</div>
+					<div class="btn green">Voltar a manter meus benefícios</div>
+				</div>
+
+				<!-- RESPOSTA 5 -->
+				<div class="opts opt5 starthidden">
+					<p class="txt">Onde você conheceu essa pessoa?</p>
+					<div class="fake-group">
+						<div class="fake-select">Selecione<i></i></div>
+						<div class="box-radios meet-where">
+							<label for="meet-where-1">
+								<div class="box-input">
+									<input type="radio" id="meet-where-1" name="meet-where">
+								</div>
+								<div class="txt">No ParPerfeito</div>
+							</label>
+							<label for="meet-where-2">
+								<div class="box-input">
+									<input type="radio" id="meet-where-2" name="meet-where">
+								</div>
+								<div class="txt">Em outro site de relacionamento</div>
+							</label>
+							<label for="meet-where-3">
+								<div class="box-input">
+									<input type="radio" id="meet-where-3" name="meet-where">
+								</div>
+								<div class="txt">Fora da Internet</div>
+							</label>
+							<label for="meet-where-4">
+								<div class="box-input">
+									<input type="radio" id="meet-where-4" name="meet-where">
+								</div>
+								<div class="txt">Nenhum dos lugares acima</div>
+							</label>
+						</div>
+					</div>
+				
+					
+					<!-- RESPOSTA 5.1 -->
+					<div class="opt5-1 starthidden">
+						<p class="txt">Esta é a melhor notícia que poderíamos receber! <a href="">Compartilhe conosco a sua história de sucesso</a> e conte aos outros usuários como o ParPerfeito o ajudou a encontrar alguém especial.</p>
+					</div>
+					<!-- RESPOSTA 5.2 -->
+					<div class="opt5-2 starthidden">
+						<p class="txt">Em qual?</p>
+						<div class="fake-group">
+							<div class="fake-select">Selecione<i></i></div>
+							<div class="box-radios sites">
+								<label for="sites-1">
+									<div class="box-input">
+										<input type="radio" id="sites-1" name="sites">
+									</div>
+									<div class="txt">Almas Gêmeas</div>
+								</label>
+								<label for="sites-2">
+									<div class="box-input">
+										<input type="radio" id="sites-2" name="sites">
+									</div>
+									<div class="txt">Amigos Virtuais</div>
+								</label>
+								<label for="sites-3">
+									<div class="box-input">
+										<input type="radio" id="sites-3" name="sites">
+									</div>
+									<div class="txt">Match.com</div>
+								</label>
+								<label for="sites-4">
+									<div class="box-input">
+										<input type="radio" id="sites-4" name="sites">
+									</div>
+									<div class="txt">Metade Ideal</div>
+								</label>
+								<label for="sites-5">
+									<div class="box-input">
+										<input type="radio" id="sites-5" name="sites">
+									</div>
+									<div class="txt">Como Vai</div>
+								</label>
+								<label for="sites-6">
+									<div class="box-input">
+										<input type="radio" id="sites-6" name="sites">
+									</div>
+									<div class="txt">MSN Paquera</div>
+								</label>
+								<label for="sites-7">
+									<div class="box-input">
+										<input type="radio" id="sites-7" name="sites">
+									</div>
+									<div class="txt">Meetic</div>
+								</label>
+								<label for="sites-8">
+									<div class="box-input">
+										<input type="radio" id="sites-8" name="sites">
+									</div>
+									<div class="txt">Outros</div>
+								</label>
+							</div>
+						</div>
+
+						<p class="txt sites-txt starthidden">Ainda que você tenha encontrado o seu alguém especial em outro lugar, ficamos felizes com isso! Essa é a maior prova de que os sites de relacionamento realmente funcionam. Lembre-se que o ParPerfeito é o maior site de relacionamentos da América Latina, contando com mais de 30 milhões de usuários cadastrados. Sinta-se livre para voltar sempre que quiser, e não se esqueça de contar aos seus amigos sobre o ParPerfeito. </p>
+					</div>
+					<!-- RESPOSTA 5.3 -->
+					<div class="opt5-3 starthidden">
+						<p class="txt">Onde?</p>
+						<div class="fake-group">
+							<div class="fake-select">Selecione<i></i></div>
+							<div class="box-radios out-of-internet">
+								<label for="out-of-internet-1">
+									<div class="box-input">
+										<input type="radio" id="out-of-internet-1" name="out-of-internet">
+									</div>
+									<div class="txt">Serviço de relacionamentos (fora da Internet)</div>
+								</label>
+								<label for="out-of-internet-2">
+									<div class="box-input">
+										<input type="radio" id="out-of-internet-2" name="out-of-internet">
+									</div>
+									<div class="txt">Anúncios pessoais no jornal</div>
+								</label>
+								<label for="out-of-internet-3">
+									<div class="box-input">
+										<input type="radio" id="out-of-internet-3" name="out-of-internet">
+									</div>
+									<div class="txt">Através de um amigo ou amiga</div>
+								</label>
+								<label for="out-of-internet-4">
+									<div class="box-input">
+										<input type="radio" id="out-of-internet-4" name="out-of-internet">
+									</div>
+									<div class="txt">Igreja/templo/etc.</div>
+								</label>
+								<label for="out-of-internet-5">
+									<div class="box-input">
+										<input type="radio" id="out-of-internet-5" name="out-of-internet">
+									</div>
+									<div class="txt">Organização social</div>
+								</label>
+								<label for="out-of-internet-6">
+									<div class="box-input">
+										<input type="radio" id="out-of-internet-6" name="out-of-internet">
+									</div>
+									<div class="txt">Boate ou bar</div>
+								</label>
+								<label for="out-of-internet-7">
+									<div class="box-input">
+										<input type="radio" id="out-of-internet-7" name="out-of-internet">
+									</div>
+									<div class="txt">Encontro por acaso</div>
+								</label>
+							</div>
+						</div>
+	
+						<p class="txt out-of-internet-txt starthidden">Ainda que você tenha encontrado o seu alguém especial em outro lugar, ficamos felizes com isso! Essa é a maior prova de que os sites de relacionamento realmente funcionam. Lembre-se que o ParPerfeito é o maior site de relacionamentos da América Latina, contando com mais de 30 milhões de usuários cadastrados. Sinta-se livre para voltar sempre que quiser, e não se esqueça de contar aos seus amigos sobre o ParPerfeito. </p>
+					</div>
+					<!-- RESPOSTA 5.4 -->
+					<div class="opt5-4 starthidden">
+						<p class="txt">Ainda que você tenha encontrado o seu alguém especial em outro lugar, ficamos felizes com isso! Essa é a maior prova de que os sites de relacionamento realmente funcionam. Lembre-se que o ParPerfeito é o maior site de relacionamentos da América Latina, contando com mais de 30 milhões de usuários cadastrados. Sinta-se livre para voltar sempre que quiser, e não se esqueça de contar aos seus amigos sobre o ParPerfeito. </p>
+					</div>
+
+					<div class="show-buttons starthidden">
+						<div class="btn red">Desativar renovação</div>
+						<div class="btn green">Voltar a manter meus benefícios</div>
+					</div>
+				</div>
+
+				<!-- RESPOSTAS 6 E 7 -->
+				<div class="opts opt6 starthidden">
+					<p class="txt">Desculpe-nos se o incomodamos de alguma forma. O ParPerfeito preserva ao máximo a qualidade dos seus serviços, bem como o respeito com que trata seus usuários.</p>
+					<p class="txt">Nosso SAC está sempre aberto a dúvidas e sugestões. Dê-nos uma chance!</p>
+					<p class="txt">Utilize o campo abaixo para detalhar sua denúncia:</p>
+					<div class="fake-group">
+						<div class="fake-select">Selecione<i></i></div>
+
+						<div class="box-radios site-features">
+							<label for="site-features-1">
+								<div class="box-input">
+									<input type="radio" id="site-features-1" name="site-features">
+								</div>
+								<div class="txt">Lista de Prediletos</div>
+							</label>
+							<label for="site-features-2">
+								<div class="box-input">
+									<input type="radio" id="site-features-2" name="site-features">
+								</div>
+								<div class="txt">Afinidade</div>
+							</label>
+							<label for="site-features-3">
+								<div class="box-input">
+									<input type="radio" id="site-features-3" name="site-features">
+								</div>
+								<div class="txt">Correio</div>
+							</label>
+							<label for="site-features-4">
+								<div class="box-input">
+									<input type="radio" id="site-features-4" name="site-features">
+								</div>
+								<div class="txt">Chat</div>
+							</label>
+							<label for="site-features-5">
+								<div class="box-input">
+									<input type="radio" id="site-features-5" name="site-features">
+								</div>
+								<div class="txt">Seja +</div>
+							</label>
+							<label for="site-features-6">
+								<div class="box-input">
+									<input type="radio" id="site-features-6" name="site-features">
+								</div>
+								<div class="txt">Busca</div>
+							</label>
+							<label for="site-features-7">
+								<div class="box-input">
+									<input type="radio" id="site-features-7" name="site-features">
+								</div>
+								<div class="txt">Ajuda</div>
+							</label>
+						</div>
+					</div>
+
+					<!-- RESPOSTA 6.1 -->
+					<div class="opt6-1 starthidden">
+						<p class="txt">A ferramenta “Prediletos” funciona como um arquivo ou agenda, onde você pode guardar os perfis dos usuários que chamaram a sua atenção, escrever comentários sobre cada um deles e muito mais. Você poderá, ainda, ordenar seus prediletos de acordo com as suas necessidades: Por Último Acesso, com Fotografias, por Ordem Alfabética, Altura, etc. E mais: Você receberá uma mensagem a cada vez que for adicionado à lista de prediletos de um usuário.</p>
+					</div>
+					<!-- RESPOSTA 6.2 -->
+					<div class="opt6-2 starthidden">
+						<p class="txt">Esta ferramenta permite definir TODOS os filtros de características disponíveis no ParPerfeito, como sexualidade, grau de instrução, tipo físico, bairro, cor dos olhos e cabelos, fumo, entre outros. Através da seleção das características, suas chances de encontrar alguém exatamente como deseja são muito maiores. </p>
+					</div>
+					<!-- RESPOSTA 6.3 -->
+					<div class="opt6-3 starthidden">
+						<p class="txt">Assinantes podem podem ler e responder a todos os e-mails recebidos. Também podem escrever com toda liberdade suas mensagens e ainda anexar fotos aos seus e-mails. </p>
+					</div>
+					<!-- RESPOSTA 6.4 -->
+					<div class="opt6-4 starthidden">
+						<p class="txt">O Chat é uma ferramenta exclusiva do ParPerfeito, que permite que os Assinantes Ouro conversem com todos os outros assinantes que estiverem online no site e que os Assinantes Platinum conversem livremente com todos os usuários do site, inclusive os básicos! E ainda, todos os básicos podem convidar os Assinantes Platinum para uma conversa de voz e vídeo! Para que o Chat funcione corretamente, é importante que não haja nenhum bloqueador de pop ups acionado em seu navegador. Qualquer outro problema que venha a surgir, basta contatar nosso SAC (Serviço de Atendimento ao Cliente) através do link Fale Conosco, na área de Ajuda.</p>
+					</div>
+					<!-- RESPOSTA 6.5 -->
+					<div class="opt6-5 starthidden">
+						<p class="txt">No Seja + você encontra dicas de sucesso, artigos e um serviço de aconselhamento que oferecemos aos nossos usuários. Lendo as dicas você irá aumentar muito suas chances de sucesso no ParPerfeito. São dicas sobre relacionamento online, a importância das fotos, cuidados especiais, entre outras. </p>
+					</div>
+					<!-- RESPOSTA 6.6 -->
+					<div class="opt6-6 starthidden">
+						<p class="txt">“Quem me busca”, “Afinidade” e “Busca salva”. Estes são os principais meios de buscar o seu par perfeito. As buscas poder ser configuradas para otimizar os resultados.</p>
+					</div>
+					<!-- RESPOSTA 6.7 -->
+					<div class="opt6-7 starthidden">
+						<p class="txt">O tópico Ajuda foi criado para esclarecer a principais dúvidas entre os usuários. Você pode acessar a qualquer momento clicando no link presente na parte superior direita do site ou por meio do mapa do site.</p>
+					</div>
+
+					<div class="show-buttons starthidden">
+						<div class="btn red">Desativar renovação</div>
+						<div class="btn green">Voltar a manter meus benefícios</div>
+					</div>
+				</div>
+
+				<!-- RESPOSTA 8 -->
+				<div class="opts opt8 starthidden">
+					<p class="txt">Desculpe-nos se o incomodamos de alguma forma. O ParPerfeito preserva ao máximo a qualidade dos seus serviços, bem como o respeito com que trata seus usuários.</p>
+					<p class="txt">Nosso SAC está sempre aberto a dúvidas e sugestões. Dê-nos uma chance!</p>
+
+					<div class="btn red">Desativar renovação</div>
+					<div class="btn green">Voltar a manter meus benefícios</div>
+				</div>
+
+				<div class="box-radios-cover"></div>
+
+			</div>
+		</div>
+
+	  	<!-- FIM BILLING PAGE -->
+	  	
+  	</div>
+
+  </body>
+</html>

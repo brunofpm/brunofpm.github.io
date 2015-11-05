@@ -1,0 +1,10 @@
+/**** GENERAL ********************************************************/
+
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, a, img {margin: 0; padding: 0; border: 0;}body {font-family: Arial, Helvetica, sans-serif; text-align: center;}a {	text-decoration: none;}a:hover {text-decoration: underline;}p {	color: #333333;}h1 {font-size: small; padding-bottom: 1px; text-align: left;}h1 img {margin-left: 5px;}h2 {font-size: small; text-align: left;}h1, h2 {margin: 2px 10% 2px 10%;}p.date, p.credits, p.content {margin: 1px 10% 2px 10%; text-align: left;}p.date, p.credits {	font-size: xx-small;}p.content {	font-size: smaller;}img.content {margin-top: 3px; font-size: x-small;}
+/**** SPECIFIC IDS ***************************************************/
+#header, #banner, #footer, #list, #content, #navigation {margin: 6px 10% 4px 10%;}#header {font-weight: bold; color: #0271AB;}
+#update {font-weight: normal; font-size: x-small;}#banner {font-size: x-small;	margin-top: 14px; margin-bottom: 10px;}#banner.content {margin-top: 4px; margin-bottom: 2px;}
+#list {text-align: left;	font-weight: bold;	font-size: smaller;}#cont {text-align: left;	font-size: smaller;}#list ul {list-style: none;}#list ul li {padding: 2px 0px;}#list ul li span.smaller {font-size: smaller; font-weight: normal;}
+#navigation {text-align: left; font-size: x-small; margin-top: 10px;}#navigation a {color: #696768; border: 1px solid #696768; padding-left: 2px;	padding-right: 3px;	margin-right: 3px;}
+#footer {font-size: xx-small; padding-top: 3px;}.nav {font-size: x-small;}
+

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+	  <link rel="shortcut icon" href="imagens/favicon.png" />
+	  <title>Site de relacionamento,  encontros e namoro online  - ParPerfeito</title>
+	  
+	  <meta property="og:image" content="http://images.parperfeito.com.br/images/logos/parperfeito.com.br/logo_ftime.png"/>
+	  <meta property="og:title" content="Site de relacionamento,  encontros e namoro online  - ParPerfeito" />
+	  
+      <meta name="title" content="Site de relacionamento,  encontros e namoro online  - ParPerfeito" />
+      <meta name="description" content="Comece um namoro, encontre um namorado, namorada ou um amigo no maior site de relacionamento e encontros do Brasil. Faça um cadastro gratuito e comece um relacionamento já." />
+      <meta name="keywords" content="amor, namorada, namorado, namoro, relacionamento, encontros, site relacionamento, ParPerfeito" />
+	  <meta name="author" content="ParPerfeito" />
+
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	  <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+	  <script type="text/javascript" src="jquery.jqtransform.js"></script>
+	  <script src="js.js" type="text/javascript"></script>
+	  <script src="custom-form.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+	  <link rel="stylesheet" type="text/css" href="jqtransform.css" media="screen" />
+	  <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+	  
+	 
+	  
+	  <script type="text/javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1);}
+	  </script>
+
+	
+  </head>
+  <body>
+  	
+  	<!-- BUSCA -->
+  	
+  	<div class="busca">
+  	
+  	
+	  	<!-- LOGO BAR -->
+	  	<h1 id="site-logo" class="logo-bar">
+	  		<img id="img-site-logo" class="sitelogo retina" border="0" src="images/logo_parperfeito_beta_iPhoneRetina.png" alt="{{i18n app.parperfeitoTitle}}" title="{{i18n app.parperfeitoTitle}}" width="156px" {{action goToMain on="onClick"}}/>
+	  		<img id="img-site-logo" class="sitelogo no-retina" border="0" src="images/logo-parperfeito-beta.png" alt="{{i18n app.parperfeitoTitle}}" title="{{i18n app.parperfeitoTitle}}" width="156px" {{action goToMain on="onClick"}}/>
+	  		<!-- TOP MENU -->
+	  		<div id="div-menu-closed" class="top-menu-closed" {{action toggleMenu on="onClick"}}>
+	  			<div class="top-menu-closed-photo"><img src="http://images.parperfeito.com.br/pictures/thumbnail/{{model.attributes.mainPhoto.name}}" alt="" width="29px" height="29px" /></div>
+	  			<div class="top-menu-closed-arrow-down"></div>
+	  		</div>
+	  		<div id="user-menu" class="top-menu" {{action toggleMenu on="onClick"}}>
+	  			<div id="user-menu-top"  class="top-menu-header" >
+	  				<div class="top-menu-photo"><img src="http://images.parperfeito.com.br/pictures/thumbnail/{{model.attributes.mainPhoto.name}}" alt="" width="29px" height="29px" /></div>
+	  				<div class="top-menu-midarea">
+	  					<span class="top-menu-name"></span>
+	  					<span class="top-menu-plan {{call planTypeClass}}">{{call planType}}</span>
+	  				</div>
+	  				<div class="top-menu-arrow-up"></div>
+	  			</div>
+	  			<ul class="top-menu-list">
+	  				<li><div id="botaoShowMyProfile" class="link"{{action showMyProfile on="onClick"}}>{{i18n app.viewProfile}}</div></li>
+	  				<li><div class="link" {{action goToSuggestion on="onClick"}}>{{i18n suggestions.suggestions}}<span class="beta">beta</span></div></li>
+	  				<li class="last"><div id="botaoLogoff" class="link" {{action logoff on="onClick"}}>{{i18n app.logoff}}</div></li>
+	  			</ul>
+	  		</div>
+	  		<!-- fim TOP MENU -->
+	  	</h1>
+	  	<!-- FIM LOGO BAR -->
+	  	
+	  	
+	  	<!-- NAVEGAÃ‡ÃƒO PRINCIPAL -->
+	  	<nav id="menuNavigation" class="nav-bar">
+	  		<ul class="menu-principal">
+				<li id="menuBusca" class="busca" {{action goToSearch on="onClick"}}>
+					<div id="menuBuscaLink" class="link active">
+						<span id="buscaIcone" class="icone"></span>
+					</div>
+				</li>
+				<li id="menuCorreio" class="correio" {{action goToMessages on="onClick"}}>
+					<div id="menuCorreioLink" class="link">
+					<span id="correioIcone" class="icone"></span>
+					
+						<span id="messagesCount" class="numero">4</span>
+					
+					</div>
+				</li>
+				<li id="menuAtividades" class="atividades" {{action toggleActivities on="onClick"}}>
+					<div id="menuAtividadesLink" class="link">
+						<span id="atividadesIcone" class="icone"></span>
+						
+					</div>
+					<!-- POP ATIVIDADES NOVO -->
+					<div id="activitiesMenu" class="content-sub-menu-atividade pop-menu-principal">
+						<div class="sub-menu-arrow"></div>
+						<div class="atividade-sub-menu-transp">
+							<div class="atividade-sub-menu">
+								<ul>
+									<li class="head">
+										<div>{{i18n activities.activity}}</div>
+									</li>
+									<li  {{action goToProfileViewed on="onClick"}}>
+										<div class="link2">
+											<span class="icone quem-me-viu"></span>
+											<span class="texto">{{i18n activities.whoLookedAtMe}}</span>
+											{{#if viewsCount}}
+											<span id="viewsCount" class="dado">{{viewsCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+									<li {{action goToWinks on="onClick"}}>
+										<div class="link2">
+											<span class="icone piscadinhas"></span>
+											<span class="texto">{{i18n activities.winks}}</span>
+											{{#if winksCount}}
+											<span id="winksCount" class="dado">{{winksCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+									<li {{action goToFavorites on="onClick"}}>
+										<div class="link2">
+											<span class="icone prediletos"></span>
+											<span class="texto">{{i18n activities.myFavorites}}</span>
+											{{#if favoritesCount}}
+											<span class="dado">{{favoritesCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- FIM POP ATIVIDADES NOVO -->
+				</li>
+				
+			</ul>
+	  	</nav>
+	  	<!-- FIM NAVEGAÃ‡ÃƒO PRINCIPAL -->
+	  	
+
+	  	<!-- Navegacao Contextual Com Icone -->
+	  	<ul class="nav-bar-withicon-messages">
+	  		<li>
+	  			<div id="botaoProfileBack" {{action goBack on="onClick"}} class="link messages-nav-bar-back left">
+	  				<div class="center-box">
+		  				<span class="icon back"></span>
+	  				</div>
+	  			</div>
+	  			<div class="nick-nav-bar">cariocadenickgrande</div>
+	  		</li>
+	  		<li style="display: none;">
+	  			<div class="link messages-nav-bar-profile-menu right">
+	  				<div class="center-box">
+		  				<span class="icon profile-menu"></span>
+	  				</div>
+	  			</div>
+	  		</li>
+	  	</ul>
+	  	<!-- FIM Navegacaoo Contextual Com icone -->
+
+
+	  	<!-- PROFILE -->
+	  	
+	  	<ul class="gallery list profile">
+	  		<li>
+	  			<div class="link" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+	  					<span class="photo-under-approval">
+							<span class="opacity"></span>
+							<p>Aprovação em até 2 dias</p>
+						</span>
+	  					<img src="images/foto.jpg" width="135" height="135" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="bt-add-face-photo">
+		  					<i></i><span class="txt">Adicionar</span>
+		  				</div>
+		  				<div class="bt-edit-face-photo">
+		  					<i></i><span class="txt">Editar</span>
+		  				</div>
+		  				<div class="dropdown-edit-face-photo">
+		  					<div class="bt-edit-face-photo-close">
+		  						<i></i><span class="txt">Editar</span>
+		  					</div>
+	  						<ul class="options">
+	  							<li class="change-face-photo">
+	  								<i></i><span class="txt">Trocar foto de rosto</span>
+	  							</li>
+	  							<li class="remove-face-photo">
+	  								<i></i><span class="txt">Remover</span>
+	  							</li>
+	  						</ul>
+		  				</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  	</ul>
+
+	  	<div class="profile-info">
+	  		<!--<div class="apelido">
+					<span class="online"></span>
+					<span class="texto-apelido">Aninhaa_3333</span>
+				</div>-->
+			<div class="info-age-city">
+				<span class="info">São Paulo, SP</span>
+				<span class="online"></span>
+			</div>
+			<ul class="profile-years-meters-kilos">
+				<li><span class="num">23</span>anos</li>
+				<li><span class="num">1,60</span>metros</li>
+				<li class="last"><span class="num">52</span>quilos</li>
+			</ul>
+			<div class="last-access">
+				Último acesso: hoje
+			</div>
+			<ul class="profile-actions">
+				<li class="link action-send-message"><span class="icon-actions"></span></li>
+				<li class="link action-send-wink"><span class="icon-actions"></span></li>
+				<li class="link action-favorite"><span class="icon-actions"></span></li>
+			</ul>
+	  	</div>
+
+	  	<div class="clearboth"></div>
+
+	  	<div class="alert-action-messages">
+	  		<div class="transparent-border"></div>
+	  		<div class="text">Piscadinha enviada com sucesso!</div>
+	  	</div>
+
+	  	<p class="profile-user-text">
+	  		Não quero um homem perfeito mas sim um homem sincero.
+	  		<span class="arrow"></span>
+	  	</p>
+
+	  	<div class="photo-carousel">
+	  		<div class="mask">
+	  			<div class="slider" id="slider">
+	  				<div class="icon-display" style="display: none;">
+	  					<span class="icon"></span>
+	  					<span class="num-photos"><span>17</span> fotos</span>
+	  				</div>
+	  				<div class="icon-display-add-photo">
+	  					<span class="icon"></span>
+	  					<span class="txt">Adicionar</span>
+	  				</div>
+	  				<ul class="photos">
+	  					<li class="link">
+	  						<span class="photo-under-approval">
+	  							<span class="opacity"></span>
+	  							<p>Aprovação em até 2 dias</p>
+	  						</span>
+	  						<img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" />
+	  					</li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  					<li class="link"><img src="images/foto.jpg" width="63" height="63" alt="Eu na praia" /></li>
+	  				</ul>
+	  			</div>
+	  			<div class="link profile-arrow-div-right">
+	  				<span></span>
+	  			</div>
+	  			<div class="link profile-arrow-div-left">
+	  				<span></span>
+	  			</div>
+	  		</div>
+	  	</div>
+
+	  	<div class="profile-tabs">
+	  		<ul class="profile-tabs-header">
+	  			<li onclick="javascript:void(0);" class="link about-me active">
+	  				<span class="icon"></span>
+	  				<span class="text">Sobre mim</span>
+	  				<span class="arrow"></span>
+	  			</li>
+	  			<li onclick="javascript:void(0);" class="link about-who-i-look-for">
+	  				<span class="icon"></span>
+	  				<span class="text">Sobre quem busco</span>
+	  				<span class="arrow"></span>
+	  			</li>
+	  		</ul>
+	  		<div class="clearboth"></div>
+	  		<ul class="profile-basic-info box-about-me">
+	  			<li class="profile-basic-info-header">Informações Básicas</li>
+	  			<li>
+	  				<span class="head">Sexo</span>
+	  				<span class="answer">Mulher</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Me interesso por</span>
+	  				<span class="answer">Homem</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Idade</span>
+	  				<span class="answer">32</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Localização</span>
+	  				<span class="answer">Rio de Janeiro, RJ, Brasil</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Altura e peso</span>
+	  				<span class="answer">1.70m, 72Kg</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Tipo físico</span>
+	  				<span class="answer">Magro</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Me considero</span>
+	  				<span class="answer">atraente;bonito/a;sensual</span>
+	  			</li>
+	  			<li>
+  				<span class="head">Tom de pele</span>
+  				<span class="answer">Branco/Caucasiano</span>
+  			</li>
+  			<li>
+  				<span class="head">Olhos</span>
+  				<span class="answer">Verdes</span>
+  			</li>
+  			<li>
+  				<span class="head">Cabelos</span>
+  				<span class="answer">Liso; Loiros; Curtos</span>
+  			</li>
+  			<li>
+  				<span class="head">Intenção</span>
+  				<span class="answer">Amizade/Diversão</span>
+  			</li>
+  			<li>
+  				<span class="head">Fidelidade</span>
+  				<span class="answer">Sou fiel</span>
+  			</li>
+  			<li>
+  				<span class="head">Romantismo</span>
+  				<span class="answer">Sou muito romântico</span>
+  			</li>
+  			<li>
+  				<span class="head">Apresentação pessoal</span>
+  				<span class="answer">É meio que ruim falarmos de nós mesmo, mas com certeza não irá se arrepender ,rsrsrs....</span>
+  			</li>
+  			<li>
+  				<span class="head">Fale mais sobre você</span>
+  				<span class="answer">Eu tenho o corpo em forma,graças a DEUS....Vou a academia trêz vez por semana, E se for pra tirar a dúvida e melhor ver pessoalmente , rsrsrs..... Mas cuidado , pra NÃO se apaixonarrrrr..... rsrsrs........</span>
+  			</li>
+  			<li>
+  				<span class="head">Meu estado civil</span>
+  				<span class="answer">Solteiro(a) sozinho(a)</span>
+  			</li>
+  			<li>
+  				<span class="head">Quanto à moradia</span>
+  				<span class="answer">Moro sozinho(a)</span>
+  			</li>
+  			<li>
+  				<span class="head">Renda mensal</span>
+  				<span class="answer">entre 2.500 e 5.000</span>
+  			</li>
+  			<li>
+  				<span class="head">Filhos</span>
+  				<span class="answer">Não tenho; Quero ter filhos</span>
+  			</li>
+  			<li>
+  				<span class="head">Minha religião</span>
+  				<span class="answer">Espírita; Um(a) praticante eventual</span>
+  			</li>
+  			<li>
+  				<span class="head">Formação acadêmica</span>
+  				<span class="answer">PHD/pós doutorado</span>
+  			</li>
+  			<li>
+  				<span class="head">Sou do signo</span>
+  				<span class="answer">Libra</span>
+  			</li>
+  			<li>
+  				<span class="head">Exercícios físicos</span>
+  				<span class="answer">Algumas vezes</span>
+  			</li>
+  			<li>
+  				<span class="head">Bebida alcoólica</span>
+  				<span class="answer">Não bebo</span>
+  			</li>
+  			<li>
+  				<span class="head">Fumo</span>
+  				<span class="answer">Não fumo</span>
+  			</li>
+  			<li>
+  				<span class="head">Com que frequência saio</span>
+  				<span class="answer">Raramente</span>
+  			</li>
+  			<li>
+  				<span class="head">Quando saio vou</span>
+  				<span class="answer">Praia, Piscina, Restaurante, Shows, Discoteca</span>
+  			</li>
+  			<li>
+  				<span class="head">Hobbies</span>
+  				<span class="answer">Cinema</span>
+  			</li>
+  			<li>
+  				<span class="head">Atividade física</span>
+  				<span class="answer">Atletismo</span>
+  			</li>
+  			<li>
+  				<span class="head">Gosta de assistir TV?</span>
+  				<span class="answer">Gosto</span>
+  			</li>
+  			<li>
+  				<span class="head">TV e filmes prediletos são</span>
+  				<span class="answer">Policial, Comédia, Pornográfico</span>
+  			</li>
+  			<li>
+  				<span class="head">Quanto você gosta de ler?</span>
+  				<span class="answer">Gosto pouco</span>
+  			</li>
+  			<li>
+  				<span class="head">Estilos de leitura</span>
+  				<span class="answer">Religioso</span>
+  			</li>
+  			<li>
+  				<span class="head">Estilos de música de que gosto</span>
+  				<span class="answer">Pagode, Reggae</span>
+  			</li>
+  			<li>
+  				<span class="head">Na maior parte do tempo meu visual é</span>
+  				<span class="answer">Esportivo</span>
+  			</li>
+  			<li>
+  				<span class="head">Minhas preferências gastronômicas</span>
+  				<span class="answer">Comida brasileira, Comida chinesa, Comida japonesa, Salada</span>
+  			</li>
+  			<li>
+  				<span class="head">Em relação a viagens</span>
+  				<span class="answer">Praias, Feiras/eventos e congressos</span>
+  			</li>
+  			<li>
+  				<span class="head">Possuo animais de estimação</span>
+  				<span class="answer">Cachorros, Cavalos, Aves, Peixes</span>
+  			</li>
+	  		</ul>
+	  		<ul class="profile-basic-info box-about-who-i-look-for">
+	  			<li class="profile-basic-info-header">Dados Gerais</li>
+	  			<li>
+	  				<span class="head">Meu estado civil</span>
+	  				<span class="answer">Solteiro(a) sozinho(a)</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Quanto à moradia</span>
+	  				<span class="answer">Moro com minha família</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Renda mensal</span>
+	  				<span class="answer">Prefiro não dizer</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Filhos</span>
+	  				<span class="answer">Não tenho; Quero ter filhos</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Minha religião</span>
+	  				<span class="answer">Evangélico Um(a) praticante dedicado(a)</span>
+	  			</li>
+	  			<li>
+	  				<span class="head">Formação acadêmica</span>
+	  				<span class="answer">2o grau</span>
+	  			</li>
+	  		</ul>
+	  	</div>
+
+	  	<div class="profile-lightbox-bg"></div>
+	  	<div class="profile-lightbox">
+	  		<div class="pagination">
+	  			<span class="pages">Foto 3 de 22</span>
+	  			<div class="close-div">
+		  			<span class="close-button"><span>X</span></span>
+		  		</div>
+	  		</div>
+	  		<img src="images/foto-lightbox-profile.jpg" class="lightbox-photo" />
+	  		<div class="buttons">
+	  			<div class="bt-use-as-face-photo">Usar como foto de rosto</div>
+	  			<div class="bt-remove-extra-photo">Remover</div>
+	  		</div>
+	  		<span class="profile-arrow right"><span></span></span>
+	  		<span class="profile-arrow left"><span></span></span>
+
+	  	</div>
+
+	  	<!-- fim PROFILE -->
+	  	
+  	</div>
+
+  	
+
+  </body>
+</html>

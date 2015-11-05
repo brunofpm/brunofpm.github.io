@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+	  <link rel="shortcut icon" href="imagens/favicon.png" />
+	  <title>Site de relacionamento,  encontros e namoro online  - ParPerfeito</title>
+	  
+	  <meta property="og:image" content="http://images.parperfeito.com.br/images/logos/parperfeito.com.br/logo_ftime.png"/>
+	  <meta property="og:title" content="Site de relacionamento,  encontros e namoro online  - ParPerfeito" />
+	  
+      <meta name="title" content="Site de relacionamento,  encontros e namoro online  - ParPerfeito" />
+      <meta name="description" content="Comece um namoro, encontre um namorado, namorada ou um amigo no maior site de relacionamento e encontros do Brasil. Faça um cadastro gratuito e comece um relacionamento já." />
+      <meta name="keywords" content="amor, namorada, namorado, namoro, relacionamento, encontros, site relacionamento, ParPerfeito" />
+	  <meta name="author" content="ParPerfeito" />
+
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=no;">
+	  <meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;" />
+	  
+	  <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+	  <script type="text/javascript" src="jquery.jqtransform.js"></script>
+	  <script src="js.js" type="text/javascript"></script>
+	  <script src="custom-form.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+	  <link rel="stylesheet" type="text/css" href="jqtransform.css" media="screen" />
+	  <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+	  
+	 <style>
+	    @media handheld and (max-width: 360px){
+	        .buttons-erase-mode { position: relative; bottom: inherit; width: inherit; z-index: auto; }
+	    }
+	 </style>
+
+	 <script type="text/javascript">
+		  $(document).ready(function() {
+		    function changeFooterPosition() {   
+		        $('.buttons-erase-mode').css('top', window.innerHeight + window.scrollY - 30 + "px");
+		    }
+
+		    $(document).bind('scroll', function() {
+		        changeFooterPosition();
+		    });
+		  });
+		</script>
+	  
+	  <script type="text/javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1);}
+	  </script>
+
+	
+  </head>
+  <body>
+  	
+  	<!-- BUSCA -->
+  	
+  	<div class="busca">
+  	
+  	
+	  	<!-- LOGO BAR -->
+	  	<h1 id="site-logo" class="logo-bar">
+	  		<img id="img-site-logo" class="sitelogo" border="0" src="images/logo-parperfeito-beta.png" alt="{{i18n app.parperfeitoTitle}}" title="{{i18n app.parperfeitoTitle}}" width="156px" height="22px" {{action goToMain on="onClick"}}/>
+	  		<!-- TOP MENU -->
+	  		<div id="div-menu-closed" class="top-menu-closed" {{action toggleMenu on="onClick"}}>
+	  			<div class="top-menu-closed-photo"><img src="http://images.parperfeito.com.br/pictures/thumbnail/{{model.attributes.mainPhoto.name}}" alt="" width="29px" height="29px" /></div>
+	  			<div class="top-menu-closed-arrow-down"></div>
+	  		</div>
+	  		<div id="user-menu" class="top-menu" {{action toggleMenu on="onClick"}}>
+	  			<div id="user-menu-top"  class="top-menu-header" >
+	  				<div class="top-menu-photo"><img src="http://images.parperfeito.com.br/pictures/thumbnail/{{model.attributes.mainPhoto.name}}" alt="" width="29px" height="29px" /></div>
+	  				<div class="top-menu-midarea">
+	  					<span class="top-menu-name"></span>
+	  					<span class="top-menu-plan {{call planTypeClass}}">{{call planType}}</span>
+	  				</div>
+	  				<div class="top-menu-arrow-up"></div>
+	  			</div>
+	  			<ul class="top-menu-list">
+	  				<li><div id="botaoShowMyProfile" class="link"{{action showMyProfile on="onClick"}}>{{i18n app.viewProfile}}</div></li>
+	  				<li><div class="link" {{action goToSuggestion on="onClick"}}>{{i18n suggestions.suggestions}}<span class="beta">beta</span></div></li>
+	  				<li class="last"><div id="botaoLogoff" class="link" {{action logoff on="onClick"}}>{{i18n app.logoff}}</div></li>
+	  			</ul>
+	  		</div>
+	  		<!-- fim TOP MENU -->
+	  	</h1>
+	  	<!-- FIM LOGO BAR -->
+	  	
+	  	
+	  	<!-- NAVEGAÃ‡ÃƒO PRINCIPAL -->
+	  	<nav id="menuNavigation" class="nav-bar">
+	  		<ul class="menu-principal">
+				<li id="menuBusca" class="busca" {{action goToSearch on="onClick"}}>
+					<div id="menuBuscaLink" class="link active">
+						<span id="buscaIcone" class="icone"></span>
+					</div>
+				</li>
+				<li id="menuCorreio" class="correio" {{action goToMessages on="onClick"}}>
+					<div id="menuCorreioLink" class="link">
+					<span id="correioIcone" class="icone"></span>
+					
+						<span id="messagesCount" class="numero">4</span>
+					
+					</div>
+				</li>
+				<li id="menuAtividades" class="atividades" {{action toggleActivities on="onClick"}}>
+					<div id="menuAtividadesLink" class="link">
+						<span id="atividadesIcone" class="icone">11</span>
+						
+						<span id="notificationsCount" class="numero"></span>
+						
+					</div>
+					<!-- POP ATIVIDADES NOVO -->
+					<div id="activitiesMenu" class="content-sub-menu-atividade pop-menu-principal">
+						<div class="sub-menu-arrow"></div>
+						<div class="atividade-sub-menu-transp">
+							<div class="atividade-sub-menu">
+								<ul>
+									<li class="head">
+										<div>{{i18n activities.activity}}</div>
+									</li>
+									<li  {{action goToProfileViewed on="onClick"}}>
+										<div class="link2">
+											<span class="icone quem-me-viu"></span>
+											<span class="texto">{{i18n activities.whoLookedAtMe}}</span>
+											{{#if viewsCount}}
+											<span id="viewsCount" class="dado">{{viewsCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+									<li {{action goToWinks on="onClick"}}>
+										<div class="link2">
+											<span class="icone piscadinhas"></span>
+											<span class="texto">{{i18n activities.winks}}</span>
+											{{#if winksCount}}
+											<span id="winksCount" class="dado">{{winksCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+									<li {{action goToFavorites on="onClick"}}>
+										<div class="link2">
+											<span class="icone prediletos"></span>
+											<span class="texto">{{i18n activities.myFavorites}}</span>
+											{{#if favoritesCount}}
+											<span class="dado">{{favoritesCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- FIM POP ATIVIDADES NOVO -->
+				</li>
+				
+			</ul>
+	  	</nav>
+	  	<!-- FIM NAVEGAÃ‡ÃƒO PRINCIPAL -->
+	  	
+	  	
+	  	<!-- Navegação Contextual Sem Ícone -->
+	  	<ul class="nav-bar-noicon">
+	  		<li>
+	  			<div href="#" class="link nav-bar-noicon left active">
+	  				<span class="text">Recebidos</span>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<div href="#" class="link nav-bar-noicon right">
+	  				<span class="text">Enviados</span>
+	  			</div>
+	  		</li>
+	  	</ul>
+	  	<!-- FIM Navegação Contextual Sem Ícone -->
+
+
+	  	<!-- BARRA DE APAGAR MENSAGENS -->
+
+	  	<ul class="erase-msg">
+	  		<li>
+	  			<div class="link">
+	  				<span class="text">apagar mensagens ></span>
+	  				<span class="text2">Escolha as mensagens a serem apagadas</span>
+	  			</div>
+	  		</li>
+	  	</ul>
+
+	  	<div class="box-buttons-erase-mode">
+		  	<div class="buttons-erase-mode">
+				<div class="cancelar">< Cancelar</div>
+				<input type="submit" class="bt-erase" value="Apagar mensagens">
+				<div class="fundo-transparente"></div>
+			</div>
+		</div>
+
+	  	
+	  	<!-- Galeria lista -->
+	  	<ul class="gallery list">
+	  		
+	  		<li>
+	  			<label for="checkbox-erase" class="checkbox-erase-mode-label">
+	  				<input type="checkbox" id="checkbox-erase" class="checkbox-erase-mode">
+	  			</label>
+	  			<div class="link" href="index.html" data-transition="slide" data-direction="reverse" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="apelido">
+		  					<span class="online"></span>
+		  					<span class="texto-apelido">Aninhaa_3333</span>
+		  				</div>
+		  				<span class="date-style date-position">26/09</span>
+		  				<div class="info-age-city">
+			  				<span class="info">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</span>
+						</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<label for="checkbox-erase" class="checkbox-erase-mode-label">
+	  				<input type="checkbox" id="checkbox-erase" class="checkbox-erase-mode">
+	  			</label>
+	  			<div class="link" href="index.html" data-transition="slide" data-direction="reverse" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="apelido">
+		  					<span class="online"></span>
+		  					<span class="texto-apelido">Aninhaa_3333</span>
+		  				</div>
+		  				<span class="date-style date-position">26/09</span>
+		  				<div class="info-age-city">
+			  				<span class="info">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</span>
+						</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<label for="checkbox-erase" class="checkbox-erase-mode-label">
+	  				<input type="checkbox" id="checkbox-erase" class="checkbox-erase-mode">
+	  			</label>
+	  			<div class="link" href="index.html" data-transition="slide" data-direction="reverse" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="apelido">
+		  					<span class="online"></span>
+		  					<span class="texto-apelido">Aninhaa_3333</span>
+		  				</div>
+		  				<span class="date-style date-position">26/09</span>
+		  				<div class="info-age-city">
+			  				<span class="info">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</span>
+						</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<label for="checkbox-erase" class="checkbox-erase-mode-label">
+	  				<input type="checkbox" id="checkbox-erase" class="checkbox-erase-mode">
+	  			</label>
+	  			<div class="link unread-msg" href="index.html" data-transition="slide" data-direction="reverse" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="apelido">
+		  					<span class="online"></span>
+		  					<span class="texto-apelido">Aninhaa_3333</span>
+		  				</div>
+		  				<span class="date-style date-position">26/09</span>
+		  				<div class="info-age-city">
+			  				<span class="info">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</span>
+						</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<label for="checkbox-erase" class="checkbox-erase-mode-label">
+	  				<input type="checkbox" id="checkbox-erase" class="checkbox-erase-mode">
+	  			</label>
+	  			<div class="link" href="index.html" data-transition="slide" data-direction="reverse" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="apelido">
+		  					<span class="online"></span>
+		  					<span class="texto-apelido">Aninhaa_3333</span>
+		  				</div>
+		  				<span class="date-style date-position">26/09</span>
+		  				<div class="info-age-city">
+			  				<span class="info">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</span>
+						</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<label for="checkbox-erase" class="checkbox-erase-mode-label">
+	  				<input type="checkbox" id="checkbox-erase" class="checkbox-erase-mode">
+	  			</label>
+	  			<div class="link" href="index.html" data-transition="slide" data-direction="reverse" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="apelido">
+		  					<span class="online"></span>
+		  					<span class="texto-apelido">Aninhaa_3333</span>
+		  				</div>
+		  				<span class="date-style date-position">26/09</span>
+		  				<div class="info-age-city">
+			  				<span class="info">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</span>
+						</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<label for="checkbox-erase" class="checkbox-erase-mode-label">
+	  				<input type="checkbox" id="checkbox-erase" class="checkbox-erase-mode">
+	  			</label>
+	  			<div class="link" href="index.html" data-transition="slide" data-direction="reverse" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="apelido">
+		  					<span class="online"></span>
+		  					<span class="texto-apelido">Aninhaa_3333</span>
+		  				</div>
+		  				<span class="date-style date-position">26/09</span>
+		  				<div class="info-age-city">
+			  				<span class="info">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</span>
+						</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<label for="checkbox-erase" class="checkbox-erase-mode-label">
+	  				<input type="checkbox" id="checkbox-erase" class="checkbox-erase-mode">
+	  			</label>
+	  			<div class="link" href="index.html" data-transition="slide" data-direction="reverse" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="apelido">
+		  					<span class="online"></span>
+		  					<span class="texto-apelido">Aninhaa_3333</span>
+		  				</div>
+		  				<span class="date-style date-position">26/09</span>
+		  				<div class="info-age-city">
+			  				<span class="info">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</span>
+						</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<label for="checkbox-erase" class="checkbox-erase-mode-label">
+	  				<input type="checkbox" id="checkbox-erase" class="checkbox-erase-mode">
+	  			</label>
+	  			<div class="link" href="index.html" data-transition="slide" data-direction="reverse" title="Carioccaa - 23 anos - Rio de Janeiro, RJ">
+	  				<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<div class="apelido">
+		  					<span class="online"></span>
+		  					<span class="texto-apelido">Aninhaa_3333</span>
+		  				</div>
+		  				<span class="date-style date-position">26/09</span>
+		  				<div class="info-age-city">
+			  				<span class="info">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</span>
+						</div>
+		  			</div>
+	  			</div>
+	  		</li>
+	  		
+	  	</ul>
+	  	<!-- fim Galeria Lista -->
+
+	  	<div class="clearboth"></div>
+
+	  	<div class="search-more-users">
+	  		<span>Mais usuários</span>
+	  	</div>
+
+	  	<!--<div id="confirmDelete" class="alert-action-messages alert-info-pessoais" style="display: block;">
+  			<div class="transparent-border"></div>
+  			<div class="text">
+	  			<div>Não esqueça! O ParPerfeito nunca pede informações pessoais como senhas e dados bancários/cartão de crédito por email.</div>
+	  			<div class="clearboth"></div>
+	  			<div id="btnDeleteNo" class="alert-msg-bt cancel">Ok</div>
+  			</div>
+  		</div>-->
+	  	
+  	</div>
+
+  </body>
+
+</html>

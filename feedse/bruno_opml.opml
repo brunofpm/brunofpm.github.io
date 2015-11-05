@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><opml version="1.0">
+<head>
+	<title>Netvibes.com Subscriptions</title>
+</head>
+<body>
+<outline title="General" text="General" icon="/img/icons/information.gif">
+	<outline type="rss" title="Spesa" text="Spesa" xmlUrl="http://spesa.com.br/operations/feed/0842bb12a9709f5f2a40f30ee78710d00ee13572" htmlUrl="http://www.spesa.com.br" />
+</outline>
+<outline title="Plantão" text="Plantão" icon="/img/icons/eye.gif">
+	<outline type="rss" title="G1.com.br - O Portal de Notícias da Globo" text="G1.com.br - O Portal de Notícias da Globo" xmlUrl="http://g1.globo.com/Rss2/0,,AS0-5597,00.xml" htmlUrl="http://g1.globo.com/Noticias/0,,5597,00.html" />
+	<outline type="rss" title="O Globo Online » Rio" text="O Globo Online » Rio" xmlUrl="http://oglobo.globo.com/rss/plantaorio.xml" htmlUrl="http://www.oglobo.com.br/" />
+	<outline type="rss" title="G1.com.br &gt; Planeta Bizarro" text="G1.com.br &gt; Planeta Bizarro" xmlUrl="http://g1.globo.com/Rss2/0,,AS0-6091,00.xml" htmlUrl="http://g1.globo.com/Noticias/PlanetaBizarro/0,,6091,00.html" />
+	<outline type="rss" title="KOMO - News - Local" text="KOMO - News - Local" xmlUrl="http://www.komotv.com/news/local/index.rss" htmlUrl="http://www.komotv.com/news/local" />
+</outline>
+<outline title="Esporte" text="Esporte" icon="/img/icons/sport_soccer.gif">
+	<outline type="rss" title="Flamengo" text="Flamengo" xmlUrl="http://globoesporte.globo.com/ESP/Noticia/Rss/0,,AS0-4282,00.xml" htmlUrl="http://globoesporte.globo.com/ESP/Home/0,,4282,00.html" />
+	<outline type="rss" title="Futebol Internacional" text="Futebol Internacional" xmlUrl="http://globoesporte.globo.com/ESP/Noticia/Rss/0,,AS0-4840,00.xml" htmlUrl="http://globoesporte.globo.com/ESP/Home/0,,4840,00.html" />
+	<outline type="rss" title="Garamblog" text="Garamblog" xmlUrl="http://www.garambone.globolog.com.br/Rss2.xml" htmlUrl="http://www.garambone.globolog.com.br" />
+	<outline type="rss" title="Lazionet" text="Lazionet" xmlUrl="http://www.lazio.net/portale/backend.php" htmlUrl="http://www.lazio.net/lazionews" />
+	<outline type="rss" title="Google News Brasil - Esportes" text="Google News Brasil - Esportes" xmlUrl="http://news.google.com.br/?ned=pt-BR_br&amp;topic=s&amp;output=rss" htmlUrl="http://news.google.com.br/?ned=pt-BR_br&amp;topic=s" />
+	<outline type="rss" title="Blog do Lédio Carmona" text="Blog do Lédio Carmona" xmlUrl="http://www.ledio.globolog.com.br/Rss2.xml" htmlUrl="http://www.ledio.globolog.com.br" />
+</outline>
+<outline title="Tecnologia" text="Tecnologia" icon="/img/icons/computer.gif">
+	<outline type="rss" title="Rec6 - Notícias mais populares" text="Rec6 - Notícias mais populares" xmlUrl="http://rec6.via6.com//rss.php?cat=1" htmlUrl="http://www.rec6.com.br" />
+	<outline type="rss" title="G1.com.br &gt; Tecnologia" text="G1.com.br &gt; Tecnologia" xmlUrl="http://g1.globo.com/Rss2/0,,AS0-6174,00.xml" htmlUrl="http://g1.globo.com/Noticias/Tecnologia/0,,6174,00.html" />
+	<outline type="rss" title="UOL - Downloads" text="UOL - Downloads" xmlUrl="http://rss.tecnologia.uol.com.br/downloads/ultnot/index.xml" htmlUrl="http://tecnologia.uol.com.br/downloads/ultnot/" />
+	<outline type="rss" title="Plantão INFO" text="Plantão INFO" xmlUrl="http://info.abril.com.br/aberto/infonews/rssnews.xml" htmlUrl="http://info.abril.com.br/aberto/infonews/" />
+	<outline type="rss" title="Bruno Torres ponto net" text="Bruno Torres ponto net" xmlUrl="http://feeds.feedburner.com/brunotorres" htmlUrl="http://brunotorres.net" />
+</outline>
+<outline title="Tecnologia2" text="Tecnologia2" icon="/img/icons/computer.gif">
+	<outline type="rss" title="Digg / Technology" text="Digg / Technology" xmlUrl="http://www.digg.com/rss/containertechnology.xml" htmlUrl="http://digg.com/view/technology" />
+	<outline type="rss" title="Connected Minds" text="Connected Minds" xmlUrl="http://marionery.com/blog/?feed=rss2" htmlUrl="http://marionery.com/blog" />
+	<outline type="rss" title="Meio Bit" text="Meio Bit" xmlUrl="http://feeds.feedburner.com/meiobit" htmlUrl="http://www.meiobit.com/" />
+	<outline type="rss" title="HospedaPlus.com" text="HospedaPlus.com" xmlUrl="http://digaospbr.wordpress.com/feed/" htmlUrl="http://digaospbr.wordpress.com" />
+	<outline type="rss" title="Giveaway of the Day" text="Giveaway of the Day" xmlUrl="http://www.giveawayoftheday.com/feed/" htmlUrl="http://www.giveawayoftheday.com" />
+	<outline type="rss" title="MiniAjax.com" text="MiniAjax.com" xmlUrl="http://feeds.feedburner.com/miniajax" htmlUrl="http://www.miniajax.com" />
+</outline>
+<outline title="Cinema e TV" text="Cinema e TV" icon="/img/icons/television.gif">
+	<outline type="rss" title="(o) Omelete" text="(o) Omelete" xmlUrl="http://www.omelete.com.br/rss/rss.aspx" htmlUrl="http://www.omelete.com.br" />
+	<outline type="rss" title="G1.com.br &gt; Cinema" text="G1.com.br &gt; Cinema" xmlUrl="http://g1.globo.com/Rss2/0,,AS0-7086,00.xml" htmlUrl="http://g1.globo.com/Noticias/Cinema/0,,7086,00.html" />
+</outline>
+<outline title="Web" text="Web" icon="/img/icons/page_white_code.gif">
+	<outline type="rss" title="Fabio Seixas, versão txt" text="Fabio Seixas, versão txt" xmlUrl="http://blog.fabioseixas.com.br/index.rdf" htmlUrl="http://blog.fabioseixas.com.br/" />
+	<outline type="rss" title="Webinsider" text="Webinsider" xmlUrl="http://webinsider.uol.com.br/feed.php/rss" htmlUrl="http://webinsider.uol.com.br" />
+	<outline type="rss" title="Revolução Etc" text="Revolução Etc" xmlUrl="http://feeds.feedburner.com/Revolucao" htmlUrl="http://www.revolucao.etc.br" />
+	<outline type="rss" title="Style Crunch" text="Style Crunch" xmlUrl="http://feeds.feedburner.com/stylecrunch" htmlUrl="http://www.stylecrunch.com" />
+	<outline type="rss" title="fechaTAG" text="fechaTAG" xmlUrl="http://blog.elcio.com.br/feed/" htmlUrl="http://blog.elcio.com.br" />
+	<outline type="rss" title="Tableless.com.br" text="Tableless.com.br" xmlUrl="http://www.tableless.com.br/feed/" htmlUrl="http://www.tableless.com.br" />
+	<outline type="rss" title="BLAM!" text="BLAM!" xmlUrl="http://feeds.feedburner.com/feedblam" htmlUrl="http://www.blam.com.br" />
+	<outline type="rss" title="| Feedse | - RSS e Web 2.0" text="| Feedse | - RSS e Web 2.0" xmlUrl="http://feeds.feedburner.com/feedse" htmlUrl="http://feedse.blogspot.com/index.html" />
+	<outline type="rss" title="experiênciaperfeita.org" text="experiênciaperfeita.org" xmlUrl="http://feeds.feedburner.com/experinciaperfeita" htmlUrl="http://www.experienciaperfeita.org/" />
+	<outline type="rss" title="Jakob Nielsen - UseIt.com" text="Jakob Nielsen - UseIt.com" xmlUrl="http://feeds.feedburner.com/bt/nielsen" htmlUrl="http://www.useit.com/alertbox/" />
+	<outline type="rss" title="Usabilidoido" text="Usabilidoido" xmlUrl="http://www.usabilidoido.com.br/atom.xml" htmlUrl="http://www.usabilidoido.com.br/" />
+</outline>
+<outline title="Web" text="Web" icon="/img/icons/page_white_code.gif">
+	<outline type="rss" title="TechCrunch" text="TechCrunch" xmlUrl="http://feeds.feedburner.com/Techcrunch" htmlUrl="http://www.techcrunch.com/" />
+	<outline type="rss" title="project.47 - Portfolio &amp; Personal Website" text="project.47 - Portfolio &amp; Personal Website" xmlUrl="http://feeds.feedburner.com/project47" htmlUrl="http://project47.viscountbox.com" />
+	<outline type="rss" title="The Web Standards Project" text="The Web Standards Project" xmlUrl="http://www.webstandards.org/feed/" htmlUrl="http://www.webstandards.org" />
+	<outline type="rss" title="Official Google Blog" text="Official Google Blog" xmlUrl="http://googleblog.blogspot.com/feeds/posts/default" htmlUrl="http://googleblog.blogspot.com/index.html" />
+	<outline type="rss" title="ViuIsso?" text="ViuIsso?" xmlUrl="http://feeds.feedburner.com/Viuisso" htmlUrl="http://www.lent.com.br/viu/" />
+	<outline type="rss" title="Undergoogle - Tudo sobre Google!" text="Undergoogle - Tudo sobre Google!" xmlUrl="http://feeds.feedburner.com/undergoogle" htmlUrl="http://undergoogle.blogspot.com" />
+	<outline type="rss" title="Cafecoca" text="Cafecoca" xmlUrl="http://www.cafecoca.com.br/?feed=rss2" htmlUrl="http://www.cafecoca.com.br" />
+	<outline type="rss" title="Go2Web20.net" text="Go2Web20.net" xmlUrl="http://feeds.feedburner.com/Go2web20net" htmlUrl="http://www.go2web20.net" />
+	<outline type="rss" title="The Alexa Top 25 Portuguese Sites" text="The Alexa Top 25 Portuguese Sites" xmlUrl="http://rss.alexa.com/top_500.pt.xml" htmlUrl="http://www.alexa.com/site/ds/movers_shakers" />
+	<outline type="rss" title="Alexa Hot Searches" text="Alexa Hot Searches" xmlUrl="http://rss.alexa.com/search_movers.xml" htmlUrl="http://www.alexa.com" />
+</outline>
+<outline title="Web" text="Web">
+	<outline type="rss" title="Techbits" text="Techbits" xmlUrl="http://feeds.feedburner.com/techbits-principal" htmlUrl="http://www.techbits.com.br" />
+	<outline type="rss" title="Web 2.0" text="Web 2.0" xmlUrl="http://www.via6.com/com_rss.php?cid=7484" htmlUrl="http://web2.com.via6.com" />
+	<outline type="rss" title="Webdesign" text="Webdesign" xmlUrl="http://www.via6.com/com_rss.php?cid=5369" htmlUrl="http://webdesign.com.via6.com" />
+	<outline type="rss" title="CSS Beauty News Feed" text="CSS Beauty News Feed" xmlUrl="http://www.cssbeauty.com/rss/news/" htmlUrl="http://www.cssbeauty.com/" />
+	<outline type="rss" title="O'Reilly Radar" text="O'Reilly Radar" xmlUrl="http://radar.oreilly.com/feed" htmlUrl="http://radar.oreilly.com/" />
+	<outline type="rss" title="Furl - Most Popular" text="Furl - Most Popular" xmlUrl="http://rss.furl.net/members/rssPopular.xml?days=1" htmlUrl="http://www.furl.net/furledPopular.jsp" />
+</outline>
+<outline title="Vagas" text="Vagas" icon="/img/icons/user_suit.gif">
+	<outline type="rss" title="vagas.carreirasolo.org" text="vagas.carreirasolo.org" xmlUrl="http://vagas.carreirasolo.org/vagas/para/ti/rss" htmlUrl="http://vagas.carreirasolo.org/posts" />
+	<outline type="rss" title="vagas.carreirasolo.org" text="vagas.carreirasolo.org" xmlUrl="http://vagas.carreirasolo.org/vagas/para/design/rss" htmlUrl="http://vagas.carreirasolo.org/" />
+	<outline type="rss" title="CSS Monster" text="CSS Monster" xmlUrl="http://www.cssbeauty.com/jobs/feed.php?f=rss" htmlUrl="http://www.cssbeauty.com/jobs/" />
+	<outline type="rss" title="AuthenticJobs.com Job Listings - Full-time: In-house, On Location" text="AuthenticJobs.com Job Listings - Full-time: In-house, On Location" xmlUrl="http://www.authenticjobs.com/rss/onsite.xml" htmlUrl="http://www.authenticjobs.com" />
+</outline>
+<outline title="Publicidade" text="Publicidade" icon="/img/icons/star.gif">
+	<outline type="rss" title="Sim, Viral." text="Sim, Viral." xmlUrl="http://feeds.feedburner.com/simviral" htmlUrl="http://simviral.blogspot.com/index.html" />
+	<outline type="rss" title="Marketing de Guerrilha - Bambuzada.com" text="Marketing de Guerrilha - Bambuzada.com" xmlUrl="http://api.flickr.com/services/feeds/groups_discuss.gne?id=89726033@N00&amp;format=rss_200" htmlUrl="http://www.flickr.com/groups/fotosdeguerrilha/" />
+	<outline type="rss" title="Marketing de Guerrilha" text="Marketing de Guerrilha" xmlUrl="http://feeds.feedburner.com/bambuzada" htmlUrl="http://bambuzada.blogspot.com" />
+	<outline type="rss" title="Brainstorm #9" text="Brainstorm #9" xmlUrl="http://feeds.feedburner.com/brainstorm9" htmlUrl="http://www.brainstorm9.com.br/" />
+</outline>
+<outline title="Outros" text="Outros" icon="/img/icons/cog.gif">
+	<outline type="rss" title="Will It Blend?" text="Will It Blend?" xmlUrl="http://www.willitblend.com/rss/default.xml" htmlUrl="http://www.willitblend.com/" />
+	<outline type="rss" title="Paulo Bertone.com.br" text="Paulo Bertone.com.br" xmlUrl="http://feeds.feedburner.com/paulobertone" htmlUrl="http://www.paulobertone.com.br" />
+	<outline type="rss" title="Charges.com.br" text="Charges.com.br" xmlUrl="http://charges.uol.com.br/charges_arquivo.xml" htmlUrl="http://charges.uol.com.br/arquivo.php" />
+	<outline type="rss" title="Ask Yahoo!" text="Ask Yahoo!" xmlUrl="http://ask.yahoo.com/ask/index.xml" htmlUrl="http://us.rd.yahoo.com/ask/rss/?http://ask.yahoo.com/" />
+	<outline type="rss" title="Updated Mozilla Add-ons" text="Updated Mozilla Add-ons" xmlUrl="https://addons.mozilla.org/rss/firefox/extensions/updated/" htmlUrl="https://addons2.mozilla.org" />
+	<outline type="rss" title="Popgadget" text="Popgadget" xmlUrl="http://www.popgadget.net/atom.xml" htmlUrl="http://www.popgadget.net/" />
+	<outline type="rss" title="Google Earth Blog" text="Google Earth Blog" xmlUrl="http://www.gearthblog.com/index.xml" htmlUrl="http://www.gearthblog.com/" />
+</outline>
+<outline title="NBA" text="NBA" icon="/img/icons/sport_basketball.gif">
+	<outline type="rss" title="GloboEsporte.com &gt; NBA &gt; Blog" text="GloboEsporte.com &gt; NBA &gt; Blog" xmlUrl="http://www.nba.globolog.com.br/Rss2.xml" htmlUrl="http://www.nba.globolog.com.br" />
+</outline>
+<outline title="Alguns blogs" text="Alguns blogs">
+	<outline type="rss" title="Rafael Payão" text="Rafael Payão" xmlUrl="http://feeds.feedburner.com/RafaelPayao" />
+	<outline type="rss" title="Blog do Marcio" text="Blog do Marcio" xmlUrl="http://janela.com.br/blogs/xmlsrv/rdf.php?blog=5" htmlUrl="http://www.janela.com.br/blogs/ehrlich" />
+	<outline type="rss" title="O Tao do Gnunes" text="O Tao do Gnunes" xmlUrl="http://gnunes.net/blog/atom.xml" htmlUrl="http://gnunes.net/blog/index.html" />
+	<outline type="rss" title="Blog do Torero" text="Blog do Torero" xmlUrl="http://blogdotorero.rssblog.uol.com.br/" htmlUrl="http://blogdotorero.blog.uol.com.br" />
+	<outline type="rss" title="DWD:3" text="DWD:3" xmlUrl="http://dwd3.blogspot.com/atom.xml" htmlUrl="http://dwd3.blogspot.com" />
+	<outline type="rss" title="Seo Brasil - O melhor Blog Brasileiro sobre otimização para mecanismos de busca" text="Seo Brasil - O melhor Blog Brasileiro sobre otimização para mecanismos de busca" xmlUrl="http://feeds.feedburner.com/Seo-Brasil" htmlUrl="http://seo-brasil.info" />
+	<outline type="rss" title="Valorizado" text="Valorizado" xmlUrl="http://valorizado.blogspot.com/rss.xml" htmlUrl="http://valorizado.blogspot.com/index.html" />
+</outline>
+<outline title="SingShot" text="SingShot" icon="/img/icons/music.gif">
+	<outline type="rss" title="SingShot - Most Recorded Songs" text="SingShot - Most Recorded Songs" xmlUrl="http://www.singshot.com/rss.html?value=mostRecordedSongs" htmlUrl="http://www.singshot.com/song.html" />
+	<outline type="rss" title="SingShot - New Songs To Record" text="SingShot - New Songs To Record" xmlUrl="http://www.singshot.com/rss.html?value=newArrivals" htmlUrl="http://www.singshot.com/songList.html?sortBy=dateAdded&amp;strong=3" />
+</outline>
+<outline title="Podcasts" text="Podcasts" icon="/img/icons/ipod.gif">
+	<outline type="rss" title="Direto do Clube" text="Direto do Clube" xmlUrl="http://podcastmp3.globo.com/esporte/diretodoclube/rss.xml" htmlUrl="http://www.globoesporte.com" />
+	<outline type="rss" title="PapoTech" text="PapoTech" xmlUrl="http://www.hamtronix.com.br/papotech/papotech.xml" />
+	<outline type="rss" title="Braincast #9" text="Braincast #9" xmlUrl="http://feeds.feedburner.com/braincast9" />
+	<outline type="rss" title="BANHEIRO FEMININO" text="BANHEIRO FEMININO" xmlUrl="http://podcast.terra.com.br/bfeminino.xml" htmlUrl=" http://banheirofeminino.terra.com.br/" />
+	<outline type="rss" title="Official Disneyland Resort Podcast" text="Official Disneyland Resort Podcast" xmlUrl="http://disneyland.disney.go.com/disneyland/en_US/rss/podcast/disneylandresort50th" />
+</outline>
+<outline title="Vídeos" text="Vídeos" icon="/img/icons/monitor.gif">
+	<outline type="rss" title="ConsoleGoals" text="ConsoleGoals" xmlUrl="http://feeds.feedburner.com/consolegoals" htmlUrl="http://www.consolegoals.com" />
+	<outline type="rss" title="YouTube :: Tag // web2" text="YouTube :: Tag // web2" xmlUrl="http://www.youtube.com/rss/tag/web2.rss" htmlUrl="http://youtube.com/rss/tag/web2.rss" />
+	<outline type="rss" title="YouTube :: Tag // winning eleven" text="YouTube :: Tag // winning eleven" xmlUrl="http://www.youtube.com/rss/tag/winning eleven.rss" htmlUrl="http://youtube.com/rss/tag/winning+eleven.rss" />
+	<outline type="rss" title="Digg / Videos" text="Digg / Videos" xmlUrl="http://www.digg.com/rss/containervideos.xml" htmlUrl="http://digg.com/view/videos" />
+</outline>
+</body></opml>

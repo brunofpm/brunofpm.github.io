@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="css/style.css"/>
+      <link rel="shortcut icon" href="imagens/favicon.ico" />
+      <title>Metalucro</title>
+      <meta name="description" content="">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no"> -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+   </head>
+
+    <body>
+
+    	<div class="home">
+
+	    	<div class="header divCentralizada">
+	    		<h1>
+	    			<img src="images/metalucro.png" alt="Metalucro" title="Metalucro" class="esquerda" />
+	    		</h1>
+	    		<ul class="menu direita tamanho600">
+	    			<li><a href="#" class="ativo">Home</a></li>
+	    			<li><a href="#">Planos & Preços</a></li>
+	    			<li><a href="#">Recursos do Sistema</a></li>
+	    			<li><a href="#">Contato</a></li>
+	    			<li><a href="#">Login</a></li>
+	    		</ul>
+	    	</div>
+
+	    	<div class="div100porcento principal">
+	    		<div class="divCentralizada">
+	    			<div class="esquerda tamanho600">
+	    				<h2>Sistema Online de <strong class="azul2">Gestão Empresarial</strong></h2>
+	    				<div class="texto branco">Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet. Nipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet.</div>
+	    			</div>
+	    			<div class="direita tamanho300">
+	    				<div class="formulario">
+	    					<div class="titulo">Crie sua conta grátis</div>
+	    					<form>
+	    						<div class="item nome">
+	    							<input type="text" placeholder="Nome" />
+	    							<div class="icone"></div>
+	    						</div>
+	    						<div class="item email">
+	    							<input type="text" placeholder="Email" />
+	    							<div class="icone"></div>
+	    						</div>
+	    						<div class="item senha">
+	    							<input type="text" placeholder="Senha" />
+	    							<div class="icone"></div>
+	    						</div>
+	    						<div class="item">
+	    							<input type="submit" />
+	    						</div>
+	    					</form>
+	    					<div class="seta"></div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    	<div class="divCentralizada">
+	    		<h3>Espaço para o título</h3>
+	    		<div class="boxHome esquerda">
+	    			<img src="images/imagemBox.jpg" />
+	    			<div class="esquerda tamanho200">
+	    				<h4>Sociis natoque Dest</h4>
+		    			<div class="texto">Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet. Nipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet.</div>
+		    			<a href="#">Ver mais</a>
+	    			</div>
+	    		</div>
+	    		<div class="boxHome direita">
+	    			<img src="images/imagemBox.jpg" />
+	    			<div class="esquerda tamanho200">
+	    				<h4>Sociis natoque Dest</h4>
+		    			<div class="texto">Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet. Nipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet.</div>
+		    			<a href="#">Ver mais</a>
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    	<div class="div100porcento footer">
+		    	<div class="divCentralizada">
+		    		<div class="area">
+			    		<img src="images/metalucro-pb.png" class="logo-footer" alt="Metalucro" title="Metalucro" />
+			    		<ul class="menu-footer">
+			    			<li><a href="#">Home</a></li>
+			    			<li><a href="#">Planos & Preços</a></li>
+			    			<li><a href="#">Recursos do Sistema</a></li>
+			    			<li><a href="#">Contato</a></li>
+			    			<li><a href="#">Login</a></li>
+			    		</ul>
+			    		<div class="redes-sociais">
+			    			<a href="#"><img src="images/facebook.jpg" width="25px" height="25px" alt="Facebook Metalucro" title="Facebook Metalucro" /></a>
+			    			<a href="#"><img src="images/twitter.jpg" width="25px" height="25px" alt="Twitter Metalucro" title="Twitter Metalucro" /></a>
+			    			
+			    		</div>
+		    		</div>
+		    		<div class="copyright">© 2014 Metalucro. All Rights Reserved</div>
+		    	</div>
+	    	</div>
+
+    	</div>
+
+
+
+
+
+
+	   <script type="text/javascript">
+	   		$( document ).ready(function() {
+	   			$('.screen0-div').click(function() {
+					$('.plugin').removeClass('screen0');
+					$('.plugin').addClass('screen1');
+				});
+				$('.plugin .close').click(function() {
+					$('.plugin').removeClass('screen1');
+					$('.plugin').removeClass('screen2');
+					$('.plugin').removeClass('screen3');
+					$('.plugin').addClass('screen0');
+					$('.screen2-div, .screen3-div, .screen4-div').hide();
+				});
+				$('.plugin .top .number-cupons').click(function() {
+					$('.screen2-div').slideToggle('fast');
+					$('.screen3-div').slideUp('fast');
+					$('.plugin .top .number-cupons .arrow').toggleClass('up');
+					$('.plugin').toggleClass('screen1');
+					$('.plugin').toggleClass('screen2');
+				});
+				$('.plugin .screen2-div .btn').click(function() {
+					$('.screen2-div').slideToggle('fast');
+					$('.screen3-div').slideToggle('fast');
+					$('.plugin .top .number-cupons .arrow').toggleClass('up');
+					$('.plugin').toggleClass('screen2');
+					$('.plugin').toggleClass('screen3');
+				});
+
+				// Fechar lightbox email
+				$('.page-opacity').click(function() {
+					$('.lb-mail').fadeOut('fast');
+					$(this).fadeOut('fast');
+				});
+
+				// Focus do Formulário de Login
+				$('.principal .formulario input').bind('blur', function(){
+				    $(this).next('.icone').toggleClass('ativo');
+				});
+				$('.principal .formulario input').bind('focus', function(){
+				    $(this).next('.icone').toggleClass('ativo');
+				});
+
+			});
+	   </script>
+
+
+   </body>
+</html>

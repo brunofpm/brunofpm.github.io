@@ -1,0 +1,130 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	vertical-align:baseline;
+}
+
+body {
+	background-color: #aee2e7;
+}
+
+.box {
+	background: url("imagens/bg-box.jpg") repeat-x scroll left bottom #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    height: 210px;
+    left: 50%;
+    margin: -105px 0 0 -350px;
+    position: absolute;
+    top: 50%;
+    width: 700px;
+}
+
+.box ul {
+    margin: 24px 0 0 32px;
+}
+
+.box ul li {
+	float: left;
+    margin: 0 0 15px;
+    width: 32%;
+    cursor: pointer;
+}
+
+.box ul li .icone {
+    display: block;
+    float: left;
+    height: 38px;
+    margin-right: 10px;
+    width: 38px;
+}
+
+.box ul .item1 .icone {background: url("imagens/icones.png") no-repeat scroll 0 0 transparent;}
+.box ul .item2 .icone {background: url("imagens/icones.png") no-repeat scroll -40px 0 transparent;}
+.box ul .item3 .icone {background: url("imagens/icones.png") no-repeat scroll -83px 0 transparent;}
+.box ul .item4 .icone {background: url("imagens/icones.png") no-repeat scroll 0 -38px transparent;}
+.box ul .item5 .icone {background: url("imagens/icones.png") no-repeat scroll -40px -38px transparent;}
+.box ul .item6 .icone {background: url("imagens/icones.png") no-repeat scroll -83px -38px transparent;}
+.box ul .item7 .icone {background: url("imagens/icones.png") no-repeat scroll 0 -77px transparent;}
+.box ul .item8 .icone {background: url("imagens/icones.png") no-repeat scroll -40px -77px transparent;}
+.box ul .item9 .icone {background: url("imagens/icones.png") no-repeat scroll -83px -77px transparent;}
+
+.box ul .item1.hover .icone {background: url("imagens/icones.png") no-repeat scroll 0 -116px transparent;}
+.box ul .item2.hover .icone {background: url("imagens/icones.png") no-repeat scroll -40px -116px transparent;}
+.box ul .item3.hover .icone {background: url("imagens/icones.png") no-repeat scroll -83px -116px transparent;}
+.box ul .item4.hover .icone {background: url("imagens/icones.png") no-repeat scroll 0 -154px transparent;}
+.box ul .item5.hover .icone {background: url("imagens/icones.png") no-repeat scroll -40px -154px transparent;}
+.box ul .item6.hover .icone {background: url("imagens/icones.png") no-repeat scroll -83px -154px transparent;}
+.box ul .item7.hover .icone {background: url("imagens/icones.png") no-repeat scroll 0 -193px transparent;}
+.box ul .item8.hover .icone {background: url("imagens/icones.png") no-repeat scroll -40px -193px transparent;}
+.box ul .item9.hover .icone {background: url("imagens/icones.png") no-repeat scroll -83px -193px transparent;}
+
+.box ul li.hover .texto {
+	color: #153d41;
+}
+
+.col-transparente {
+	opacity:0.37;
+	-moz-opacity: 0.37;
+	filter: alpha(opacity=37);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=37)";
+}
+
+.box ul li .texto {
+	color: #5D898D;
+    display: table-cell;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    height: 42px;
+    vertical-align: middle;
+    width: 160px;
+    line-height: 19px;
+}
+
+.copyright {
+    bottom: -25px;
+    color: #45949C;
+    font-family: Verdana;
+    font-size: 10px;
+    left: 50%;
+    margin: 0 0 0 -123px;
+    position: absolute;
+}
+
+.match {
+    background-color: #FFFFFF;
+    border: 3px solid #010101;
+    border-radius: 8px 8px 8px 8px;
+    left: 50%;
+    margin: -52px 0 0 -125px;
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: none;
+}
+
+.match .fechar {
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+.transparencia {
+    background: url("imagens/transparencia.png") repeat 0 0 transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	z-index: 1;
+	display: none;
+}

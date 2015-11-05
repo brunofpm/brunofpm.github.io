@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+img { border:none;}
+
+body { margin:0; padding:0; background-image:url(../images/bg.jpg); background-position: center top; background-repeat:no-repeat; height:1000px; width:100%; position:static;}
+
+h1, p {text-indent:-99999px; position:absolute;}
+
+div#area-4 { margin:0 auto; padding:0; width:1010px; height:1490px;}
+
+div#area-4 div#corpo { }
+div#area-4 div#corpo #topo {height:550px; width:1010px;}
+div#area-4 div#corpo #cont {height:450px; width:1010px;}
+div#area-4 div#corpo #footer {height:393px; width:1010px;}
+
+div#area-4 div#corpo #topo .preco-principal {
+    display: block;
+    height: 41px;
+    left: 50%;
+    margin: 451px 0 0 -264px;
+    position: absolute;
+    text-indent: -99999px;
+    width: 257px;
+	}
+	
+div#area-4 div#corpo #topo .video {
+	background-color: red;
+    height: 211px;
+    left: 50%;
+    margin: 225px 0 0 69px;
+    position: absolute;
+    width: 366px;
+	}
+
+
+div#area-4 div#corpo #cont ul.novidades {position:absolute; left:50%; width:250px; height:315px; margin: 70px 0 0 -365px;}
+div#area-4 div#corpo #cont ul.novidades li {list-style:none; font-family:Arial; color:#585858; font-size:12px; border-bottom:1px dotted #1171ab; line-height:14px; margin: 15px 0; padding: 0 0 12px;}
+div#area-4 div#corpo #cont ul.novidades li:last-child {border:0;}
+div#area-4 div#corpo #cont ul.novidades li span {color:#244991; font-weight:bold;}
+
+div#area-4 div#corpo #cont .carrossel-fora {
+	height: 246px;
+    left: 50%;
+    margin: 93px 0 0 82px;
+    overflow: hidden;
+    position: absolute;
+    width: 372px;
+	}
+div#area-4 div#corpo #cont .carrossel-fora ul.carrossel { width: 5000px; height:246px; float:left; z-index: 8; padding:0; margin:0;}
+div#area-4 div#corpo #cont .carrossel-fora ul.carrossel li {display:block; float:left; padding:0; margin:0;}
+
+div#area-4 div#corpo #cont .seta-esq {position:absolute; left:50%; width:52px; height:53px; margin:200px 0 0 50px; background:url(../images/seta-esq.png) no-repeat left top; display:block; z-index: 9;}
+div#area-4 div#corpo #cont .seta-dir {position:absolute; left:50%; width:52px; height:53px; margin:200px 0 0 436px; background:url(../images/seta-dir.png) no-repeat left top; display:block; z-index: 9;}
+
+
+div#area-4 div#corpo #footer a {text-indent:-99999px;}
+div#area-4 div#corpo #footer a.preco-1 {position:absolute; left:50%; width:103px; height:32px; margin:153px 0 0 -348px; }
+div#area-4 div#corpo #footer a.preco-2 {position:absolute; left:50%; width:103px; height:32px; margin:153px 0 0 -134px;}
+div#area-4 div#corpo #footer a.preco-3 {position:absolute; left:50%; width:103px; height:32px; margin:153px 0 0 78px;}
+div#area-4 div#corpo #footer a.preco-4 {position:absolute; left:50%; width:103px; height:32px; margin:153px 0 0 291px;}
+div#area-4 div#corpo #footer a.preco-5 {position:absolute; left:50%; width:103px; height:32px; margin:338px 0 0 -348px; }
+div#area-4 div#corpo #footer a.preco-6 {position:absolute; left:50%; width:103px; height:32px; margin:338px 0 0 -134px;}
+div#area-4 div#corpo #footer a.preco-7 {position:absolute; left:50%; width:103px; height:32px; margin:338px 0 0 78px;}
+div#area-4 div#corpo #footer a.clique-e-veja-mais {position:absolute; left:50%; width:176px; height:32px; margin:338px 0 0 218px;}

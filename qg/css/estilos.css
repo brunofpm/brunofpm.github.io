@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+*{font-family:Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0; list-style:none; outline:none; border:0;}
+body{width: 100%; background-color:#0b1c14; text-align: center;}
+
+.clear {clear:both;}
+
+#qg {background:url(../images/bg.jpg) left top no-repeat; width:994px; height:1142px; margin:0 auto; padding:0; text-align: left;}
+
+hr {border:1px solid #006666; margin:56px 0 0;}
+
+h1 span { display: none;}
+h2 span { display: none;}
+
+#qg .logo-qg {position:absolute; top:0; margin:20px 0 0 30px; width:212px; height:122px; background:url(../images/logo-qg.png) left top no-repeat; text-indent:-9999px;}
+
+/*#qg ul.menu { position:absolute; top:0; width:240px; height:210px; margin:135px 0 0 658px;}
+#qg ul.menu li {display:block; margin:0 0 10px 0;}*/
+#qg ul.menu { position:absolute; top:0; width:930px; height:50px; margin:159px 0 0 34px;}
+#qg ul.menu li {display:inline; float:left; margin:0 8px 0 0;}
+#qg ul.menu li a.aquebra {background:url(../images/menu-aquebra.png) left top no-repeat; width:224px; height:38px; text-indent:-9999px; display:block;}
+#qg ul.menu li a.aquebra-active {background:url(../images/menu-aquebra.png) left bottom no-repeat; width:224px; height:38px; text-indent:-9999px; display:block;}
+#qg ul.menu li a.aquebra:hover {background:url(../images/menu-aquebra.png) left bottom no-repeat;}
+#qg ul.menu li a.servicos {background:url(../images/menu-servicos.png) left top no-repeat; width:224px; height:38px; text-indent:-9999px; display:block;}
+#qg ul.menu li a.servicos-active {background:url(../images/menu-servicos.png) left bottom no-repeat; width:224px; height:38px; text-indent:-9999px; display:block;}
+#qg ul.menu li a.servicos:hover {background:url(../images/menu-servicos.png) left bottom no-repeat;}
+#qg ul.menu li a.clientes {background:url(../images/menu-clientes.png) left top no-repeat; width:224px; height:38px; text-indent:-9999px; display:block;}
+#qg ul.menu li a.clientes-active {background:url(../images/menu-clientes.png) left bottom no-repeat; width:224px; height:38px; text-indent:-9999px; display:block;}
+#qg ul.menu li a.clientes:hover {background:url(../images/menu-clientes.png) left bottom no-repeat;}
+#qg ul.menu li a.contato {background:url(../images/menu-contato.png) left top no-repeat; width:224px; height:38px; text-indent:-9999px; display:block;}
+#qg ul.menu li a.contato-active {background:url(../images/menu-contato.png) left bottom no-repeat; width:224px; height:38px; text-indent:-9999px; display:block;}
+#qg ul.menu li a.contato:hover {background:url(../images/menu-contato.png) left bottom no-repeat;}
+
+#qg img.frase-aquebra {margin:-10px 0 25px;}
+
+#qg .box-conteudo { background-color:#BEDFB4; margin:223px 0 0 20px; padding:20px; position:absolute; text-align:left; top:0; width:467px; color:#333; opacity:0.9; display:none;}
+#qg .box-conteudo h2 {color:#91c07e; font-family:Verdana; font-size:62px; font-weight:bold; letter-spacing:-8px; margin:-21px 0 15px;}
+#qg .box-conteudo h3 {height:26px; background:url(../images/bg-accordion-hover.jpg) repeat-x; color:#b7dba8; display:block; text-decoration:none;  font-family:Verdana; font-size:18px; font-weight:bold; letter-spacing:-1px; padding:0 0 0 10px; margin:0 0 10px;}
+#qg .box-conteudo p {margin:0 0 15px 0; font-size:15px; color:#3f4140; font-family:Verdana; letter-spacing:-1px; line-height:20px;}
+#qg .box-conteudo p.email,
+#qg .box-conteudo p.telefone {margin:0 0 10px 10px; font-size:20px; color:#2f5844;}
+#qg .box-conteudo p.endereco {margin:0 0 0 10px;}
+#qg .box-conteudo p.telefone span {letter-spacing:1px;}
+#qg .box-conteudo p.telefone .prefixo {font-size:14px; font-weight:bold;}
+#qg .box-conteudo p.email:last-child {padding:0 0 30px !important;}
+#qg .box-conteudo .foto-equipe {float:right;}
+#qg .box-conteudo .gmaps {position:absolute; margin:-9px 0 0 30px;}
+#qg .box-conteudo ul.formulario {margin:0 0 20px 0;}
+#qg .box-conteudo ul.formulario li.mensagem {margin:10px 0 0;}
+#qg .box-conteudo ul.formulario li:first-child {float:left; margin:0 20px 0 0;}
+#qg .box-conteudo ul.formulario li:last-child {margin:10px 0 0; text-align:right;}
+#qg .box-conteudo ul.formulario li input[type=text] {width:213px; height:20px; padding:0 5px;}
+#qg .box-conteudo ul.formulario li input[type=submit] {width:100px; height:20px; color:#4A713A;}
+#qg .box-conteudo ul.formulario li textarea {width:458px; height:80px; padding:5px;}
+
+#qg .box-conteudo a.servicos-accordion {height:26px; background:url(../images/bg-accordion-hover.jpg) repeat-x; color:#b7dba8; display:block; text-decoration:none;  font-family:Verdana; font-size:18px; font-weight:bold; letter-spacing:-1px; padding:0 0 0 10px; margin:15px 0 0;}
+#qg .box-conteudo a.servicos-accordion:hover {background:url(../images/bg-accordion.jpg) repeat-x; color:#4a713a;}
+#qg .box-conteudo div.servicos-box {border-bottom:1px solid #799e70;}
+#qg .box-conteudo div.servicos-box p {margin:10px 0 10px 10px; font-size:13px;}
+
+#qg .box-conteudo ul.fotos-aquebra li {display:inline;}
+#qg .box-conteudo ul.fotos-aquebra li a img {height:65px;}
+
+#qg .box-conteudo .lista-clientes a {width:138px; height:111px; float:left; margin:10px 10px 0 0;}
+#qg .box-conteudo .lista-clientes a.cli-apes {background:url(../images/clientes-apes.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-apes:hover {background:url(../images/clientes-apes.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-asa {background:url(../images/clientes-asa.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-asa:hover {background:url(../images/clientes-asa.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-burgerking {background:url(../images/clientes-burgerking.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-burgerking:hover {background:url(../images/clientes-burgerking.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-capoarq {background:url(../images/clientes-capoarq.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-capoarq:hover {background:url(../images/clientes-capoarq.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-copasa {background:url(../images/clientes-copasa.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-copasa:hover {background:url(../images/clientes-copasa.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-dobrasil {background:url(../images/clientes-dobrasil.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-dobrasil:hover {background:url(../images/clientes-dobrasil.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-duo {background:url(../images/clientes-duo.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-duo:hover {background:url(../images/clientes-duo.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-fashiondays {background:url(../images/clientes-fashiondays.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-fashiondays:hover {background:url(../images/clientes-fashiondays.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-festivalcinema {background:url(../images/clientes-festivalcinema.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-festivalcinema:hover {background:url(../images/clientes-festivalcinema.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-folic {background:url(../images/clientes-folic.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-folic:hover {background:url(../images/clientes-folic.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-hf {background:url(../images/clientes-hf.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-hf:hover {background:url(../images/clientes-hf.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-independencia {background:url(../images/clientes-independencia.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-independencia:hover {background:url(../images/clientes-independencia.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-lepostiche {background:url(../images/clientes-lepostiche.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-lepostiche:hover {background:url(../images/clientes-lepostiche.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-limits {background:url(../images/clientes-limits.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-limits:hover {background:url(../images/clientes-limits.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-samsung {background:url(../images/clientes-samsung.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-samsung:hover {background:url(../images/clientes-samsung.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-selene {background:url(../images/clientes-selene.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-selene:hover {background:url(../images/clientes-selene.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-steps {background:url(../images/clientes-steps.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-steps:hover {background:url(../images/clientes-steps.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-tenda {background:url(../images/clientes-tenda.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-tenda:hover {background:url(../images/clientes-tenda.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-treviolo {background:url(../images/clientes-treviolo.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-treviolo:hover {background:url(../images/clientes-treviolo.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-uci {background:url(../images/clientes-uci.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-uci:hover {background:url(../images/clientes-uci.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-unimed {background:url(../images/clientes-unimed.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-unimed:hover {background:url(../images/clientes-unimed.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-viannajunior {background:url(../images/clientes-viannajunior.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-viannajunior:hover {background:url(../images/clientes-viannajunior.jpg) left bottom no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-vivo {background:url(../images/clientes-vivo.jpg) left top no-repeat;}
+#qg .box-conteudo .lista-clientes a.cli-vivo:hover {background:url(../images/clientes-vivo.jpg) left bottom no-repeat;}
+
+
+#qg ul.redes-sociais {position:absolute; top:0; margin:12px 0 0 856px;}
+#qg ul.redes-sociais li {display:inline; margin:0 5px 0 0;}
+#qg ul.redes-sociais li:last-child {display:none;}
+
+#qg .ultimas-do-twitter { position:absolute; margin:224px 0 0 576px;}
+#qg .ultimas-do-twitter ul { margin:10px 0 0;}
+#qg .ultimas-do-twitter ul li {display:block; width:380px;}
+#qg .ultimas-do-twitter ul li img {float:left; margin:8px 10px 0 0;}
+#qg .ultimas-do-twitter ul li .box {border:0; background-color:#BEDFB4; opacity:0.9; float:left; margin:8px 0 0; padding:5px 15px; width:292px; }
+#qg .ultimas-do-twitter ul li .box .texto {color:#4A713A; font-size:11px; font-style:italic; font-weight:bold; }
+#qg .ultimas-do-twitter ul li .box .texto a {color:#4A713A;}
+#qg .ultimas-do-twitter ul li .box p.cabecalho a {color:#57ab5e; font-size:10px; margin:0; }
+#qg .ultimas-do-twitter .passaro {margin:-16px 0 0 325px; z-index:999; position:absolute;}
+
+#qg .footer {position:absolute; width:994px; height:48px; background-color:#0a1b12; margin-bottom:0; margin:1095px 0 0; opacity:0.9;}
+#qg .footer p {margin-top:16px; font-family:Verdana; color:#BEDFB4; font-size:13px; display:block; letter-spacing:-1px; text-align:center;}
+
+
+
+
+
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #FFF;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 40%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #FFF;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #fff; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
+#lightbox-image-details-currentNumber { display:none;}

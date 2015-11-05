@@ -1,0 +1,186 @@
+/*
+-------------------------------------------------------------------------
+################################ CRÉDITOS ###############################
+
+Site: 
+Cliente: TVGI
+Origem: Agência Kindle
+Versão: 1.0
+
+Desenvolvimento XHTML e CSS: 
+
+--------------------------------------------------------------------------
+*/
+
+
+/* ############################### GLOBAL ############################# */
+
+/* ---- Regras Gerais ---- */
+
+* {margin:0; padding:0; outline:0; text-decoration:none; list-style-type:none;}
+
+p {line-height:18px; margin:0 0 10px;}
+img, fieldset {border:0;}
+hr, h1 a span, h2 span, .hide, legend, label span {display:none;}
+
+.clear {clear:both !important;}
+.noborder {border:0 !important;}
+.nopadding {padding:0 !important;}
+.nomargin {margin:0 !important;}
+.nobg {background:none !important;}
+
+body  {	font: 100% Verdana, Arial, Helvetica, sans-serif; text-align: center; font-size:11px; color: #666666; background:url(http://www.kindle.com.br/tvgi/images/clube-bg.jpg) left top repeat-x; }
+
+
+#bg-topo {background:url(http://www.kindle.com.br/tvgi/images/clube-bg-topo.jpg) top center no-repeat;}
+
+#bg-top-content {background:url(http://www.kindle.com.br/tvgi/images/bg-top-content.png) top center no-repeat; width: 995px; height:14px; left:50%; margin:-294px 0 0 -498px; position:absolute;}
+
+#master { width: 990px; margin:140px auto 0; top:0; text-align:left; }
+* html #master {margin:0px auto 0 !important; top:0 !important;}
+*+html #master {margin:0px auto 0 !important; top:0 !important;}
+
+#content-1-2 { float: right; width: 320px; padding: 0 0 0 10px; margin:-215px 0 0;}
+#content-1-1 { margin:-211px 0 0; padding: 0 0 0 15px; float:left; width:620px; }
+
+h2.std {background-color:#FFF !important; padding:6px 0 6px 12px !important; color:#41aee2 !important; font-size:18px !important; font-family:Verdana, Geneva, sans-serif !important; font-weight:bold !important; letter-spacing:-1.1px !important;}
+
+
+/*------HEADER--------*/
+
+#header { width:1004px; height:200px; margin:0 auto; text-align:left; }  
+#header h1 {background:url(http://www.kindle.com.br/tvgi/images/clube-logo.png) left top no-repeat; width:306px; height:204px; position:absolute; margin:58px 0 0 55px; padding:0; }
+#header h1 span {display:none;}
+#header ul.menu1 {position:absolute; margin:166px 0 0 245px;}
+#header ul.menu1 li.linha {background:url(http://www.kindle.com.br/tvgi/images/clube-menu-sep.jpg) left top no-repeat; width:3px; height:29px; display:block; float:left; margin:-3px 8px 0 8px;}
+#header ul.menu1 li {display:inline; background:url(http://www.kindle.com.br/tvgi/images/clube-menu-sep.jpg) right top no-repeat; height:29px;}
+#header ul.menu1 li a {font-family:Verdana, Geneva, sans-serif; font-size:16px; color:#FFF; text-decoration:none; letter-spacing:-1.2px; display:block; float:left;}
+#header ul.menu1-inicio {position:absolute; margin:166px 0 0 64px;}
+#header ul.menu1-inicio li {display:inline; margin-right:8px; background:url(http://www.kindle.com.br/tvgi/images/clube-menu-sep.jpg) right top no-repeat; height:29px;}
+#header ul.menu1-inicio li a {font-family:Verdana, Geneva, sans-serif; font-size:16px; color:#FFF; text-decoration:none; letter-spacing:-1.5px;}
+#header ul.menu2 li a span {display:none;}
+#header ul.menu2 {position:absolute; margin:115px 0 0 615px;}
+#header ul.menu2 li {display:inline; color:#FFF;}
+#header ul.menu2 li.linha {background:url(http://www.kindle.com.br/tvgi/images/linha_menu2.jpg) left top no-repeat; width:2px; height:12px; display:block; float:left; margin:5px 10px 0 10px;}
+#header ul.menu2 li a {padding:0;}
+#header ul.menu2 li a.login {background:url(http://www.kindle.com.br/tvgi/images/login_1.png) left top no-repeat; width:46px; height:26px; display:block; float:left;}
+#header ul.menu2 li a.login:hover { background:url(http://www.kindle.com.br/tvgi/images/login.png) left top no-repeat;}
+#header ul.menu2 li a.cadastrese {background:url(http://www.kindle.com.br/tvgi/images/cadastrese_1.png) left top no-repeat; width:86px; height:26px; display:block; float:left;}
+#header ul.menu2 li a.cadastrese:hover { background:url(http://www.kindle.com.br/tvgi/images/cadastrese.png) left top no-repeat;}
+#header ul.menu2 li a.esqueci {background:url(http://www.kindle.com.br/tvgi/images/esqueci_1.png) left top no-repeat; width:162px; height:26px; display:block; float:left;}
+#header ul.menu2 li a.esqueci:hover { background:url(http://www.kindle.com.br/tvgi/images/esqueci.png) left top no-repeat;}
+
+#header ul.redes-sociais-busca {position:absolute; margin:60px 0 0 416px;}
+#header ul.redes-sociais-busca li {display:inline; padding-right:5px;}
+#header ul.redes-sociais-busca li a {float:left; margin:0 10px 0 0;}
+#header ul.redes-sociais-busca li input { font-family:Arial, Helvetica, sans-serif; font-size:12px; font-style:italic; color:#999999; background:url(http://www.kindle.com.br/tvgi/images/bg-input-busca.png) left top no-repeat; width:230px; height:26px; border:0; margin:0; float:left; padding:4px 0 0 9px;}
+#header ul.redes-sociais-busca li input:focus {font-style:normal; font-size:14px;}
+#header ul.redes-sociais-busca li input[type="value"] {margin:5px 5px 5px 6px;}
+#header .publicidade-home-header {position:absolute; margin:34px 0 0 492px;}
+
+.destaque-home {margin:0;}
+
+
+/*----CONTENT-1-1-----*/
+
+h2 span {text-indent:-1000px;}
+
+.separador-home-1 {background:url(http://www.kindle.com.br/tvgi/images/separador-home-1.jpg) left top no-repeat; border:0; height:6px; width:448px; margin:20px 0 0 0;}
+
+#content-1-1 #clube-webdoor {width:622px; margin:20px 0 20px 0;}
+#content-1-1 #membros {width:630px; height:185px; margin:14px 0;}
+#content-1-1 #membros .widget1 {float:left; margin:13px 0 0 5px;}
+#content-1-1 #membros .widget2 {float:left; margin:13px 0 0 0;}
+#content-1-1 #blogs {width:630px; height:270px; margin:0}
+#content-1-1 #programacao,
+#content-1-1 #ultimas-do-twitter {width:622px; margin:20px 0 0 0;}
+#content-1-1 #publicidade-home-1 {width:622px; height:130px; margin:30px 0 0 0; background:url(http://www.kindle.com.br/tvgi/images/separador-home-1.jpg) left bottom no-repeat;}
+#content-1-1 #publicidade-home-2 {width:622px; height:130px; margin:50px 0 0 0; background:url(http://www.kindle.com.br/tvgi/images/separador-home-1.jpg) left bottom no-repeat;}
+#content-1-1 #membros img {margin:10px 0 0 0;}
+#content-1-1 #blogs img {margin:10px 0 0 0;}
+#content-1-1 #blogs .widget1 {float:left; margin:22px 0 0 0;}
+#content-1-1 #blogs .widget2 {float:left; margin:22px 0 0 16px;}
+#content-1-1 #programacao {width:622px; margin:20px 0 0 0; height:210px;}
+#content-1-1 #programacao .encontre-local {width:200px; height:105px; margin:10px 0 0 0; padding:75px 0 0 5px; background:url(http://www.kindle.com.br/tvgi/images/label-encontre-seu-local-aqui.jpg) left top no-repeat; float:left;}
+#content-1-1 #programacao .encontre-local select {width:146px; margin:0 0 5px 10px; background-color:#e7e7e7; border:1px solid #8a8a8a; color:#aaaaaa; font-size:11px;}
+#content-1-1 #programacao .programacao-destaque {float:right; width:416px; margin:5px 0 0 0;}
+#content-1-1 #programacao .encontre-local p {width:146px; margin:0 0 5px 10px; line-height:13px;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora {width:58px; height:80px; float:left; margin:0 5px 0 0;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li:first-child {display:block; width:58px; height:53px; background:url(http://www.kindle.com.br/tvgi/images/bg-data-hora-1.png) left top no-repeat; margin:0 0 2px 0; text-align:center;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li:last-child {display:block; width:58px; height:24px; background:url(http://www.kindle.com.br/tvgi/images/bg-data-hora-2.png) left top no-repeat; text-align:center; padding:2px 0 0 0;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li .dia {font-size:28px; color:#FFFFFF;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li .mes {font-size:9px; color:#FFFFFF;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li .hora {font-size:9px; color:#FFFFFF;}
+#content-1-1 #programacao .programacao-destaque img {float:left; margin:0 10px 0 0;}
+#content-1-1 #programacao .programacao-destaque .programacao-programa .subtitulo {font-size:16px; font-weight:bold; color:#47afdf;}
+#content-1-1 #programacao .programacao-destaque .programacao-programa .botao span {display:none;}
+#content-1-1 #programacao .programacao-destaque .programacao-programa .botao {background:url(http://www.kindle.com.br/tvgi/images/bot-veja-mais.png) left top no-repeat; width:70px; height:34px; float:left; margin:5px 0 0 0;}
+#content-1-1 #destaques {width:622px; margin:20px 0 20px 0; height:420px;}
+#content-1-1 #destaques h2 {background:url(http://www.kindle.com.br/tvgi/images/tit-destaques.jpg) top left no-repeat; height:28px; width:138px;}
+#content-1-1 #destaques .destaques-direita {width:288px; height:193px; float:right; margin:20px 0 0 0; background:url(http://www.kindle.com.br/tvgi/images/bg-destaques.jpg) right bottom no-repeat;}
+#content-1-1 #destaques .destaques-esquerda {width:288px; height:193px; float:left; margin:20px 0 0 0; background:url(http://www.kindle.com.br/tvgi/images/bg-destaques.jpg) right bottom no-repeat;}
+#content-1-1 #destaques .destaques-direita a .subtitulo,
+#content-1-1 #destaques .destaques-esquerda a .subtitulo {font-size:14px; font-weight:bold; color:#47afdf; margin:1px 0 0 0;}
+#content-1-1 #destaques .destaques-direita a .texto,
+#content-1-1 #destaques .destaques-esquerda a .texto {font-size:11px; color: #666666; margin:1px 0 0 0;}
+#content-1-1 #ultimas-do-twitter h2 {background:url(http://www.kindle.com.br/tvgi/images/tit-ultimas-twitter.jpg) top left no-repeat; height:26px; width:213px;}
+#content-1-1 #ultimas-do-twitter ul {margin:10px 0 0 0;}
+#content-1-1 #ultimas-do-twitter ul li {display:block; width:580px;}
+#content-1-1 #ultimas-do-twitter ul li img {float:left; margin:15px 10px 0 0;}
+#content-1-1 #ultimas-do-twitter ul li .box {width:460px; border:1px solid #c1c1c1; margin:15px 0 0 0; padding:5px 25px 0 15px; float:left;}
+#content-1-1 #ultimas-do-twitter ul li .box .texto {font-size:15px; font-weight:bold; font-style:italic; color:#565656;}
+#content-1-1 #ultimas-do-twitter ul li .box .texto a {color:#999;}
+#content-1-1 #ultimas-do-twitter ul li .box p.cabecalho a {font-size:10px; color:#b6b6b6; margin:0;}
+
+#content-1-1 #proximos-eventos {margin:29px 0 0 0;}
+#content-1-1 #proximos-eventos .box-1 .box-1-1 {background-color:#c7e3f6; width:290px; height:100px; float:left; margin:5px 0 0 0; border:8px solid #FFF;}
+#content-1-1 #proximos-eventos .box-1 .box-1-2 {background-color:#c7e3f6; width:290px; height:100px; float:right; margin:5px 0 0 0; border:8px solid #FFF;}
+#content-1-1 #proximos-eventos .box-1 .box-1-1 img,
+#content-1-1 #proximos-eventos .box-1 .box-1-2 img {float:left; margin-right:10px;}
+#content-1-1 #proximos-eventos .box-1 .box-1-1 div,
+#content-1-1 #proximos-eventos .box-1 .box-1-2 div {padding:10px;}
+#content-1-1 #proximos-eventos .box-1 .box-1-1 div h3,
+#content-1-1 #proximos-eventos .box-1 .box-1-2 div h3 {color:#178cd9; font-size:14px; font-weight:bold;}
+#content-1-1 #proximos-eventos .box-1 .box-1-1 div p.data,
+#content-1-1 #proximos-eventos .box-1 .box-1-2 div p.data {font-size:10px; font-weight:normal; color:#FFF; background-color:#178cd9; display:block; margin:5px 0 5px 0;}
+#content-1-1 #proximos-eventos .box-1 .box-1-1 div p,
+#content-1-1 #proximos-eventos .box-1 .box-1-2 div p {color:#666666; background:none; line-height:14px;} 
+#content-1-1 #fotos-slideshow {margin:20px 0 0 0;}
+#content-1-1 #conteudos-mais-populares {margin:44px 0 0;}
+
+
+/*----CONTENT-1-2-----*/
+
+.separador-home-2 {background:url(http://www.kindle.com.br/tvgi/images/separador-home-2.jpg) center top no-repeat; border:0; height:6px; width:330px; margin:20px 0 0 0;}
+
+#content-1-2 #publicidade-home-2,
+#content-1-2 #blogs-do-canal,
+#content-1-2 #videos-clube,
+#content-1-2 #widget-facebook,
+#content-1-2 #enquete { margin:26px 0 0 0;}
+#content-1-2 #video-em-destaque {width:290px; height:260px; border:8px solid #FFF;}
+#content-1-2 #blogs-do-canal h2 {background:url(http://www.kindle.com.br/tvgi/images/tit-blogs-do-canal.jpg) top left no-repeat; height:26px; width:177px; margin:0 0 15px 0;}
+#content-1-2 #blogs-do-canal .blog {margin:13px 0 0 0;}
+#content-1-2 #blogs-do-canal .blog a p {font-size:16px; color: #666666; margin:1px 0 0 0; margin:0 0 7px 0; letter-spacing:-0.7px;}
+#content-1-2 #blogs-do-canal .blog img {float:left; margin:0 10px 0 0;}
+#content-1-2 #blogs-do-canal .blog a .subtitulo {font-size:12px; font-weight:bold; color:#47afdf; margin:1px 0 0 0;}
+#content-1-2 #blogs-do-canal .blog a .descricao {font-size:11px; color: #666666; margin:1px 0 0 0;}
+#content-1-2 #videos-clube {margin:30px 0 0 0;}
+#content-1-2 #videos-clube h2 {background:url(http://www.kindle.com.br/tvgi/images/tit-videos.jpg) top left no-repeat; height:26px; width:213px; margin:0 0 15px 0;}
+#content-1-2 #videos-clube div {margin:30px 0 0 0;}
+#content-1-2 #enquete h2 {background:url(http://www.kindle.com.br/tvgi/images/tit-enquete.jpg) top left no-repeat; height:28px; width:113px; margin:0 0 15px 0;}
+#content-1-2 #enquete input[type="radio"] {}
+#content-1-2 #enquete p {color:#255f73; font-size:12px; font-weight:bold;}
+#content-1-2 #enquete ul {margin:0; line-height:9px;}
+#content-1-2 #enquete ul li {color:#505050; font-size:10px; margin:0; height:22px;}
+#content-1-2 #enquete ul li label {margin:0;}
+#content-1-2 #enquete a.botao {background:url(http://www.kindle.com.br/tvgi/images/bot-ver-resultado.png) left top no-repeat; width:89px; height:41px; margin:38px 0 0 0; float:left;}
+#content-1-2 #atividades {width:295px; margin:18px 0 0;}
+#content-1-2 #atividades ul {background-color:#FFF; margin:5px 0 0 0; width:295px; float:left; }
+#content-1-2 #atividades ul li {display:block; margin:10px 10px 25px 10px;}
+#content-1-2 #atividades ul li img {float:left; margin:0 5px 0 0;}
+#content-1-2 #atividades ul li h3 {font-size:12px; font-weight:bold; color:#178cd9;}
+#content-1-2 #atividades ul li div {float:left; width:162px; margin:0 0 12px;}
+#content-1-2 #atividades ul li div p {line-height:14px; color:#666666;}
+#content-1-2 #ultimas-foruns {margin:21px 0 0;}
+

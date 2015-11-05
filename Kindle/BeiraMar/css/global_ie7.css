@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document - ie7 */
+
+/* form newsletter */
+div#master div#header div#header-1-2 div#hForm input.recebeemail[type=text]{margin-left:-590px}
+div#master div#header div#header-1-2 div#hForm input#input_select{margin-left:-380px}
+div#master div#header div#header-1-2 div#hForm div#wrap_dropdown{margin-left:-380px; width:;}
+div#master div#header div#header-1-2 div#hForm div#input_select_bt{margin-left:-142px}
+
+div#master div#content div#content-1 #content-1-2 #passouporaqui #conteudo img{display:block; margin:0 auto; max-width:206px; max-height:139px; margin-top:8px;}

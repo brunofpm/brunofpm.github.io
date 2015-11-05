@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*pag compra*/
+div#master div#header{margin:0 auto; padding:0; width:100%; height:218px; background:none}
+div#master div#content{display:block; margin:0 auto; padding:0; width:100%; background:none;}
+div#master div#content div#content-1{border:1px dashed red}
+

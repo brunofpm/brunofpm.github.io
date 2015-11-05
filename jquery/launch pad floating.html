@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>MyHANZO : FMT : Campaign List</title>	
+	
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	
+	<link type="text/css" href="files/styles_v2.css" rel="stylesheet">
+	<link href="files/hanzo.ico" rel="shortcut icon">
+	
+	<script type="text/javascript" src="files/prototype.js"></script>
+	<script type="text/javascript" src="files/validator.js"></script>
+	<script type="text/javascript" src="files/resizer.js"></script>
+	<script type="text/javascript" src="files/scriptaculous.js"></script><script type="text/javascript" src="files/effects.js"></script>
+	<script type="text/javascript">
+		function show_news() {
+			new Effect.Appear('news_background', { duration: 0.6, from: 0.0, to: 0.9, queue: 'end' });
+			new Effect.SlideDown('news', { duration: 1.5, queue: 'end' });
+		}
+		function hide_news() {
+			new Effect.SlideUp('news', { queue: 'end' });
+			new Effect.Fade('news_background', { duration: 1.5, queue: 'end' });
+		}
+		function show_launchpad() {
+			new Effect.Fade('showactivationbar', { duration: 0.0, from: 0.0, to: 0.0 });
+			new Effect.SlideDown('launchpad', { duration: 0.5 });
+			new Effect.Appear('news_background', { duration: 0.4, from: 0.0, to: 0.7, queue: 'end' });
+		}
+		function hide_launchpad() {
+			new Effect.Fade('news_background', { duration: 0.4, queue: 'end' });
+			new Effect.SlideUp('launchpad', { duration: 0.5, queue: 'end' });
+			new Effect.Appear('showactivationbar', { duration: 0.0, from: 1.0, to: 1.0, queue: 'end' });
+		}
+	</script>
+	<script type="text/javascript">
+		var t;
+		function count(time,exec) {
+			t=setTimeout(exec,time);
+		}
+		function reset() {
+			clearTimeout(t);
+		}
+	</script>
+	
+	
+	<!-- END MACRO VELOCITY "HEAD" ================================================ -->
+</head>
+	
+<body onload="resizer();" onresize="resizer();">
+
+<!-- START MACRO VELOCITY "newsHTML": renders the containers that will display latest news -->
+<!-- START NEWS DIV: This DIV displays the platform updates ===== -->
+
+<div id="news_background" style="display: none;" onclick="hide_news();" onmouseover="count(500,'hide_launchpad()');" onmouseout="reset();">&nbsp;</div>
+
+<div id="news" style="display: none;" onclick="hide_news();">
+	
+	<div>
+		<p class="no_content">Não houve mudanças recentes nesse produto.</p>
+	</div>
+
+	<a href="javascript:hide_news();" title="Clique para fechar"><img class="close" src="files/delete_magenta.gif"></a>
+
+</div>
+
+<!-- END MACRO VELOCITY "newsHTML" ============================================ -->
+
+<!-- START LEFT DIV: This DIV displays the contextual menu of the page ======== -->
+
+<div id="showactivationbar" onmouseover="count(500,'show_launchpad()');" onmouseout="reset();"></div>
+
+<a class="visibilitycontrols first" href="#" onmouseup="show_launchpad();" >
+	<div class="description"><span>Show Toolbox</span></div>
+	<img src="files/show_launchpad_magenta.gif" />
+</a>
+
+<div id="launchpad" class="floating" style="display: none;">
+
+	<div>
+	
+		<a class="visibilitycontrols first" href="launch pad fixed.html">
+			<div class="description"><span>Make Toolbox fixed</span></div>
+			<img src="files/fixed_launchpad_magenta.gif" />
+		</a>
+		
+		<a class="visibilitycontrols" href="#" onmouseup="hide_launchpad();">
+			<div class="description"><span>Hide Toolbox</span></div>
+			<img src="files/hide_launchpad_magenta.gif" />
+		</a>
+		
+		<a class="app homefloating" href="hp.html">
+			<div class="description"><span>Go to MyHANZO Homepage</span></div>
+			<img src="files/home_launchpad_small_magenta.gif" /><br /><span class="link">Home</span>
+		</a>
+
+		<a class="app" href="#">
+			<div class="description"><span>Create and manage Content Channels</span></div>
+			<img src="files/channel_launchpad_small_magenta.gif" /><br /><span class="link">CMT</span>
+		</a>
+		
+		<a class="app" href="#">
+			<div class="description"><span>Publish content in your Channels</span></div>
+			<img src="files/channel_launchpad_small_magenta.gif" /><br /><span class="link">CPT</span>
+		</a>
+		
+		<a class="app" href="#">
+			<div class="description"><span>Create and manage Chats</span></div>
+			<img src="files/chat_launchpad_small_magenta.gif" /><br /><span class="link">ChatMT</span>
+		</a>
+		
+		<a class="app" href="#">
+			<div class="description"><span>Create, manage and follow-up Feedback Campaigns</span></div>
+			<img src="files/feedback_launchpad_small_magenta.gif" /><br /><span class="link">FMT</span>
+		</a>
+		
+		<a class="app" href="#">
+			<div class="description"><span>Create and manage Quizzes or Tests</span></div>
+			<img src="files/quiz_test_launchpad_small_magenta.gif" /><br /><span class="link">QTMT</span>
+		</a>
+	
+		<a class="app" href="#">
+			<div class="description"><span>Follow-up your products results</span></div>
+			<img src="files/report_launchpad_small_magenta.gif" /><br /><span class="link">URPT</span>
+		</a>
+		
+		<a class="app" href="#">
+			<div class="description"><span>Create and manage Elections</span></div>
+			<img src="files/voting_launchpad_small_magenta.gif" /><br /><span class="link">VMT</span>
+		</a>
+		
+		<div id="hideactivationbar" onmouseout="Effect.SlideUp('launchpad', { queue: 'end' } );" style="display:none;">&nbsp;
+		</div>
+	
+	</div>
+	
+</div>
+	
+<div id="left">
+
+	<!-- START MACRO VELOCITY "permanentLinks": renders the top left links, same for every page -->
+	
+	<!-- START LOGOUT AND SUGGESTIONS: On everypage (expect the login page) ==== -->
+		<div id="permanent">
+	
+			<!-- START TRIAL BLOCK: if this is a TRIAL ACCOUNT, show these elements ==== -->
+									<!-- END TRIAL BLOCK ==== -->
+			
+			<a href="login.html" title="Sair">&lt;&lt;&nbsp;Logout</a>
+			<a href="#" title="Sugestões">&lt;&lt;&nbsp;Suggestions</a>
+			<a class="last" href="javascript:show_news();" title="Latest News">Latest News&nbsp;<b>!</b></a>
+
+		</div>
+	<!-- END LOGOUT AND SUGGESTIONS ============================================ -->
+
+	<div id="menu">	
+
+		<a title="Atualizar Lista" href="https://fmt.hanzo.com.br/fmt/campaignList.do">
+			Atualizar Lista<img alt="Atualizar Lista" src="sample_page_files/refresh_magenta.gif">
+		</a>
+		
+		<a title="Nova Campanha" href="https://fmt.hanzo.com.br/fmt/createCampaign.do">
+			Nova Campanha<img alt="Nova Campanha" src="sample_page_files/new_magenta.gif">
+		</a>
+
+	</div>
+
+
+	<!-- END MACRO VELOCITY "permanentLinks" =================================== -->
+
+</div>
+<!-- END LEFT DIV ============================================================== -->
+
+<!-- START MIDDLE DIV: This DIV displays the main content of the page  ========= -->
+<div id="middle">
+
+
+	<!-- START MACRO VELOCITY "HEADER": 2 variables. If empty, use "". Variable 1: <Page Header>. Variable 2: <Page Sub-Header> ===== -->
+	
+<!-- START HEADER: This DIV display HANZO logo and headers' text  ========== -->
+<div id="header">
+		<img src="files/hanzologo_rgb_120px.gif" alt="HANZO Logo">
+		<h1>FMT : Campaign List</h1>
+			
+	    <!-- START ERROR REPORT: This velocity macro prints any server-side errors   -->
+	
+	
+	<!-- END ERROR REPORT  ===================================================== -->
+</div>
+<!-- END HEADER ============================================================ -->
+
+	<!-- START MACRO VELOCITY "HEADER" ========================================= -->
+
+	<!-- START PAGE CONTENT: Insert here the page content  ===================== -->
+	<!-- ======================================================================= -->
+<div id="legend">
+		<img src="sample_page_files/lens_magenta.gif" alt="Explorar respostas da campanha" title="Explorar respostas da campanha">=Explorar respostas da campanha
+		
+				<a href="https://fmt.hanzo.com.br/fmt/campaignList.do?hideCampaigns=true" title="Escondendo campanhas &quot;mortas&quot; (encerradas/canceladas). Clique p/ mostrar">
+			<img src="sample_page_files/grave_cyan.gif" title="Mostrando também campanhas &quot;mortas&quot; (encerradas/canceladas). Clique p/ esconder" alt="Mostrando também campanhas &quot;mortas&quot; (encerradas/canceladas). Clique p/ esconder">
+		</a>
+			</div>
+
+		<!-- END ELECTIONS REPORTS LINKS =========================================== -->
+<table>
+		<tbody><tr>
+			<th class="leftcell" width="22%"><a href="https://fmt.hanzo.com.br/fmt/campaignList.do?field=name&amp;ascending=true">Nome</a>	
+</th>
+			<th class="left"><a href="https://fmt.hanzo.com.br/fmt/campaignList.do?field=keyword&amp;ascending=true">Palavra-chave</a>	
+</th>
+			<th width="18%"><a href="https://fmt.hanzo.com.br/fmt/campaignList.do?field=startDate&amp;ascending=true">Data Início</a>	  <img src="sample_page_files/next_sort_asc.gif" height="6" width="10">  
+</th>
+			<th width="18%"><a href="https://fmt.hanzo.com.br/fmt/campaignList.do?field=endDate&amp;ascending=false">Data Fim</a>	
+</th>
+			<th><a href="https://fmt.hanzo.com.br/fmt/campaignList.do?field=creatorName&amp;ascending=true">Criador</a>	
+</th>
+			<th class="rightcell left" colspan="2" width="20%"><a href="https://fmt.hanzo.com.br/fmt/campaignList.do?field=lifeCycleMessage&amp;ascending=false">Status</a>	
+</th>
+		</tr>
+		
+				<!-- END: Empty List Warning -->	
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=104">Pq o Gui nao vai no Fabio</a></td>
+			<td>FAGUI</td>
+			<td class="center smaller">12/01/2007 16:49</td>
+			<td class="center smaller">13/01/2007 16:49</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=104" title="Explorar as respostas recebidas">
+					3<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=102">2006 12 22 A</a></td>
+			<td>20061222A</td>
+			<td class="center smaller">22/12/2006 10:42</td>
+			<td class="center smaller">23/12/2006 10:51</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=97">2006 10 31 B</a></td>
+			<td>20061031B</td>
+			<td class="center smaller">31/10/2006 10:53</td>
+			<td class="center smaller">31/10/2006 10:59</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Cancelada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=96">2006 10 31 A</a></td>
+			<td>20061031A</td>
+			<td class="center smaller">31/10/2006 10:51</td>
+			<td class="center smaller">31/10/2006 10:53</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=90">Teste Lele e Fafa</a></td>
+			<td>LELEFAFA</td>
+			<td class="center smaller">22/09/2006 17:31</td>
+			<td class="center smaller">23/09/2006 17:29</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=90" title="Explorar as respostas recebidas">
+					5<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=88">JOAOBIDU</a></td>
+			<td>BIDU</td>
+			<td class="center smaller">17/08/2006 17:26</td>
+			<td class="center smaller">18/08/2010 17:26</td>
+			<td class="center smaller">Anna Crook</td>
+			<td class="left rightcell">No Ar</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=83">FALA QUE EU TE ESCUTO</a></td>
+			<td>FALA</td>
+			<td class="center smaller">09/08/2006 16:52</td>
+			<td class="center smaller">10/10/2006 16:48</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=83" title="Explorar as respostas recebidas">
+					4<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=82">GUSTAVO</a></td>
+			<td>GUSTAVO</td>
+			<td class="center smaller">08/08/2006 12:27</td>
+			<td class="center smaller">09/10/2006 12:27</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=82" title="Explorar as respostas recebidas">
+					3<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=79">ALTEROSA</a></td>
+			<td>ALTEROSA</td>
+			<td class="center smaller">13/07/2006 02:09</td>
+			<td class="center smaller">14/07/2006 02:16</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=77">Gracie</a></td>
+			<td>GRACIE</td>
+			<td class="center smaller">04/07/2006 12:23</td>
+			<td class="center smaller">05/07/2006 12:27</td>
+			<td class="center smaller">soda</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=77" title="Explorar as respostas recebidas">
+					3<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=74">ABRACO</a></td>
+			<td>ABRACO</td>
+			<td class="center smaller">16/06/2006 17:19</td>
+			<td class="center smaller">17/08/2006 17:26</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=74" title="Explorar as respostas recebidas">
+					4<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=73">2006 06 07 1</a></td>
+			<td>200606071</td>
+			<td class="center smaller">07/06/2006 16:18</td>
+			<td class="center smaller">08/06/2006 16:18</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=73" title="Explorar as respostas recebidas">
+					2<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=72">Correio</a></td>
+			<td>CIDADE</td>
+			<td class="center smaller">06/06/2006 10:52</td>
+			<td class="center smaller">07/06/2020 10:52</td>
+			<td class="center smaller">Anna Crook</td>
+			<td class="left rightcell">No Ar</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=72" title="Explorar as respostas recebidas">
+					2<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=71">2006 06 06 1</a></td>
+			<td>200606061</td>
+			<td class="center smaller">06/06/2006 10:33</td>
+			<td class="center smaller">07/06/2006 10:33</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=64">IDOLO</a></td>
+			<td>IDOLO</td>
+			<td class="center smaller">26/04/2006 19:27</td>
+			<td class="center smaller">27/04/2006 19:34</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=64" title="Explorar as respostas recebidas">
+					3<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=57">Fale AQUI</a></td>
+			<td>AQUI</td>
+			<td class="center smaller">05/04/2006 21:30</td>
+			<td class="center smaller">06/06/2006 21:30</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=57" title="Explorar as respostas recebidas">
+					2<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=53">REBELDES</a></td>
+			<td>REBELDES</td>
+			<td class="center smaller">13/03/2006 19:04</td>
+			<td class="center smaller">30/03/2006 19:04</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=53" title="Explorar as respostas recebidas">
+					2<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=48">FELIPE dylon</a></td>
+			<td>FELIPE</td>
+			<td class="center smaller">21/02/2006 19:23</td>
+			<td class="center smaller">22/02/2006 19:25</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=48" title="Explorar as respostas recebidas">
+					2<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=47">fronteira</a></td>
+			<td>nova</td>
+			<td class="center smaller">15/02/2006 15:55</td>
+			<td class="center smaller">16/02/2006 15:55</td>
+			<td class="center smaller">Anna Crook</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=44">asdf</a></td>
+			<td>asdf</td>
+			<td class="center smaller">24/01/2006 10:18</td>
+			<td class="center smaller">24/01/2006 10:55</td>
+			<td class="center smaller">gsantos</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=38">test</a></td>
+			<td>test</td>
+			<td class="center smaller">17/01/2006 11:08</td>
+			<td class="center smaller">18/01/2006 11:08</td>
+			<td class="center smaller">gsantos</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=38" title="Explorar as respostas recebidas">
+					1<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=33">LANCE</a></td>
+			<td>LANCE</td>
+			<td class="center smaller">05/01/2006 17:07</td>
+			<td class="center smaller">06/01/2006 17:12</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=33" title="Explorar as respostas recebidas">
+					3<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=32">Campanha 20051227 01</a></td>
+			<td>20051227</td>
+			<td class="center smaller">28/12/2005 20:02</td>
+			<td class="center smaller">29/12/2005 20:09</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=32" title="Explorar as respostas recebidas">
+					1<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=30">Campanha 20051223 01</a></td>
+			<td>200512231</td>
+			<td class="center smaller">23/12/2005 12:04</td>
+			<td class="center smaller">24/12/2005 12:11</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=30" title="Explorar as respostas recebidas">
+					2<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=29">Campanha 20051220 01</a></td>
+			<td>2005122001</td>
+			<td class="center smaller">20/12/2005 10:41</td>
+			<td class="center smaller">20/12/2005 10:48</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Cancelada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=29" title="Explorar as respostas recebidas">
+					3<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=28">SAQ</a></td>
+			<td>SAQ</td>
+			<td class="center smaller">14/12/2005 15:47</td>
+			<td class="center smaller">15/12/2005 15:52</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=28" title="Explorar as respostas recebidas">
+					4<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=27">Campanha 20051201 01</a></td>
+			<td>2005120101</td>
+			<td class="center smaller">01/12/2005 15:25</td>
+			<td class="center smaller">01/12/2005 15:35</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=27" title="Explorar as respostas recebidas">
+					2<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=25">Treinamento SET</a></td>
+			<td>TREINO</td>
+			<td class="center smaller">24/11/2005 20:28</td>
+			<td class="center smaller">01/12/2005 20:28</td>
+			<td class="center smaller">gustavo</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=25" title="Explorar as respostas recebidas">
+					2<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=24">2005 11 21 01</a></td>
+			<td>TEST</td>
+			<td class="center smaller">21/11/2005 17:18</td>
+			<td class="center smaller">21/11/2005 17:25</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=23">DEMO 051017 01</a></td>
+			<td>DEMO</td>
+			<td class="center smaller">17/10/2005 20:49</td>
+			<td class="center smaller">18/10/2005 20:55</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=23" title="Explorar as respostas recebidas">
+					12<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=19">Maior Fazendeiro</a></td>
+			<td>FAZEN</td>
+			<td class="center smaller">04/10/2005 12:12</td>
+			<td class="center smaller">04/10/2005 12:30</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=19" title="Explorar as respostas recebidas">
+					2<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=18">Campanha 20050928 01</a></td>
+			<td>C200509281</td>
+			<td class="center smaller">28/09/2005 20:53</td>
+			<td class="center smaller">29/09/2005 21:01</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=18" title="Explorar as respostas recebidas">
+					1<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=5">Quem eh a HANZO</a></td>
+			<td>HANZO</td>
+			<td class="center smaller">12/09/2005 16:27</td>
+			<td class="center smaller">13/09/2005 16:33</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Cancelada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=5" title="Explorar as respostas recebidas">
+					7<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=4">Campanha 20050912 01</a></td>
+			<td>TECO</td>
+			<td class="center smaller">12/09/2005 15:29</td>
+			<td class="center smaller">12/09/2005 15:39</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right smaller">
+				<a href="https://fmt.hanzo.com.br/fmt/feedbackListing.do?campaignId=4" title="Explorar as respostas recebidas">
+					3<img src="sample_page_files/lens_magenta.gif" alt="Explorar as respostas recebidas" title="Explorar as respostas recebidas">
+				</a>
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=3">Churrasco do Harry</a></td>
+			<td>harry</td>
+			<td class="center smaller">12/09/2005 11:27</td>
+			<td class="center smaller">13/09/2005 11:27</td>
+			<td class="center smaller">Anna Crook</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+				<tr>
+			<td class="leftcell"><a href="https://fmt.hanzo.com.br/fmt/campaignReviewList.do?campaignId=2">Campanha 20050909 01</a></td>
+			<td>FALA</td>
+			<td class="center smaller">09/09/2005 16:59</td>
+			<td class="center smaller">09/09/2005 17:30</td>
+			<td class="center smaller">ssalvador</td>
+			<td class="left rightcell">Encerrada</td>
+						<td class="leftcell rightcell right grey smaller">
+				0<img src="sample_page_files/lens_grey.gif" alt="Nenhuma resposta foi recebida" title="Nenhuma resposta foi recebida">
+			</td>
+					</tr>
+					</tbody></table>
+	
+	<!-- END PAGE CONTENT  ===================================================== -->
+	<!-- ======================================================================= -->
+
+<!-- START MACRO VELOCITY "COPYRIGHT". It contains "MIDDLE" div closure, the white slashed on the top and the copyright itself ===== -->
+
+<!-- START RIGHT SLASH GIF: This white image represents the slash in the vertical railroad tracks  -->
+<img class="rightslash" src="files/slash.gif">
+<!-- END RIGHT SLASH GIF ========================================================================== -->
+</div>
+
+<!-- START COPYRIGHT: This velocity macro prints the Copyright content ===== -->
+<div id="copyright">
+
+	<p class="links">
+		| <a href="http://www.hanzo.com.br" target="_blank">About HANZO</a> | <a href="#">Bokuto: the Mobile Services Platform</a> |
+	</p>
+	
+	<p>© Copyright 2007, HANZO.</p>
+	
+</div>
+<!-- END COPYRIGHT ========================================================= -->
+
+<!-- START LEFT SLASH GIF: This white image represents the slash in the vertical railroad tracks  -->
+<img class="leftslash" src="files/slash.gif">
+<!-- END LEFT SLASH GIF ========================================================================== -->
+
+<!-- END MACRO VELOCITY "COPYRIGHT" ============================================ -->
+
+</body></html>

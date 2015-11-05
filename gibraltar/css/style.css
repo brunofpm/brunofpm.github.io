@@ -1,0 +1,850 @@
+body {
+	font-family: "Trebuchet MS", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 1em;
+	padding: 0px;
+	background-color: #032043;
+	margin: 0px;
+
+}
+
+h2 {
+	font-size: 1.5em;
+	padding: 0px;
+	line-height: 0px;	
+}
+
+h3 {
+	font-size: 1.4em;
+	padding-top: 10px;
+	line-height: 10px;	
+}
+
+img { border: none; }
+
+p.breadcrumb {
+	font-size: 0.8em;
+	color: #cdc8b5;
+	font-family: "Trebuchet MS", Arial;
+}
+
+strong { font-size: 1.1em; }
+
+.fieldtip{
+	font-size: 0.6em;
+	background-color:#ACACAC;
+	color: #FFFFFF;
+	font-weight: normal;
+	
+}
+
+.floatRight {float: right;}
+
+.signature {font-size: 0.8em;}
+
+#final {
+	position:absolute;
+	top: 0px;
+	height: 700px;
+	width: 100%;
+}
+
+#mainDiv {
+	width: 750px;
+	top: 30px;
+	bottom: 10px;
+	height: 620px;
+	
+	margin-left: -375px;
+	overflow: auto;
+	overflow-x: hidden;	
+	position: absolute;
+	left: 50%;
+	border: 2px solid #a80532;
+	font-family: "Trebuchet MS", Arial;
+	font-size: 11px;
+	color: #4e4e4e;
+	background-color: #e2ded0;
+}
+
+#idiomas {
+	height: 12px;
+	width: 58px;
+	top: 10px;
+	margin-left: 330px;
+	position: absolute;
+	left: 50%;
+	
+}
+
+#idiomas img {
+	border: none;
+}
+
+#idiomas a:hover {
+	
+}
+
+#mainDiv #header {
+	position: relative;
+	height: 69px;
+	width: 760px;
+	background-color: #e2ded0;
+	top: 17px;
+	_top: 7px;
+	left: 16px;
+}
+
+#mainDiv #header #menu {
+	position: absolute;
+	background-color: #e2ded0;
+	left: 198px;
+	padding: 0px;
+	top: 0px;
+}
+
+#mainDiv #header #menu ul {
+	width: 535px;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+#mainDiv #header #menu ul li {
+	display: inline;
+	list-style-type: none;
+	left: -40px;
+	border-left: 1px;
+	border-right: 0px;
+}
+
+#mainDiv #header #menu ul li a {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#mainDiv #header #menu ul li img {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#mainDiv #header #menu ul li a:hover {
+}
+
+#mainDiv #header #logo {
+	background-color: #003399;
+	float: left;
+	position: relative;
+	z-index: 11;
+}
+
+/*MENU ######################################################################################################### */
+div#menu ul li#menu1 a {
+	background-image: url(../img/menuRestaurante.jpg);
+	position:relative;
+	height: 69px;
+	width: 86px;
+	display: block;
+	float: left;
+}
+
+div#menu ul li#menu2 a {
+	background-image: url(../img/menuCardapio.jpg);
+	position:relative;
+	height: 69px;
+	width: 86px;
+	display: block;
+	float: left;
+	left: 1px;
+}
+div#menu ul li#menu3 a {
+	background-image: url(../img/menuEstreito.jpg);
+	position:relative;
+	height: 69px;
+	width: 86px;
+	display: block;
+	float: left;
+	left: 2px;
+}
+div#menu ul li#menu4 a {
+	background-image: url(../img/menuImprensa.jpg);
+	position:relative;
+	height: 69px;
+	width: 86px;
+	display: block;
+	float: left;
+	left: 3px;
+}
+div#menu ul li#menu5 a {
+	background-image: url(../img/menuLocalizacao.jpg);
+	position:relative;
+	height: 69px;
+	width: 86px;
+	display: block;
+	float: left;
+	left: 4px;
+}
+div#menu ul li#menu6 a {
+	background-image: url(../img/menuContato.jpg);
+	position:relative;
+	height: 69px;
+	width: 86px;
+	display: block;
+	float: left;
+	left: 5px;
+}
+
+div#menu ul li#menu1 a:hover {background-image: url(../img/menuRestauranteOVER.jpg);}
+div#menu ul li#menu2 a:hover {background-image: url(../img/menuCardapioOVER.jpg);}
+div#menu ul li#menu3 a:hover {background-image: url(../img/menuEstreitoOVER.jpg);}
+div#menu ul li#menu4 a:hover {background-image: url(../img/menuImprensaOVER.jpg);}
+div#menu ul li#menu5 a:hover {background-image: url(../img/menuLocalizacaoOVER.jpg);}
+div#menu ul li#menu6 a:hover {background-image: url(../img/menuContatoOVER.jpg);}
+
+/*##############################################################################################################*/
+
+#mainDiv #content {
+	overflow: auto;
+	height: 520px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	width: 737px;
+	float: left;
+	background-color: #e2ded0;
+	left: 16px;
+	top: 25px;
+	_top: 15px;
+}
+
+#mainDiv #content div p strong a { color:#0b4b91; }
+#mainDiv #content div p strong a:hover { color: #0066CC; }
+
+
+#mainDiv #content #box1 {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 245px;
+	width: 413px;
+	margin: 0px;
+	padding: 5px;
+	float:left;
+	top: 0px;
+	left: 0px;
+}
+#mainDiv #content #box1 p { margin-top: 4px; line-height: 1.4em;}
+
+#mainDiv #content #box2 {
+    font-size: 1.0em;
+	background-color: #ccc8b5;
+	position: relative;
+	height: 442px;
+	_height: 448px;
+	width: 281px;
+	margin: 0px;
+	margin-left: 15px;
+	padding: 5px;
+	float: right;
+	right: 17px;
+}
+#mainDiv #content #box2 p { margin-top: 4px; line-height: 1.4em; _line-height: 1.3em; }
+
+#mainDiv #content #box3 {
+	background-color: #bfbcac;
+	position: relative;
+	height: 182px;
+	width: 199px;
+	padding: 5px;
+	float:left;
+	top: 5px;
+	margin: 0px;
+	left: 0px;
+}
+#mainDiv #content #box3 p { margin-top: 4px; line-height: 1.4em;}
+
+#mainDiv #content #box4 {
+	background-color: #bfbcac;
+	position: relative;
+	height: 182px;
+	width: 199px;
+	margin: 0px;
+	padding: 5px;
+	float:right;
+	top: 5px;
+	right: 7px;
+}
+#mainDiv #content #box4 p { margin-top: 4px; line-height: 1.4em;}
+
+#mainDiv #content div p {
+	color: #4e4e4e;	
+}
+
+#mainDiv #content div p a {
+	color: #0b4b91;	
+}
+
+#mainDiv #content #footer {
+	font-size: 0.9em;
+	text-align: center;
+	position: relative;
+	width: 760px;
+	float: left;
+	top: 20px;
+	_top: 30px;
+	z-index: 1000;
+	margin-left: -20px;
+}
+
+/* RESTAURANTE ####################################################################################################*/
+
+#mainDiv #content #box1Rest {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 272px;
+	width: 300px;
+	margin: 0px;
+	padding: 10px;
+	float:left;
+	top: 0px;
+	left: 0px;
+}
+#mainDiv #content #box1Rest p { margin-top: 4px; line-height: 1.4em;}
+
+#mainDiv #content #box2Rest {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 282px;
+	width: 385px;
+	margin: 0px;
+	margin-left: 15px;
+	padding: 5px;
+	float: right;
+	right: 17px;
+}
+#mainDiv #content #box2Rest p { margin-top: 4px; line-height: 1.4em;}
+
+div.fotosRestaurante {
+	padding: 3px;
+	background-color: #d4d1c0;
+	background-image: url(../img/bgBoxTitle.jpg);
+	background-repeat: repeat-x;
+	border: 1px solid #a7a495;
+}
+
+div.fotosRestaurante p {
+	font-weight: bold;
+	padding-left: 5px;
+	font-size: 1.1em;
+}
+
+div.fotosRestaurante img { 
+	padding: 4px;
+}
+
+div#box3Rest img {
+    margin: 9px;
+	padding: 4px;
+	border: 2px solid #a7a495;
+}
+
+#mainDiv #content #box3Rest {
+	background-color: #bfbcac;
+	position: relative;
+	height: 230px;
+	width: 700px;
+	float:left;
+	top: 5px;
+	margin: 0px;
+	left: 0px;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#mainDiv #content #box3Rest p { margin-top: 4px; line-height: 1.4em;}
+
+
+/* CARDÁPIO ######################################################################################################*/
+
+#mainDiv #content #box1Card {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 110px;
+	width: 700px;
+	margin: 0px;
+	padding: 10px;
+	float:left;
+	top: 0px;
+	left: 0px;
+}
+#mainDiv #content #box1Card p { margin-top: 4px; line-height: 1.4em;}
+
+#mainDiv #content #box2Card {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 620px;
+	width: 345px;
+	top: 5px;
+	margin: 0px;
+	padding: 5px;
+	float: left;
+	left: 0px;
+}
+#mainDiv #content #box2Card p { margin-top: 4px; line-height: 1.4em;}
+
+
+#mainDiv #content #box3Card {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 620px;
+	width: 350px;
+	float:left;
+	top: 5px;
+	margin: 0px;
+	left: 5px;
+	padding: 5px;
+}
+#mainDiv #content #box3Card p { margin-top: 4px; line-height: 1.4em;}
+
+
+
+
+/* ACCORDION #####################################################################################################*/
+
+#myAccordion dd img, #myAccordion2 dd img, #myAccordion3 dd img, #myAccordion4 dd img {
+    border: 2px solid #a7a495;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    float: right;
+    width: 43px;
+    height: 33px;
+}
+
+#myAccordion{
+	width: 342px;
+	position: absolute;
+	left: 5px;
+	top: -5px;
+	-top: 5px;
+	border: 0px solid #a7a495;
+	background-color: #e2ded0;
+}
+#myAccordion dt{
+	line-height: 23px;
+	background-color: #d4d1c0;
+	background-image: url(../img/barraUp.jpg);
+	background-repeat: no-repeat;
+	border: 1px solid #a7a495;
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: #4b4c51;
+	padding-top: 4px;
+	padding-right: 25px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	font-size: 1.0em;
+}
+#myAccordion dd{
+	overflow: auto;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#myAccordion p{
+	margin: 8px 0px 30px 0px;
+}
+#myAccordion dt.myAccordionHover
+{
+
+	cursor: hand;
+	text-decoration: underline;
+}
+#myAccordion dt.myAccordionActive
+{
+	background-image: url(../img/barraDown.jpg);
+	background-repeat: no-repeat;
+    color: #0b4b91;
+	font-weight: bold;
+}
+
+#myAccordion2{
+	width: 347px;
+	position: absolute;
+	left: 5px;
+	top: -5px;
+	-top: 5px;
+	border: 0px solid #a7a495;
+	background-color: #e2ded0;
+}
+#myAccordion2 dt{
+	line-height: 23px;
+	background-color: #d4d1c0;
+	background-image: url(../img/barraUp.jpg);
+	background-repeat: no-repeat;
+	border: 1px solid #a7a495;	
+	padding-top: 4px;
+	padding-right: 25px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: #4b4c51;
+	font-size: 1.0em;
+}
+#myAccordion2 dd{
+	overflow: auto;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#myAccordion2 p{
+	margin: 8px 0px 30px 0px;
+}
+#myAccordion2 dt.myAccordionHover
+{
+
+	cursor: hand;
+	text-decoration: underline;
+}
+#myAccordion2 dt.myAccordionActive
+{
+	background-image: url(../img/barraDown.jpg);
+	background-repeat: no-repeat;
+	color: #0b4b91;
+	font-weight: bold;
+}
+
+
+#myAccordion3{
+	width: 347px;
+	position: absolute;
+	left: 5px;
+	top: -5px;
+	-top: 5px;
+	border: 0px solid #a7a495;
+	background-color: #e2ded0;
+}
+#myAccordion3 dt{
+	line-height: 21px;
+	background-color: #d4d1c0;
+	background-image: url(../img/barraUp.jpg);
+	background-repeat: no-repeat;
+	border: 1px solid #a7a495;	
+	padding-top: 4px;
+	padding-right: 25px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: #4b4c51;
+	font-size: 1.0em;
+}
+
+
+#myAccordion3 dd{
+	overflow: auto;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#myAccordion3 p{
+	margin: 10px 0px;
+	padding-right: 10px;
+}
+#myAccordion3 dt.myAccordionHover
+{
+	text-decoration: underline;
+	cursor: hand;
+}
+#myAccordion3 dt.myAccordionActive
+{
+	background-image: url(../img/barraDown.jpg);
+	background-repeat: no-repeat;
+	
+	color: #0b4b91;
+	font-weight: bold;
+}
+
+#myAccordion4{
+	width: 347px;
+	position: absolute;
+	left: 5px;
+	top: -5px;
+	-top: 5px;
+	border: 0px solid #a7a495;
+	background-color: #e2ded0;
+}
+#myAccordion4 dt{
+	line-height: 21px;
+	background-color: #d4d1c0;
+	background-image: url(../img/barraUp.jpg);
+	background-repeat: no-repeat;
+	border: 1px solid #a7a495;	
+	padding-top: 4px;
+	padding-right: 25px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: #4b4c51;
+	font-size: 1.0em;
+}
+#myAccordion4 dd{
+	overflow: auto;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#myAccordion4 p{
+	margin: 10px 0px;
+	padding-right: 10px;
+}
+#myAccordion4 dt.myAccordionHover
+{
+	text-decoration: underline;
+	cursor: hand;
+}
+#myAccordion4 dt.myAccordionActive
+{
+	background-image: url(../img/barraDown.jpg);
+	background-repeat: no-repeat;
+	color: #0b4b91;
+	font-weight: bold;
+}
+
+/* ESTREITO #####################################################################################################*/
+
+#mainDiv #content #box1Estr {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 130px;
+	width: 595px;
+	margin: 0px;
+	padding: 10px;
+	float:left;
+	top: 0px;
+	left: 0px;
+}
+#mainDiv #content #box1Estr p { margin-top: 4px; line-height: 1.4em;}
+
+#mainDiv #content #box2Estr {
+	background-color: #e2ded0;
+	position: relative;
+	height: 260px;
+	width: 101px;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	right: 17px;
+}
+#mainDiv #content #box2Card p { margin-top: 4px; line-height: 1.4em;}
+
+
+#mainDiv #content #box3Estr {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 111px;
+	width: 615px;
+	float:left;
+	top: 5px;
+	margin: 0px;
+	left: 0px;
+	padding: 0px;
+}
+
+#mainDiv #content #box3Estr img { padding: 6px; }
+
+#mainDiv #content #box3Estr p { margin-top: 4px; line-height: 1.4em;}
+
+
+/* IMPRENSA ###############################################################################################*/
+
+#mainDiv #content #box1Impr {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 10px;
+	width: 700px;
+	margin: 0px;
+	padding: 10px;
+	float:left;
+	top: 0px;
+	left: 0px;
+}
+#mainDiv #content #box1Impr p { margin-top: 4px; line-height: 1.4em;}
+
+#mainDiv #content #box2Impr {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 620px;
+	width: 350px;
+	top: 0px;
+	margin: 0px;
+	padding: 5px;
+	float: left;
+	left: 0px;
+}
+#mainDiv #content #box2Impr p { margin-top: 4px; line-height: 1.4em;}
+
+
+#mainDiv #content #box3Impr {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 620px;
+	width: 350px;
+	float:left;
+	top: 0px;
+	margin: 0px;
+	left: 0px;
+	padding: 5px;
+}
+#mainDiv #content #box3Impr p { margin-top: 4px; line-height: 1.4em;}
+
+
+/* LOCALIZAÇÃO ###################################################################################################*/
+
+#mainDiv #content #box1Loca {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 80px;
+	width: 700px;
+	margin: 0px;
+	padding: 10px;
+	float:left;
+	top: 0px;
+	left: 0px;
+}
+#mainDiv #content #box1Loca p { margin-top: 4px; line-height: 1.4em;}
+
+#mainDiv #content #box2Loca {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 260px;
+	width: 345px;
+	top: 5px;
+	margin: 0px;
+	padding: 5px;
+	float: left;
+	left: 0px;
+}
+#mainDiv #content #box2Loca p { margin-top: 4px; line-height: 1.4em;}
+
+
+#mainDiv #content #box3Loca {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 260px;
+	width: 350px;
+	float:left;
+	top: 5px;
+	margin: 0px;
+	left: 5px;
+	padding: 5px;
+}
+#mainDiv #content #box3Loca p { margin-top: 4px; line-height: 1.4em;}
+
+#mainDiv #content #box4Loca {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 50px;
+	_height: 30px;
+	width: 700px;
+	margin: 0px;
+	padding: 10px;
+	float:left;
+	top: 10px;
+	left: 0px;
+}
+#mainDiv #content #box4Loca p { margin-top: 4px; line-height: 1.4em;}
+
+
+/* CONTATO #################################################################################################*/
+
+#mainDiv #content #box1Cont {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 400px;
+	width: 350px;
+	margin: 0px;
+	padding: 10px;
+	float:left;
+	top: 0px;
+	left: 0px;
+}
+#mainDiv #content #box1Cont p label { margin-top: 4px; line-height: 1.4em; font-size: 1.1em;}
+
+#mainDiv #content #box1Cont label { top: 20px; left: 40px; position: relative; }
+
+#mainDiv #content #box1Cont label input.field { width: 19em; }
+#mainDiv #content #box1Cont label textarea.field { width: 19.5em; height: 8em; }
+#mainDiv #content #box1Cont label input.button {
+
+    margin-left: 15em;
+    background-color: #999999;
+    font-family: "Trebuchet MS", Arial, Verdana, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+#mainDiv #content #box2Cont {
+	background-color: #ccc8b5;
+	position: relative;
+	height: 400px;
+	width: 325px;
+	margin: 0px;
+	margin-left: 15px;
+	padding: 10px;
+	float: right;
+	right: 17px;
+}
+#mainDiv #content #box2Cont p { margin-top: 4px; line-height: 1.4em;}
+
+
+
+/* IMAGE BOX #################################################################################################*/
+
+#ImageBoxOverlay
+{
+	background-color: #000;
+}
+#ImageBoxCaption
+{
+	background-color: #F4F4EC;
+}
+#ImageBoxContainer
+{
+	width: 250px;
+	height: 250px;
+	background-color: #F4F4EC;
+}
+#ImageBoxCaptionText
+{
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-size: 13px;
+	color: #000;
+}
+#ImageBoxCaptionImages
+{
+	margin: 0;
+}
+#ImageBoxNextImage
+{
+	background-image: url(../img/imagebox/spacer.gif);
+	background-color: transparent;
+}
+#ImageBoxPrevImage
+{
+	background-image: url(../img/imagebox/spacer.gif);
+	background-color: transparent;
+}
+#ImageBoxNextImage:hover
+{
+	background-image: url(../img/imagebox/prox.gif);
+	background-repeat:	no-repeat;
+	background-position: right;
+}
+#ImageBoxPrevImage:hover
+{
+	background-image: url(../img/imagebox/ant.gif);
+	background-repeat:	no-repeat;
+	background-position: left;
+}

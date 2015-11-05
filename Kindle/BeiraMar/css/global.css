@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* Beira Mar - CSS Document */
+
+html,body{margin:0; padding:0; width:100%; height:100%; font-family:"Times New Roman", Times, serif;}
+
+body{background:url(../img/bg-geral.jpg) repeat #d0c4aa;}
+
+div.clear{clear:both}
+div#master *{outline:none}
+
+div#master{margin:0; padding:0;}
+
+h1 {margin:0;}
+h1 a {background:url(../img/logo-beira-mar.png) no-repeat; width:182px; height:170px; text-indent:-9999px; display:block; position:absolute; left:50%; top:3px; margin-left: -472px;}
+
+#header {margin:0 auto;}
+#header-1 {height:88px; width:100%; background-color:#131311;}
+#header-1 #menu {background:url(../img/bg-menu.jpg) no-repeat; height: 88px; left: 50%; margin: 0 0 0 -280px; padding: 27px 0 0; position: absolute;  width: 820px;}
+#header-1 #menu li {background:url(../img/divisor-vert-menu.png) no-repeat right; display: block; float: left; height: 36px; padding: 11px 8px 0 7px;}
+#header-1 #menu li:last-child {background:none;}
+#header-1 #menu li a {height:36px; color:#FFF; text-decoration:none; font-size:13px;}
+#header-1 #menu li a:hover {color:#d1be8a;}
+#header-2 {height:367px; width:100%; background:url(../img/header-img-principal.jpg) no-repeat top center #2c1c0d;}
+
+h2 {background:url(../img/faixa.png) repeat-x; height: 149px; margin: -7px 0 0;}
+h2 .como-fazemos {background:url(../img/tit-como-fazemos.png) no-repeat bottom; height: 121px; width:331px; margin:0 auto; display:block; text-indent:-99999px;}
+
+#content {width:1060px; margin:0 auto;}
+#content #content-1 {width:640px; float:left; margin:0;}
+#content #content-1 #content-1-1 { height:320px;}
+#content #content-1 #content-1-1 p {color:#675952; font-size:18px;}
+#content #content-1 #content-1-1 p.first {margin-top:14px !important;}
+#content #content-1 #content-1-1 p.recuado { text-indent:-115px; margin:0;}
+#content #content-1 #content-1-1 p.continuacao { margin:0;}
+#content #content-1 #content-1-1 p strong {color:#393633; font-weight:bold;}
+#content #content-1 #content-1-1 .chef {float:left; margin: -135px 0 0;}
+#content #content-1 #content-1-1 .saiba-mais {background:url(../img/bt-saiba-mais.png) no-repeat; display:block; height: 38px; width:128px; text-indent:-9999px; margin: 15px 0 0 430px;}
+#content #content-1 #content-1-2 {display: block; float: left; width: 240px; margin-top: -11px;}
+#content #content-1 #content-1-2 .cadastro-de-news .titulo {background:url(../img/tit-cadastro-de-news.png) no-repeat; display:block; height: 91px; width:282px; text-indent:-9999px;}
+#content #content-1 #content-1-2 .cadastro-de-news .texto {font-size:18px; color:#29261e; font-style:italic; width:172px; margin: 10px 0 10px 33px;}
+#content #content-1 #content-1-2 .cadastro-de-news input.email {color:#6f1f0a; font-style:italic; font-size:14px; background:url(../img/bg-input-cadastro-de-news.png) bottom center no-repeat; width:262px; height:45px; padding: 0 0 0 22px; border:0; display:block; margin: 0 0 0 25px;}
+#content #content-1 #content-1-2 .cadastro-de-news input.cadastrar {background:url(../img/bt-cadastrar.png) no-repeat; width:130px; height:36px; border:0; display:block; text-indent:-99999px; margin: 20px 0 50px 30px; cursor:pointer;}
+#content #content-1 #content-1-2 .fale-conosco .titulo {background:url(../img/tit-fale-conosco.png) no-repeat; display:block; height: 91px; width:282px; text-indent:-9999px;}
+#content #content-1 #content-1-2 .fale-conosco .texto {font-size:18px; color:#29261e; font-style:italic; width:172px; margin: 10px 0 10px 33px;}
+#content #content-1 #content-1-2 .fale-conosco .entre-em-contato {background:url(../img/bt-entre-em-contato.png) no-repeat; display:block; height: 38px; width:171px; text-indent:-9999px; margin: 20px 0 50px 30px;}
+#content #content-1 #content-1-3 {display: block; float: right; width: 240px; margin:30px 0 0;}
+#content #content-1 #content-1-3 .nutricao .titulo {background:url(../img/tit-nutricao.png) no-repeat; display:block; height: 56px; width:236px; text-indent:-9999px;}
+#content #content-1 #content-1-3 .nutricao .texto {font-size:18px; color:#675952; width:180px; margin: 0;}
+#content #content-1 #content-1-3 .nutricao .texto strong {color:#6f1f0a; font-weight:bold;}
+#content #content-1 #content-1-3 .nutricao .cabecalho {font-size:11px; color:#29261e;}
+#content #content-1 #content-1-3 .nutricao .leia-mais {background:url(../img/bt-leia-mais.png) no-repeat; display:block; height: 38px; width:128px; text-indent:-9999px; margin: 0;}
+#content #content-1 #content-1-3 .nutricao .box {margin: 0 0 25px 6px;}
+#content #content-1 #content-1-3 .twitter .titulo {background:url(../img/tit-twitter.png) no-repeat; display:block; height: 62px; width:236px; text-indent:-9999px;}
+#content #content-1 #content-1-3 .twitter .texto {font-size:18px; color:#675952; width:195px; margin: 5px 0 25px 10px;}
+#content #content-1 #content-1-3 .twitter .divisor-hor-1 {background:url(../img/divisor-hor-1.png) no-repeat; display:block; height: 1px; width:202px;}
+#content #content-1 #content-1-3 .twitter .aspas-i {background:url(../img/ico-aspas.png) no-repeat left; display:block; height: 13px; width:18px; position:absolute; text-indent:-9999px; margin: -9px 0 0 8px;}
+#content #content-1 #content-1-3 .twitter .aspas-f {background:url(../img/ico-aspas.png) no-repeat right; display:block; height: 13px; width:18px; position:absolute; text-indent:-9999px; margin: -21px 0 0 185px;}
+
+#content #content-2 {width:382px; float:right; margin-top: -80px;}
+#content #content-2 ul li {list-style:none;}
+#content #content-2 ul li a.confeitaria {background:url(../img/conheca-sprite4.png) no-repeat 0 0; display:block; height: 207px; width:306px; text-indent:-9999px;}
+#content #content-2 ul li a.restaurante {background:url(../img/conheca-sprite4.png) no-repeat 0 -207px; display:block; height: 207px; width:306px; text-indent:-9999px;}
+#content #content-2 ul li a.bistro {background:url(../img/conheca-sprite4.png) no-repeat 0 -412px; display:block; height: 204px; width:306px; text-indent:-9999px;}
+#content #content-2 ul li a.emporio {background:url(../img/conheca-sprite4.png) no-repeat 0 -616px; display:block; height: 207px; width:306px; text-indent:-9999px;}
+#content #content-2 #receita-do-mes {background:url(../img/bg-receita-do-mes.png) no-repeat; display:block; height: 301px; width:386px;}
+#content #content-2 #receita-do-mes .titulo {background:url(../img/tit-receita-do-mes.png) no-repeat; display:block; height: 91px; width:282px; text-indent:-9999px; margin: 10px 0 0 47px; position:absolute;}
+#content #content-2 #receita-do-mes .leite {background:url(../img/leite.png) no-repeat; display:block; height: 194px; width:211px; margin: 65px 0 0 183px; position:absolute;}
+#content #content-2 #receita-do-mes .box {width:170px; margin: 83px 0 0 60px; position:absolute;}
+#content #content-2 #receita-do-mes .titulo-receita {font-weight:bold; font-size:18px; color:#000; margin: 20px 0 4px;}
+#content #content-2 #receita-do-mes .texto {font-style:italic; font-size:18px; color:#000; margin: 0 0 9px;}
+#content #content-2 #receita-do-mes .ico-foto {background:url(../img/ico-foto-twitter.png) no-repeat left; display:block; height: 13px; width:24px; margin: 0; text-indent:-9999px; float:left;}
+#content #content-2 #receita-do-mes .ico-twitter {background:url(../img/ico-foto-twitter.png) no-repeat right; display:block; height: 13px; width:24px; margin: 0; text-indent:-9999px; float:left;}
+#content #content-2 #receita-do-mes .saiba-mais{background:url(../img/bt-saiba-mais.png) no-repeat; display:block; height: 38px; width:128px; text-indent:-9999px; margin: 10px 0 0;}
+
+#footer {background:url(../img/bg-footer.png) repeat-x bottom; background-color:none; display:block; height: 167px; width:100%; margin:-65px auto;}
+#footer p {color: #FFFFFF; font-size: 14px; left: 50%; margin: 0 0 0 -450px; padding-top: 70px; position: absolute; width: 490px;}
+
+
+
+.interna #header-1 {height:95px !important;}
+
+/* BISTRÔ */
+
+.bistro #header-1 {height:95px !important;}
+
+h2 .bistro-tit {background:url(../img/bistro-tit.png) no-repeat bottom; display: block; height: 132px; left: 50%; margin: 30px 0 0 -272px; position: absolute; text-indent: -99999px; width: 739px;}
+
+#content-bistro #coluna-2 {float:right; width:335px;}
+
+#content-bistro {width:990px; margin:0 auto;}
+#content-bistro .bistro-fotos {background:url(../img/bistro-fotos.png) no-repeat; width:620px; height:885px; display:block; margin: -42px 0 0; float:left;}
+#content-bistro p {color:#393633; font-size:16px; font-style:italic; margin-bottom:30px; line-height: 21px;}
+#content-bistro p.recuado {display: block; height: 100px; margin: 17px 0 0 -223px; position: absolute; width: 555px;}
+#content-bistro p.continuacao {padding-top:130px;}
+#content-bistro p.pois-entao-quem-somos-nos {background:url(../img/tit-pois-entao-quem-somos-nos.png) no-repeat; width:282px; height:32px; text-indent:-9999px; display:block;} 
+
+
+/* CONFEITARIA */
+
+.confeitaria #header-1 {height:95px !important;}
+
+h2 .confeitaria-tit {background:url(../img/confeitaria-tit.png) no-repeat bottom; display: block; height: 130px; left: 50%; margin: 30px 0 0 -272px; position: absolute; text-indent: -99999px; width: 746px;}
+
+#content-confeitaria #coluna-2 {float:right; width:335px; margin-right:60px;}
+
+#content-confeitaria {width:990px; margin:0 auto;}
+#content-confeitaria .confeitaria-fotos {background:url(../img/confeitaria-fotos.png) no-repeat; width:594px; height:750px; display:block; margin: -42px 0 0; float:left;}
+#content-confeitaria p {color:#393633; font-size:16px; font-style:italic; margin-bottom:30px; line-height: 21px;}
+#content-confeitaria p.recuado {display: block; height: 100px; margin: 17px 0 0 -195px; position: absolute; width: 530px;}
+#content-confeitaria p.continuacao {padding-top:85px;}
+#content-confeitaria p.alem-de-fazer-sucesso-pelo-paladar-irresistivel {background:url(../img/tit-alem-de-fazer-sucesso-pelo-paladar-irresistivel.png) no-repeat; width:274px; height:73px; text-indent:-9999px; display:block;} 
+
+
+/* FALE CONOSCO */
+
+.fale-conosco #header-1 {height:95px !important;}
+
+h2 .contato-tit {background:url(../img/contato-tit.png) no-repeat bottom; display: block; height: 95px; left: 50%; margin: 30px 0 0 -272px; position: absolute; text-indent: -99999px; width: 696px;}
+
+#content-fale-conosco {width:1022px; margin:0 auto;}
+
+#content-fale-conosco #coluna-1 {float:left; width:290px; margin-top: -32px;}
+#content-fale-conosco #coluna-2 {float:left; width:460px; margin: 10px 0 15px;}
+#content-fale-conosco #coluna-3 {float:left; width:240px; margin: -32px 0 0 30px;}
+
+#content-fale-conosco #coluna-1 .xicara {background:url(../img/contato-xicara.png) no-repeat; display: block; height: 333px; width:283px;}
+
+#content-fale-conosco #coluna-2 form label {display:block; color:#7c2323; font-size:20px; font-weight:normal !important; margin: 10px 0 3px 6px;}
+#content-fale-conosco #coluna-2 form .nome,
+#content-fale-conosco #coluna-2 form .email {background:url(../img/input-text-bg-1.png) no-repeat; display: block; height: 33px; width:422px; border:0; padding: 0 20px;}
+#content-fale-conosco #coluna-2 form .ddd {background:url(../img/input-text-bg-2.png) no-repeat; display: block; height: 33px; width:75px; border:0; padding: 0 10px; float:left;}
+#content-fale-conosco #coluna-2 form .telefone {background:url(../img/input-text-bg-3.png) no-repeat; display: block; height: 33px; width:162px; border:0; padding: 0 10px;}
+#content-fale-conosco #coluna-2 form .mensagem {background:url(../img/textarea-bg.png) no-repeat; display: block; height: 126px; width:440px; border:0; padding: 15px;}
+#content-fale-conosco #coluna-2 form .enviar{background:url(../img/bt-enviar.png) no-repeat; display:block; height: 43px; width:131px; text-indent:-9999px; margin: 10px 0 100px; border:0;}
+
+#content-fale-conosco #coluna-3 .telefone .tit-telefone {background:url(../img/tit-telefone.png) no-repeat; display:block; height: 84px; width:227px; text-indent:-9999px;}
+#content-fale-conosco #coluna-3 .telefone p {color:#29261e; font-size:18px; font-style:italic; width:215px; line-height:20px; margin: 5px 0 0 12px;}
+#content-fale-conosco #coluna-3 .telefone .numero {background:url(../img/fale-conosco-numero-telefone.png) no-repeat; display:block; height: 88px; width:217px; text-indent:-9999px; margin: -17px 0 0 10px;}
+
+
+
+/* NOVIDADES */
+
+h2 .novidades-tit {background:url(../img/novidades-tit.png) no-repeat bottom; display: block; height: 93px; left: 50%; margin: 30px 0 0 -272px; position: absolute; text-indent: -99999px; width: 740px;}
+
+#content-novidades {width:1000px; margin:0 auto;}
+
+#content-novidades ul {margin: 50px 0 100px;}
+#content-novidades ul li {list-style:none; background:url(../img/divisor-hor-2.png) no-repeat bottom; width:941px; clear:both; height:155px; display:block; margin: 0 0 20px;}
+#content-novidades ul li .moldura-foto {background:url(../img/novidades-moldura-foto.png) no-repeat bottom; width:153px; height:123px; display:block; float:left; margin: 0 40px 0 0;}
+#content-novidades ul li .moldura-foto .foto {margin: 16px 0 0 14px;}
+#content-novidades ul li .box {}
+#content-novidades ul li .box .titulo {font-weight:bold; color:#7d2323; font-size:26px; letter-spacing: 1.2px; margin:0 0 10px;}
+#content-novidades ul li .box .texto { font-style:italic; color:#393633; font-size:24px; letter-spacing: 1.1px; margin:0 0 10px;}
+#content-novidades ul li .box .saiba-mais {background:url(../img/bt-saiba-mais.png) no-repeat; display:block; height: 38px; width:128px; text-indent:-9999px; float:left;}

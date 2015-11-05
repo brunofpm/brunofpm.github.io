@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Restaurante Gibraltar | Cozinha Mediterrânea</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="shortcut icon" href="img/favicon.ico" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+
+<style type="text/css">
+<!--
+#final {
+	height: 700px;
+}
+
+#mainDiv {
+	height: 620px;
+}
+
+#mainDiv #content {
+	height: 520px;
+}
+
+#mainDiv #content #footer {
+	top: 210px;
+	_top: 220px;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="final">
+<!--<div id="idiomas">
+	<a href="index.html"><img src="img/bandeiraBrasil.gif" alt="Portugu&ecirc;s" /></a>
+	<a href="index_en.html"><img src="img/bandeiraEstUnidos.gif" alt="Portugu&ecirc;s" /></a>
+</div>-->
+
+<div id="mainDiv">
+
+	<div id="header">
+		<div id="logo"><a href="index.html"><img src="img/logoGibraltar.jpg" alt="Restaurante Gibraltar" border="0" /></a></div>
+		<div id="menu">
+			<ul>
+				<li id="menu1"><a href="restaurante.html"></a></li>
+				<li id="menu2"><a href="cardapio.html"></a></li>
+				<li id="menu3"><a href="estreito.html"></a></li>
+				<li id="menu4"><a href="imprensa.html"></a></li>
+				<li id="menu5"><a href="localizacao.html"></a></li>
+				<li id="menu6"><a href="contato.html"></a></li>
+			</ul>
+	  </div>
+		<div id="languages"></div>
+	</div>
+	
+	<div id="content">
+		<div id="box1Estr">
+			<p class="breadcrumb">>> estreito</p>
+			<h2>Estreito</h2>
+			<p>Em breve.</p>
+		</div>
+		
+		<div id="box2Estr">
+			<img src="img/logoEstreito.jpg" alt="ESTREITO lounge &amp; tapas bar" />
+		</div>
+		
+		
+		<div id="box3Estr">
+				<img src="img/tapas1.jpg" alt="Tapas" />
+				<img src="img/fotoEstreito2.jpg" alt="Estreito" />	
+				<img src="img/fotoEstreito3.jpg" alt="Estreito" />	
+		</div>
+		
+
+		<div id="footer"><p>Restaurante Gibraltar - Todos os Direitos Reservados<br />
+		               Rua Nuta James, 65 - Lojas I, J e K - Condado de Cascais - Barra da Tijuca - Rio de Janeiro, RJ | Telefone: (21) 2483-6275</p><div>
+					  
+	</div>
+	
+</div>
+
+<!--<script type="text/javascript">
+
+$("#box1").mouseover( function() { $("#box1").css({ background: "#bfbcac" }); } );
+$("#box1").mouseout( function() { $("#box1").css({ background: "#ccc8b5" }); } );
+
+$("#box2").mouseover( function() { $("#box2").css({ background: "#bfbcac" }); } );
+$("#box2").mouseout( function() { $("#box2").css({ background: "#ccc8b5" }); } );
+
+$("#box3").mouseover( function() { $("#box3").css({ background: "#ccc8b5" }); } );
+$("#box3").mouseout( function() { $("#box3").css({ background: "#bfbcac" }); } );
+
+$("#box4").mouseover( function() { $("#box4").css({ background: "#ccc8b5" }); } );
+$("#box4").mouseout( function() { $("#box4").css({ background: "#bfbcac" }); } );
+
+</script>
+-->
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#myAccordion').Accordion(
+				{
+					headerSelector	: 'dt',
+					panelSelector	: 'dd',
+					activeClass		: 'myAccordionActive',
+					hoverClass		: 'myAccordionHover',
+					panelHeight		: 200,
+					speed			: 300
+				}
+			);
+		}
+	);
+	
+		$(document).ready(
+		function()
+		{
+			$('#myAccordion2').Accordion(
+				{
+					headerSelector	: 'dt',
+					panelSelector	: 'dd',
+					activeClass		: 'myAccordionActive',
+					hoverClass		: 'myAccordionHover',
+					panelHeight		: 200,
+					speed			: 300
+				}
+			);
+		}
+	);
+</script>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background:url(../bg.gif) repeat;
+}
+.clear{clear:both;}
+
+img {border:0;}
+
+#content {
+	font-family: Helvetica, sans-serif;
+	margin: 30px;
+	font-size: 1em;
+	background-color: #F8F8F8;
+	padding: 15px;
+}
+#content .box-esq {float:left; width:600px;}
+#content .box-dir {float:right; width:400px; margin:22px 20px 0 0;}
+
+#content .box-dir .ico-twitter {position:absolute; margin:-13px 0 0 283px;}
+
+#tweet-container ul {border: 1px solid #CCCCCC; width: 350px; padding:14px 20px 5px;}
+#tweet-container ul li {color: #999999; font-size: 0.8em; list-style:none; padding:8px 0; border-bottom: 1px solid #EEEDED;}
+#tweet-container ul li:last-child{border:0;}
+#tweet-container ul li a {color: #999999; font-size: 0.8em;}
+
+.redes-sociais a img {height:44px; margin:0 5px 0 0;}
+
+.titulo {
+	font-size: 4em;
+	letter-spacing: -0.1em;
+	color: #CCCCCC;
+	font-weight: bold;
+}
+
+.areas {
+	font-weight: bold;
+	color: #CCCCCC;
+	font-size: 1.6em;
+}
+#info {
+	color: #999999;
+	font-size: 0.8em;
+	line-height: 1.6em;
+}
+#contato {
+	font-weight: bold;
+	color: #999999;
+	font-size: 1.2em;
+}
+
+
+#sites-click {
+	border-bottom: 1px solid #CCCCCC;
+    color: #999999;
+    font-size: 1em;
+    margin-top: 40px;
+}
+.sites-click1 {margin-top:0px !important;}
+
+#news-click {
+   position: relative;
+   top: 80px;
+   color: #999999;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: -0.1em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+#news {
+  position: relative;
+  top: 80px;
+} 
+
+
+.imagens {
+	border: 5px solid #FFFFFF;
+	margin-right: 15px;
+	margin-top: 20px;
+}
+
+.imagens:hover {border: 5px solid #dbdad9;}
+
+.div-site {
+
+	width: 110px;
+	height: 110px;
+  display: inline;
+}
+
+.div-recente {
+
+	width: 388px;
+  display: inline;
+}
+
+.div-recente .imagens {margin-right:0px;}

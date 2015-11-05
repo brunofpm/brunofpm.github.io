@@ -1,0 +1,232 @@
+﻿#chat {
+    bottom: 0;
+    color: #ffffff;
+    right: 10px;
+    margin: 0 auto;        
+    width: 270px;
+    position: fixed;
+    z-index: 1000;
+    font-family: Arial;
+}
+
+#chat.operator {
+    width: 370px;
+}
+
+#chat .name-div,
+#chat .operator-div,
+#chat .user-div,
+#chat .queue-div,
+#chat .operatorOffline-div {display: none;}
+#chat.name .name-div {display: block;}
+#chat.operator .operator-div {display: block;}
+#chat.user .user-div {display: block;}
+#chat.queue .queue-div {display: block;}
+#chat.operatorOffline .operatorOffline-div {display: block;}
+
+#chatHeader {
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+}
+
+#chatHeader.online {
+    background-color: #43d430;
+}
+
+#chatHeader.offline {
+    background-color: #f42b2b;
+}
+
+#chatHeader .subject {
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0 0 65px;
+}
+
+#chatHeader .live-chat {
+    position: absolute;
+    left: 5px;
+    top: -25px;
+}
+
+#chatHeader.online .live-chat.on {display: block;}
+#chatHeader.online .live-chat.off {display: none;}
+#chatHeader.offline .live-chat.on {display: none;}
+#chatHeader.offline .live-chat.off {display: block;}
+
+#chatHeader .arrow {
+    background: url("../images/arrows-chat.png") no-repeat scroll 0 0 transparent;
+    height: 10px;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    width: 18px;
+}
+
+#chatHeader .arrow.up {
+    background-position: 0 -11px;
+}
+
+#chat .operator-div .leftCol {
+    width: 263px;
+    float: left;
+}
+
+#chat #chatBody {
+    background-color: #fff;
+    border-left: 1px solid #bdc2c4;
+    border-right: 1px solid #bdc2c4;
+    border-top: 1px solid #bdc2c4;
+    float: left;
+    width: 100%;
+}
+
+#chat .operator-div .rightCol {
+    background-color: #dedede;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 106px;
+}
+
+#chat .messages {
+    height: 190px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+#chat .msg {
+    background-color: #dddddd;
+    color: #535353;
+    font-size: 15px;
+    line-height: 21px;
+    margin: 12px auto;
+    padding: 8px 12px;
+    width: 82%;
+}
+
+#chat .msg.op {
+    background-color: #cceaf5;
+}
+
+#chat .msg .name {
+    font-weight: bold;
+}
+
+#chat .textSend {
+    border: 1px solid #bdc2c4;
+    color: #666;
+    display: table;
+    font-size: 12px;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px;
+    width: 89%;
+}
+
+#chat .user-list {
+    margin-top: 12px;
+}
+
+#chat .user-list li {
+    display: block;
+    float: left;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#chat .user-list li:nth-child(odd) {
+    background-color: #b2b2b2;
+}
+
+#chat .user-list li .ico {
+    background: url('../images/ico-online-waiting.png') no-repeat 0 0 transparent;
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: left;
+    margin: 0 5px;
+}
+
+#chat .user-list li .ico.online {background-position: 0 0;}
+#chat .user-list li .ico.waiting {background-position: -16px 0;}
+
+#chat .user-list li .user-name {
+    font-size: 13px;
+    line-height: 16px;
+    color: #535353;
+    font-weight: bold;
+    float: left;
+    width: 70px;
+} 
+
+#chat .queue-div,
+#chat .operatorOffline-div {
+    width: 220px;
+    margin: 56px auto;
+    text-align: center;
+}
+
+#chat .tit {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0097cc;
+}
+
+#chat .txt {
+    color: #535353;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 6px 0 10px;
+}
+
+#chat .txt .red {
+    color: #f42b2b;
+    font-weight: bold;
+}
+
+#chat .position {
+    color: #0097cc;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0 0 12px;
+}
+
+#chat .btn {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 0;
+    width: 180px;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #0095c9;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095c9', endColorstr='#097ca4');
+    background: -webkit-gradient(linear, left top, left bottom, from(#0095c9), to(#097ca4));
+    background: -moz-linear-gradient(top,  #0095c9,  #097ca4); 
+}
+
+#chat .name-div {
+    width: 220px;
+    margin: 21px auto;
+    text-align: center;
+}
+
+#chat .name-div label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #535353;
+}
+
+#chat .name-div input[type='text'] {
+    border: 1px solid #bdc2c4;
+    color: #535353;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 157px;
+}

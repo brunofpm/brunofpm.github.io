@@ -1,0 +1,478 @@
+/*
+-------------------------------------------------------------------------
+################################ CRÉDITOS ###############################
+
+Site: 
+Cliente: TVGI
+Origem: Agência Kindle
+Versão: 1.0
+
+Desenvolvimento XHTML e CSS: 
+
+--------------------------------------------------------------------------
+*/
+
+
+/* ############################### GLOBAL ############################# */
+
+/* ---- Regras Gerais ---- */
+
+* {margin:0; padding:0; outline:0; text-decoration:none; list-style-type:none;}
+
+p {line-height:18px; margin:0 0 10px;}
+img, fieldset {border:0;}
+hr, h1 a span, h2 span, a span, .hide, legend, label span {display:none;}
+
+.clear {clear:both !important;}
+.noborder {border:0 !important;}
+.nopadding {padding:0 !important;}
+.nomargin {margin:0 !important;}
+.nobg {background:none !important;}
+
+body  {	font: 100% Verdana, Arial, Helvetica, sans-serif; background: #FFFFFF; text-align: center; font-size:11px; color: #666666; background:url(../images/bg-header-repeat.jpg) top repeat-x; }
+
+#bg-top-content {background:url(../images/bg-top-content.png) top center no-repeat; width: 995px; height:14px; left:50%; margin:-294px 0 0 -498px; position:absolute;}
+
+#master { width: 995px; margin:-280px auto 0 auto; text-align:left; background-color:#FFFFFF; height:1895px; }
+
+#content-1-2 { float: right; width: 335px; background: #EBEBEB; padding: 15px 0 0 20px; background:url(../images/separador-home-vertical.jpg) left top no-repeat; }
+#content-1-1 { margin: 0 0 0 0; padding: 0 0 0 15px; float:left; width:620px; } 
+#content-1-3{display:block; margin:0 auto; padding:0; width:990px; min-height:500px; border:1px dotted #fff;}
+
+
+
+
+
+/*------HEADER--------*/
+
+#header { background:url(../images/bg-header-repeat.jpg) top repeat-x; width:1004px; height:159px; margin:0 auto; text-align:left; }  
+#header h1 {background:url(../images/logo-tvgi.png) left top no-repeat; width:284px; height:156px; position:absolute; margin:0; padding:0; }
+#header h1 span {display:none;}
+#header .noar { background:url(../images/bg-noar-header.png) no-repeat; width:651px; height:50px; position:absolute; margin:106px 0 0 329px; display:block;}
+#header .noar img {float:left; margin:11px 0 0 31px;}
+#header .noar .programa {float:left; font-size:15px; color:#e5e5e5; margin:17px 0 0 10px; letter-spacing:-0.7px;}
+#header .noar ul.trocar {float:left; margin:17px 0 0 40px; }
+#header .noar ul.trocar li {display:inline; padding-right:5px;}
+#header .noar ul.trocar li:first-child {font-size:15px; color:#e5e5e5; letter-spacing:-0.7px; font-weight:bold;}
+#header .noar ul.trocar li select {width:117px; color:#666666; background-color:#fdfeff; border:0; arrow-color:#fff;}
+#header ul.menu2 {position:absolute; margin:32px 0 0 420px;}
+#header ul.menu2 li {display:inline; color:#FFF;}
+#header ul.menu2 li a {color:#FFFFFF; margin:0 8px; letter-spacing:-0.5px !important;}
+#header ul.menu2 li a:hover {color:#CCDCE1;}
+#header ul.menu2-redes {position:absolute; margin:27px 0 0 345px;}
+#header ul.menu2-redes li {display:inline; color:#FFF;}
+#header ul.menu2-redes li a {color:#FFFFFF; margin:0 5px; letter-spacing:-0.5px;}
+#header ul.menu2-redes li a:hover {color:#CCDCE1;}
+#header ul.redes-sociais-busca {position:absolute; margin:62px 0 0 352px;}
+#header ul.redes-sociais-busca li {display:inline; padding-right:5px;}
+#header ul.redes-sociais-busca li a {float:left; margin:0 10px 0 0;}
+#header ul.redes-sociais-busca li input { font-family:Arial, Helvetica, sans-serif; font-size:12px; font-style:italic; color:#999999; background:url(../images/bg-input-busca.png) left top no-repeat; width:370px; height:28px; border:0; margin:0; float:left; padding:4px 0 0 9px;}
+#header ul.redes-sociais-busca li input:focus {font-style:normal; font-size:14px;}
+#header ul.redes-sociais-busca li input[type="value"] {margin:5px 5px 5px 6px;}
+#header .publicidade-home-header {position:absolute; margin:24px 0 0 786px;}
+
+
+/*------WEBDOOR--------*/
+
+#webdoor {background:url(../images/img-principal.jpg) top center no-repeat; height:640px; margin:0 auto;}
+#webdoor #flashtvgi {margin:-30px 0 0 0;}
+#webdoor #menu-principal {width:1004px; margin:0 auto;}
+#webdoor #menu-principal ul {background:url(../images/bg-menu-principal.png) top left no-repeat; margin:0 0 0 338px; padding:13px 0 0 0; width:630px; height:51px;}
+#webdoor #menu-principal ul li {color:#FFFFFF; padding:0; float:left;}
+#webdoor #menu-principal ul li a {padding:0 0 0 16px;}
+#webdoor #menu-principal ul li a span {display:none;}
+
+#webdoor #menu-principal ul li.linha {background:url(../images/linha.jpg) left top no-repeat; width:2px; height:32px; display:block; float:left;}
+#webdoor #menu-principal ul li a.item0 {background:url(../images/home.png) left top no-repeat; width:38px; height:32px; display:block; float:left; margin-left:20px;}
+#webdoor #menu-principal ul li a.item0:hover { background:url(../images/home_on.png) left top no-repeat;}
+#webdoor #menu-principal ul li a.item1 {background:url(../images/programas.png) left top no-repeat; width:96px; height:32px; display:block; float:left;}
+#webdoor #menu-principal ul li a.item1:hover { background:url(../images/programas_on.png) left top no-repeat;}
+#webdoor #menu-principal ul li a.item2 {background:url(../images/grade.png) left top no-repeat; width:174px; height:32px; display:block; float:left;}
+#webdoor #menu-principal ul li a.item2:hover { background:url(../images/grade_on.png) left top no-repeat;}
+#webdoor #menu-principal ul li a.item3 {background:url(../images/assine.png) left top no-repeat; width:119px; height:32px; display:block; float:left;}
+#webdoor #menu-principal ul li a.item3:hover { background:url(../images/assine_on.png) left top no-repeat;}
+#webdoor #menu-principal ul li a.item4 {background:url(../images/clube.png) left top no-repeat; width:96px; height:32px; display:block; float:left;}
+#webdoor #menu-principal ul li a.item4:hover { background:url(../images/clube_on.png) left top no-repeat;}
+
+
+
+/*----CONTENT-1-1-----*/
+
+h2 span {text-indent:-1000px;}
+
+.separador-home-1 {background:url(../images/separador-home-1.jpg) left top no-repeat; border:0; height:6px; width:448px; margin:20px 0 0 0;}
+
+#content-1-1 #membros {width:622px; height:185px; margin:20px 0 20px 0; background:url(../images/bg-membros.jpg) right bottom no-repeat;}
+#content-1-1 #membros .widget1 {float:left; margin:13px 0 0 5px;}
+#content-1-1 #membros .widget2 {float:left; margin:13px 0 0 14px;}
+#content-1-1 #blogs {width:622px; height:270px; margin:20px 0 20px 0; background:url(../images/bg-blogs.jpg) right bottom no-repeat;}
+#content-1-1 #programacao,
+#content-1-1 #ultimas-do-twitter {width:622px; margin:20px 0 0 0;}
+#content-1-1 #publicidade-home-1 {width:622px; height:130px; margin:30px 0 0 0; background:url(../images/separador-home-1.jpg) left bottom no-repeat;}
+#content-1-1 #publicidade-home-2 {width:622px; height:130px; margin:50px 0 0 0; background:url(../images/separador-home-1.jpg) left bottom no-repeat;}
+#content-1-1 #membros h2 {background:url(../images/tit-membros.jpg) top left no-repeat; height:25px; width:241px;}
+#content-1-1 #membros img {margin:10px 0 0 0;}
+#content-1-1 #blogs h2 {background:url(../images/tit-blogs.jpg) top left no-repeat; height:28px; width:241px;}
+#content-1-1 #blogs img {margin:10px 0 0 0;}
+#content-1-1 #blogs .widget1 {float:left; margin:22px 0 0 0;}
+#content-1-1 #blogs .widget2 {float:left; margin:22px 0 0 16px;}
+#content-1-1 #programacao {width:622px; margin:20px 0 0 0; height:210px;}
+#content-1-1 #programacao h2 {background:url(../images/tit-programacao.jpg) top left no-repeat; height:28px; width:241px;}
+#content-1-1 #programacao .encontre-local {width:200px; height:105px; margin:10px 0 0 0; padding:75px 0 0 5px; background:url(../images/label-encontre-seu-local-aqui.jpg) left top no-repeat; float:left;}
+#content-1-1 #programacao .encontre-local select {width:146px; margin:0 0 5px 10px; background-color:#e7e7e7; border:1px solid #8a8a8a; color:#aaaaaa; font-size:11px;}
+#content-1-1 #programacao .programacao-destaque {float:right; width:416px; margin:5px 0 0 0;}
+#content-1-1 #programacao .encontre-local p {width:146px; margin:0 0 5px 10px; line-height:13px;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora {width:58px; height:80px; float:left; margin:0 5px 0 0;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li:first-child {display:block; width:58px; height:53px; background:url(../images/bg-data-hora-1.png) left top no-repeat; margin:0 0 2px 0; text-align:center;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li {display:block; width:58px; height:24px; background:url(../images/bg-data-hora-2.png) left top no-repeat; text-align:center; padding:2px 0 0 0;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li .dia {font-size:28px; color:#FFFFFF;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li .mes {font-size:9px; color:#FFFFFF;}
+#content-1-1 #programacao .programacao-destaque ul.programacao-data-hora li .hora {font-size:9px; color:#FFFFFF;}
+#content-1-1 #programacao .programacao-destaque img {float:left; margin:0 10px 0 0;}
+#content-1-1 #programacao .programacao-destaque .programacao-programa .subtitulo {font-size:16px; font-weight:bold; color:#47afdf;}
+#content-1-1 #programacao .programacao-destaque .programacao-programa .botao span {display:none;}
+#content-1-1 #programacao .programacao-destaque .programacao-programa .botao {background:url(../images/bot-veja-mais.png) left top no-repeat; width:70px; height:34px; float:left; margin:5px 0 0 0;}
+#content-1-1 #destaques {width:622px; margin:20px 0 20px 0; height:420px;}
+#content-1-1 #destaques h2 {background:url(../images/tit-destaques.jpg) top left no-repeat; height:28px; width:138px;}
+#content-1-1 #destaques .destaques-direita {width:288px; height:193px; float:right; margin:20px 0 0 0; background:url(../images/bg-destaques.jpg) right bottom no-repeat;}
+#content-1-1 #destaques .destaques-esquerda {width:288px; height:193px; float:left; margin:20px 0 0 0; background:url(../images/bg-destaques.jpg) right bottom no-repeat;}
+#content-1-1 #destaques .destaques-direita a .subtitulo,
+#content-1-1 #destaques .destaques-esquerda a .subtitulo {font-size:14px; font-weight:bold; color:#47afdf; margin:1px 0 0 0;}
+#content-1-1 #destaques .destaques-direita a .texto,
+#content-1-1 #destaques .destaques-esquerda a .texto {font-size:11px; color: #666666; margin:1px 0 0 0;}
+#content-1-1 #destaques .destaques-direita a div,
+#content-1-1 #destaques .destaques-esquerda a div {margin:2px 0 0 10px !important;}
+#content-1-1 #destaques .destaques-esquerda a span.mais,
+#content-1-1 #destaques .destaques-direita a span.mais {position:absolute; margin:-14px 0 0 262px; text-indent:-99999px; display:block; background:url(../images/ico-mais.jpg) top left no-repeat; height:18px; width:18px;}
+#content-1-1 #ultimas-do-twitter h2 {background:url(../images/tit-ultimas-twitter.jpg) top left no-repeat; height:26px; width:213px;}
+#content-1-1 #ultimas-do-twitter ul#container-tweets {margin:10px 0 0 0; display:block;}
+#content-1-1 #ultimas-do-twitter ul#container-tweets li {display:block; width:580px;}
+#content-1-1 #ultimas-do-twitter ul#container-tweets li img {float:left; margin:15px 10px 0 0;}
+#content-1-1 #ultimas-do-twitter ul#container-tweets li .box {width:460px; border:1px solid #c1c1c1; margin:15px 0 0 0; padding:5px 25px 0 15px; float:left;}
+#content-1-1 #ultimas-do-twitter ul#container-tweets li .box .texto {font-size:13px; font-weight:bold; font-style:italic; color:#565656;}
+#content-1-1 #ultimas-do-twitter ul#container-tweets li .box .texto a {color:#999;}
+#content-1-1 #ultimas-do-twitter ul#container-tweets li .box p.cabecalho a {font-size:10px; color:#b6b6b6; margin:0;}
+
+
+/*----CONTENT-1-2-----*/
+
+.separador-home-2 {background:url(../images/separador-home-2.jpg) center top no-repeat; border:0; height:6px; width:330px; margin:20px 0 0 0;}
+
+#publicidade-home-2,
+#video-em-destaque,
+#video-em-destaque_sem-icone,
+#vemporai,
+#diversao,
+#maislidas,
+#videos-clube,
+#widget-facebook,
+#blogs-do-canal,
+#enquete { margin:30px 0 0 0;}
+#video-em-destaque h2 {background:url(../images/tit-video-destaque.jpg) top left no-repeat; height:27px; width:226px; margin:0 0 15px 0;}
+#video-em-destaque_sem-icone h2 {background:url(../images/tit-video-destaque_sem-icone.jpg) top left no-repeat; height:27px; width:226px; margin:0 0 15px 0;}
+#vemporai h2 {background:url(../images/tit-vemporai.jpg) top left no-repeat; height:35px; width:119px; margin:0 0 15px 0;}
+#vemporai a.destaque h4,
+#vemporai a.sub-destaque h4{ font-family:Verdana; font-size:11px; color:#a9a9a9; font-weight:bold; margin:6px 0;}
+#vemporai a.destaque p,
+#vemporai a.sub-destaque p{ font-family:Verdana; font-size:12px; color:#666; font-weight:bold;}
+#vemporai a.destaque {border-bottom:1px dotted #999; display:block;}
+#vemporai a.sub-destaque {margin:40px 0; display:block;}
+#vemporai a.sub-destaque img {float:left; display:block; margin:0 12px 0 0;}
+#diversao h2 {background:url(../images/tit-diversao.jpg) top left no-repeat; height:25px; width:91px; margin:0 0 15px 0;}
+#diversao a {display:block; float:left; width:153px;}
+#diversao a h4{ font-family:Verdana; font-size:11px; color:#a9a9a9; font-weight:bold; margin:6px 0;}
+#diversao a p{ font-family:Verdana; font-size:12px; color:#666; font-weight:bold;}
+#blogs-do-canal h2 {background:url(../images/tit-blogs-do-canal.jpg) top left no-repeat; height:27px; width:177px; margin:0 0 15px 0;}
+#blogs-do-canal .blog {margin:13px 0 0 0;}
+#blogs-do-canal .blog a p {font-size:16px; color: #666666; margin:1px 0 0 0; margin:0 0 7px 0; letter-spacing:-0.7px;}
+#blogs-do-canal .blog img {float:left; margin:0 10px 0 0;}
+#blogs-do-canal .blog a .subtitulo {font-size:14px; font-weight:bold; color:#47afdf; padding:6px 0 0 0;}
+#blogs-do-canal .blog a .descricao {font-size:11px; color: #666666; margin:1px 0 0 0;}
+#videos-clube h2 {background:url(../images/tit-videos.jpg) top left no-repeat; height:26px; width:213px; margin:0 0 15px 0;}
+#videos-clube div {margin:30px 0 0 0;}
+#enquete h2 {background:url(../images/tit-enquete.jpg) top left no-repeat; height:28px; width:113px; margin:0 0 15px 0;}
+#enquete input[type="radio"] {}
+#enquete p {color:#255f73; font-size:12px; font-weight:bold;}
+#enquete ul {margin:-27px 0 0; line-height:9px; width:290px;}
+#enquete ul li {color:#505050; font-size:10px; margin:0; height:22px;}
+#enquete ul li label {margin:0;}
+#enquete a.botao {background:url(../images/bot-ver-resultado.png) left top no-repeat; width:89px; height:41px; margin:38px 0 0 0; float:left;}
+
+#maislidas ul {border-top:1px solid #e1e1e1; padding:7px 0 0;}
+#maislidas ul li {display:block; float:left; margin:0 0 14px;}
+#maislidas ul li .esquerda {display:block; float:left; width:32px; font-size:34px; color:#b3b3b3;}
+#maislidas ul li .direita {display:block; float:left; width:275px; font-size:13px; color:#3db1da; padding:4px 0 0;}
+
+
+
+/*----FOOTER-----*/
+
+#footer-bg {width:100%; height:68px; background:url(../images/bg-footer.jpg) top repeat-x; margin:30px 0 0 0;}
+#footer-bg .footer { position:absolute; width:1000px; left:50%; margin-left:-500px; height:28px;}
+#footer-bg .footer p {letter-spacing:-0.5px; color:#FFFFFF; float:left; margin:25px 0 0 20px;}
+#footer-bg .footer ul.menu {margin:25px 0 0 20px;}
+#footer-bg .footer ul.menu li {display:inline; color:#FFF;}
+#footer-bg .footer ul.menu li a {color:#FFFFFF; margin:0 10px; letter-spacing:-0.5px;}
+#footer-bg .footer ul.menu li a:hover {color:#CCDCE1;}
+
+#footer {background:url("../images/clube-footer-bg.png") no-repeat scroll center top transparent !important; border:0 none; display:block; height:179px; margin:0; padding:0; width:1000px; }
+
+
+/*----INTERNAS-----*/
+
+#master-internas { width: 996px; margin:-575px auto 70px auto; text-align:left; background-color:#FFFFFF; padding:0; }
+
+#master-internas #content-1-2 { float: right; width: 335px; background: #EBEBEB; padding: 15px 0 0 20px; background:url(../images/separador-home-vertical.jpg) left top no-repeat; }
+#master-internas #content-1-1 { margin: 14px 0 0 0; padding: 0;  width:600px; position:absolute; } 
+
+#master-internas #content-1-1-programas { margin: 0 0 0 0; padding: 0 0 0 5px; float:left; width:640px !important; }
+#master-internas #content-1-2-programas { float: right; width: 310px; background: #EBEBEB; padding: 40px 0 0 20px; background:url(../images/separador-home-vertical.jpg) left top no-repeat; }
+
+#menu {height:640px; margin:0 auto;}
+#menu #flashtvgi {margin:-30px 0 0 0;}
+#menu #menu-principal {width:1004px; margin:0 auto;}
+#menu #menu-principal ul {background:url(../images/bg-menu-principal.png) top left no-repeat; margin:1px 0 0 338px; padding:13px 0 0 0; width:630px; _width:680px; height:51px;}
+#menu #menu-principal ul li {color:#FFFFFF; padding:0; float:left; _margin:0 12px 0 -15px;}
+#menu #menu-principal ul li a {padding:0 0 0 16px;}
+#menu #menu-principal ul li a span {display:none;}
+
+#menu #menu-principal ul li.linha {background:url(../images/linha.jpg) left top no-repeat; width:2px; height:32px; display:block; float:left;}
+#menu #menu-principal ul li a.item0 {background:url(../images/home.png) left top no-repeat; width:38px; height:32px; display:block; float:left; margin-left:20px;}
+#menu #menu-principal ul li a.item0:hover { background:url(../images/home_on.png) left top no-repeat;}
+#menu #menu-principal ul li a.item1 {background:url(../images/programas.png) left top no-repeat; width:96px; height:32px; display:block; float:left;}
+#menu #menu-principal ul li a.item1:hover { background:url(../images/programas_on.png) left top no-repeat;}
+#menu #menu-principal ul li a.item2 {background:url(../images/grade.png) left top no-repeat; width:174px; height:32px; display:block; float:left;}
+#menu #menu-principal ul li a.item2:hover { background:url(../images/grade_on.png) left top no-repeat;}
+#menu #menu-principal ul li a.item3 {background:url(../images/assine.png) left top no-repeat; width:119px; height:32px; display:block; float:left;}
+#menu #menu-principal ul li a.item3:hover { background:url(../images/assine_on.png) left top no-repeat;}
+#menu #menu-principal ul li a.item4 {background:url(../images/clube.png) left top no-repeat; width:96px; height:32px; display:block; float:left;}
+#menu #menu-principal ul li a.item4:hover { background:url(../images/clube_on.png) left top no-repeat;}
+
+
+/*----GRADE-----*/
+
+#internas h2.tit-grade { background:url(../images/tit-grade.jpg) left top no-repeat; height:41px; width:358px; margin:15px 0 0 0;}
+#internas h2.tit-grade span {text-indent:-9999px;}
+
+#internas #calendario {margin:50px 0 0 0;}
+#internas #calendario ul#mycarousel {margin:0; float:left;}
+#internas #calendario ul#mycarousel li {display:inline; background:url(../images/calendario-bg.jpg) left top no-repeat; width:123px; height:110px; margin:0 1px; float:left; text-align:center; padding:11px 0 0;}
+#internas #calendario ul#mycarousel li:hover {background:url(../images/calendario-bg-hover.jpg) left top no-repeat;}
+#internas #calendario ul#mycarousel li a .dia { font-family:Arial; font-size:45px; font-weight:bold; color:#3b7995; margin:5px 0 0;}
+#internas #calendario ul#mycarousel li a .mes { font-family:Arial; font-size:12px; font-weight:bold; color:#3b7995; margin:-8px 0 0;}
+#internas #calendario .carousel-esquerda {float:left; margin:40px 0 0;}
+#internas #calendario .carousel-direita {float:left; margin:-75px 0 0 913px;}
+
+#internas .separador {background:url(../images/grade-separador.jpg) left top no-repeat; width:950px; height:11px; margin:10px 0 0 22px;}
+#internas .outros-programas-separador {background:url(../images/outros-programas-separador.jpg) left top no-repeat; width:501px; height:11px; margin:10px 0 0 22px;}
+
+#internas ul.programas {margin:20px 0 0; width:950px;}
+#internas ul.programas li.pai {display:block; background-image:url(../images/grade-ico-mais.jpg); background-position:right top; background-repeat:no-repeat; margin:34px 0 0; width:955px; clear:both; cursor:pointer; float:left;}
+#internas ul.programas li.mudaseta{background-image:url(../images/grade-ico-menos.jpg) !important; }
+#internas ul.programas li.pai ul li {display:inline;}
+#internas ul.programas li ul li:first-child {margin:-3px 10px 0 0; float:left;}
+#internas ul.programas li ul li.horario { font:Arial; font-size:20px; font-weight:bold; color:#3b7995; padding:12px 6px; background-color:#deecf0;}
+#internas ul.programas li ul li.descricao {color:#999; letter-spacing:-0.2px;}
+#internas ul.programas li ul li.descricao span {display:inline; font-family:Verdana; font-size:17px; color:#47afdf; letter-spacing:-0.7px; }
+#internas ul.programas li.pai div.programa-aberto {border-top:1px solid #ccc; margin:12px 0 20px 0; padding:10px 0 0; display:none;}
+#internas ul.programas li.pai .programa-aberto img { float:left; margin:0 10px 35px 0;}
+#internas ul.programas li .programa-aberto p {color:#999; width:470px; float:left;}
+	
+
+/*----FAQ-----*/
+
+#internas h2.tit-faq { background:url(../images/tit-faq.jpg) left top no-repeat; height:41px; width:70px; margin:15px 0 0 0;}
+#internas h2.tit-faq span {text-indent:-9999px;}
+#internas h3 {font-family:Verdana; font-size:23px; color:#47afdf; font-weight:normal; letter-spacing:-1.1px; margin:10px 0 8px 10px;}
+#internas .sub-h3 {font-size:10px; color:#333;}
+
+#internas ul.faq {margin:35px 0 0; width:575px;}
+#internas ul.faq li.pai {display:block; background-image:url(../images/grade-ico-mais.jpg); background-position:right top; background-repeat:no-repeat; margin:10px 0 0; width:575px; clear:both; cursor:pointer;}
+#internas ul.faq li.mudaseta{background-image:url(../images/grade-ico-menos.jpg) !important; }
+#internas ul.faq li.pai div.faq-fechado {font-family:Verdana; font-size:11px; font-weight:bold; color:#333; height:27px; padding:5px 0 0;}
+#internas ul.faq li.pai div.faq-aberto {margin:-10px 0 50px; padding:10px 0 0; display:none;}
+#internas ul.faq li .faq-aberto p {color:#999; width:470px; margin:0 0 0 20px;}	
+#internas ul.faq li .faq-aberto .resposta {color:#47afdf;}
+
+#internas .form-duvidas {background:url(../images/bg-faq-form.jpg) left bottom no-repeat; width:300px; height:400px; display:block; padding:0 30px 20px; margin:0 0 20px 0;}
+#internas .form-duvidas form label {float:left; clear:both; margin:10px 0 0; font-family:Verdana; font-size:11px; font-weight:bold; color:#333;}
+#internas .form-duvidas form label input[type="text"],
+#internas .form-duvidas form label select,
+#internas .form-duvidas form label textarea {width:290px; height:20px; border:1px solid #47afdf; margin:5px 0 0; font-family:Verdana; font-size:11px; font-weight:bold; color:#333; padding:2px;}
+#internas .form-duvidas form label textarea {height:166px;}
+
+#internas .canais-comunicacao {background:url(../images/bg-faq-form2.jpg) left bottom no-repeat; width:300px; height:75px; display:block; padding:0 30px 20px;}
+#internas .canais-comunicacao a {float:left; clear:both; font-size:12px; color:#3399cc; margin:16px 0 0;}
+#internas .canais-comunicacao a img {margin:-5px 0 0; float:left; position:absolute;}
+#internas .canais-comunicacao a span {margin:0 0 0 35px; display:block; width:200px;}
+
+
+/*----PROGRAMAS-----*/
+
+#internas h2.tit-programas { background:url(../images/tit-programas.jpg) left top no-repeat; height:41px; width:175px; margin:15px 0 0 0;}
+#internas h2.tit-programas span {text-indent:-9999px;}
+
+#internas .programas-box { position:relative; width:310px; height:471px; background:url(../images/bg-programas.jpg) left top no-repeat; float:left; display:block; margin:15px 0 0;}
+#internas .programas-box .programacao-destaque { width:310px !important;}
+#internas .programas-box .programacao-destaque ul.programacao-data-hora {width:58px; height:80px; float:left; margin:15px 10px 0 15px;}
+#internas .programas-box .programacao-destaque ul.programacao-data-hora li:first-child {display:block; width:58px; height:53px; background:url(../images/bg-data-hora-1.png) left top no-repeat; margin:0 0 2px 0; text-align:center;}
+#internas .programas-box .programacao-destaque ul.programacao-data-hora li {display:block; width:58px; height:24px; background:url(../images/bg-data-hora-2.png) left top no-repeat; text-align:center; padding:2px 0 0 0; margin:0; float:left;}
+#internas .programas-box .programacao-destaque ul.programacao-data-hora li .dia {font-size:28px; color:#FFFFFF;}
+#internas .programas-box .programacao-destaque ul.programacao-data-hora li .mes {font-size:9px; color:#FFFFFF;}
+#internas .programas-box .programacao-destaque ul.programacao-data-hora li .hora {font-size:9px; color:#FFFFFF;}
+#internas .programas-box .programacao-destaque .programacao-texto {color:#999; font-size:14px; font-family:Arial; margin:15px 0 0; height:80px; width:200px; display:block; float:left;}
+
+#internas .programas-box a.gosto { background:url(../images/bt-gosto.jpg) left top no-repeat; width:125px; height:30px; text-indent:-9999px; display:block; float:left; margin:10px 0 0 10px;}
+#internas .programas-box a.gosto:hover { background:url(../images/bt-gosto.jpg) left bottom no-repeat;}
+#internas .programas-box a.naovejo { background:url(../images/bt-nao-vejo.jpg) left top no-repeat; width:125px; height:30px; text-indent:-9999px; display:block; float:left; margin:10px 0 0 15px;}
+#internas .programas-box a.naovejo:hover { background:url(../images/bt-nao-vejo.jpg) left bottom no-repeat;}
+
+#internas .programas-box a.twitter { background:url(../images/ico-twitter2.jpg) left top no-repeat; height:20px; display:block; padding:10px 0 0 37px; margin:15px 0 0 10px; font-family:Verdana; font-size:12px; color:#3399cc;}
+#internas .programas-box a.twitter:hover { background:url(../images/ico-twitter2.jpg) left bottom no-repeat;}
+#internas .programas-box a.clubetvgi { background:url(../images/ico-lupa.jpg) left top no-repeat; height:20px; display:block; padding:10px 0 0 37px; margin:15px 0 0 10px; font-family:Verdana; font-size:12px; color:#3399cc; }
+#internas .programas-box a.clubetvgi:hover { background:url(../images/ico-lupa.jpg) left bottom no-repeat;}
+
+#internas .outros-programas h3 { background:url(../images/tit-outros-programas.jpg) left top no-repeat; height:26px; width:185px; margin:42px 0 0 0;}
+#internas .outros-programas h3 span {text-indent:-9999px; visibility:hidden;}
+
+#internas .outros-programas ul#mycarousel {width:400px; height:270px;}
+#internas .outros-programas ul#mycarousel li {float:left; margin:5px 0 0 0; width:155px; height:103px; display:block;}
+#internas .outros-programas ul#mycarousel li div {display:block; margin:4px 0 0; float:left; position:relative;}
+#internas .outros-programas ul#mycarousel li div div.opiniao {position:absolute; width:40px; height:20px; display:block; left:109px; top:-3px; z-index:99999px;}
+#internas .outros-programas ul#mycarousel li a.gosto {display:block; background:url(../images/ico-gosto-small.png) left top no-repeat; width:19px; height:20px; float:left; margin:0;}
+#internas .outros-programas ul#mycarousel li a.gosto:hover {background:url(../images/ico-gosto-small.png) left bottom no-repeat;}
+#internas .outros-programas ul#mycarousel li a.gosto span {text-indent:-9999px;}
+#internas .outros-programas ul#mycarousel li a.naovejo {display:block; background:url(../images/ico-naovejo-small.png) left top no-repeat; width:19px; height:20px; margin:0; float:left;}
+#internas .outros-programas ul#mycarousel li a.naovejo:hover {background:url(../images/ico-naovejo-small.png) left bottom no-repeat;}
+#internas .outros-programas ul#mycarousel li a.naovejo span {text-indent:-9999px;}
+#internas .outros-programas ul#mycarousel li img {}
+
+#internas .programas-publicidade-01 {margin:20px 0 0;}
+#internas .programas-publicidade-01 .publicidade {text-align:right; margin:0 42px 4px 0;}
+#internas .programas-publicidade-01 .banner {background-color:#CCC; width:970px; height:140px; text-align:center;}
+#internas .programas-publicidade-01 .banner img {margin:20px 0 0;}
+
+
+/*----ANUNCIE-----*/
+
+#internas h2.tit-anuncie { background:url(../images/tit-anuncie-no-canal.jpg) left top no-repeat; height:35px; width:271px; margin:15px 0 0 0;}
+#internas h2.tit-anuncie span {text-indent:-9999px;}
+
+#internas .anuncie .box-img {background:url(../images/bg-img-anuncie-no-canal.jpg) left top no-repeat; width:317px; height:187px; float:left; margin:25px 0 0;}
+#internas .anuncie .texto {float:left; margin:0 0 20px;}
+
+
+/*----LOGIN-----*/
+
+body#login  { font: 100% Verdana, Arial, Helvetica, sans-serif; text-align: center; font-size:11px; color: #666666; background:url(../images/clube-bg2.jpg) left top repeat-x; }
+#bg-camada2 {background:url(../images/bg-login-camada2.jpg) top center no-repeat; width:100%; height:920px; position:absolute; margin:0;}
+#master-login {position:absolute; width:1000px; left:50%; margin:0 0 0 -500px;}
+#master-login div.logo {position:absolute; width:305px; height:195px; margin:27px 0 0 286px; background:url(../images/clube-logo-bg.png) no-repeat;}
+#master-login div.logo a {background:url(../images/clube-logo.png) no-repeat; width:272px; height:70px; position:absolute; display:block; margin:48px 0 0 16px;} 
+#master-login div.logo a h1 {text-indent:-9999px;}
+#master-login div.banner {position:absolute; margin:100px 0 0 725px;}
+#box-login {background:url(../images/bg-login-box.png) left top no-repeat; width:955px; height:640px; position:relative; margin:170px 0 0 0; text-align:left; top:0;}
+#box-login form {position:absolute; width:345px; height:400px; margin:125px 0 0 52px; font-family:Verdana; font-size:12px; font-weight:bold; color:#333;}
+#box-login label {display:block;}
+#box-login input[type="text"] {width:346px; height:24px; border:1px solid #41aee2; margin:4px 0 15px 0;}
+#box-login input.entrar {display:block;}
+#box-login .esqueci-minha-senha {margin:-30px 0 0 205px; float:right; position:absolute; color:#0972b6; text-decoration:underline; font-weight:normal;}
+#box-login .texto {position:absolute; margin:230px 0 0 470px; width:440px; font-weight:bold; font-family:Verdana;}
+#box-login .texto h2 { font-size:17px; color:#1d8fda; margin:0 0 5px 0; background:url(../images/bullet-seta.jpg) bottom left no-repeat; padding:0 0 0 20px; height:17px;}
+#box-login .texto p{color:#454545; font-size:13px; line-height:19px;}
+#box-login .facaparte {width:147px; height:135px; position:absolute; display:block; margin:462px 0 0 470px; background:url(../images/bt-faca-parte.jpg) left top no-repeat; text-indent:-9999px;}
+
+
+
+/*----CADASTRO-----*/
+
+#master-cadastro {position:absolute; width:1000px; left:50%; margin:0 0 0 -500px;}
+#master-cadastro div.logo {position:absolute; width:305px; height:195px; margin:27px 0 0 368px; background:url(../images/clube-logo-bg.png) no-repeat;}
+#master-cadastro div.logo a {background:url(../images/clube-logo.png) no-repeat; width:272px; height:70px; position:absolute; display:block; margin:48px 0 0 16px;} 
+#master-cadastro div.logo a h1 {text-indent:-9999px;}
+#master-cadastro div.banner {position:absolute; margin:100px 0 0 725px;}
+#box-cadastro {background:url(../images/bg-cadastro-box.png) left top no-repeat; width:970px; height:953px; position:relative; margin:175px 0 0; text-align:left;}
+#box-cadastro .texto {position:absolute; margin:475px 0 0 552px; width:350px; font-weight:bold; font-family:Verdana;}
+#box-cadastro .texto h2 { font-size:17px; color:#1d8fda; margin:0 0 5px 0; background:url(../images/bullet-seta.jpg) bottom left no-repeat; padding:0 0 0 20px; height:17px;}
+#box-cadastro .texto p{color:#454545; font-size:13px; line-height:19px;}
+#box-cadastro .acesseja {width:147px; height:168px; position:absolute; display:block; margin:530px 0 0 470px; background:url(../images/bt-acesseja.jpg) left top no-repeat; text-indent:-9999px;}
+
+#box-cadastro form {position:absolute; width:450px; margin:86px 0 0 52px; font-family:Verdana; font-size:12px; font-weight:bold; color:#333;}
+#box-cadastro form span.texto-normal {font-family:Verdana; font-size:12px; font-weight:bold; color:#333; display:block;}
+#box-cadastro form div {margin:0;}
+#box-cadastro form input[type="text"] {border:1px solid #41aee2; margin:4px 0 15px 0; height:25px; padding:0 5px;}
+#box-cadastro form .inteira input[type="text"] { width:422px;}
+#box-cadastro form .medio1 {width:200px;}
+#box-cadastro form .medio2 {width:110px;}
+#box-cadastro form .redes {width:125px;}
+#box-cadastro form .menor { width:30px; text-align:center;}
+#box-cadastro form input[type="text"].operadora {width:200px; margin:0 0 0 8px;}
+#box-cadastro form .inteira {width:420px; display:block; clear:both;}
+#box-cadastro form .dupla-esq {float:left; width:225px; display:block; clear:left;}
+#box-cadastro form .dupla-dir {float:left; width:220px; display:block;}
+#box-cadastro form input.feminino {margin:13px 0 0;}
+#box-cadastro form input.masculino {margin:0 0 0 10px;}
+#box-cadastro form select {width:210px; height:25px; border:1px solid #41aee2; margin:4px 0 15px;}
+#box-cadastro form .light { color:#666; font-size:11px; font-weight:normal; letter-spacing:-1px;}
+#box-cadastro form input.receber-celular {margin:5px 0 10px;}
+#box-cadastro form input.receber-newsletter {margin:0 0 33px;}
+#box-cadastro form input.assinante-nao {margin:0 0 0 5px;}
+
+#box-cadastro form div div.esq {float:left; display:block; width:68px; height:38px;}
+#box-cadastro form div div.dir {float:right; display:block; width:150px; margin:-8px 0 0;}
+#box-cadastro form div div.dir input.redes2 {margin:4px 0 0;}
+#box-cadastro form div div.dir input.redes {padding:0 4px; font-size:11px; color:#c1bbbb; font-weight:normal;}
+#box-cadastro form div.tit-redes {margin:45px 0 18px;}
+#box-cadastro form div.termo {margin:10px 0 10px; padding:16px 0 0;}
+#box-cadastro form div.termo a {text-decoration:underline; color:#178cd9;}
+
+
+
+/*--------- INSTITUCIONAL ----------*/
+
+.institucional {min-height:545px !important;}
+#internas h2.tit-institucional { background:url(../images/tit-institucional.jpg) left top no-repeat; height:32px; width:177px; margin:15px 0 0 0;}
+#internas h2.tit-institucional span {text-indent:-9999px;}
+
+#internas a.english-version {position:absolute; width:240px; height:25px; background:url(../images/label-english-version.jpg) left top no-repeat; text-align:center; padding:6px 0 0; margin:-40px 0 0 668px; color:#FFF; font-family:Arial; font-size:14px;}
+#internas a.english-version:hover {background:url(../images/label-english-version.jpg) left bottom no-repeat;}
+
+#internas div.box-sobreatvgi {background:url(../images/bg-sobreatvgi-institucional.jpg) left top no-repeat; width:980px; height:314px; padding:2px 0 0 20px; margin:16px 0 0;}
+#internas div.box-sobreatvgi p {width:352px; letter-spacing:-1px;}
+
+#internas div.box-disponibilidade {background:url(../images/img-computador.jpg) right top no-repeat; width:633px; height:304px; margin:45px 0 0 20px; float:left;}
+#internas div.box-disponibilidade p {width:333px; letter-spacing:-1px;}
+
+#internas div.video-da-tvgi {float:right; margin:47px 0 0;}
+
+#internas div.video-da-tvgi h3 {background:url(../images/ico-video.jpg) left center no-repeat; padding:0 0 0 30px; height:25px;}
+
+
+/*--------- Assine o Canal ----------*/
+
+#content-1-3 {background:url(../images/bgAssinetvgi.jpg) no-repeat top center; background-position:-27px -8px;}
+
+#internas h2.tit-Assine{background:url(../images/tit-Assine.png) top left no-repeat; width:211px; height:30px; margin:15px 0 0 0; padding:0;}
+#internas h2.tit-Assine span {text-indent:-9999px;}
+
+#content-1-3 div.selectRegiao{position:absolute; display:block; margin:245px 0 0 100px; padding:0; width:150px;}
+#content-1-3 div.selectRegiao select{margin:0 0 5px 0; padding:4px; width:150px;}
+
+#content-1-3 div.txtArea001{display:block; position:relative; margin:0 auto; margin-top:430px; padding:0; width:970px; height:auto;}
+#content-1-3 div.txtArea001 h3{margin:0 0 16px; padding:0; color:#47afdf; font-size:15px;}
+#content-1-3 div.txtArea001 p{margin:0; padding:0; color:#666666; text-align:left}
+
+#content-1-3 div.txtArea002{display:block; position:relative; margin:0 auto; margin-top:20px; padding:0; width:970px; height:auto;}
+#content-1-3 div.txtArea002 h3{margin:0 0 14px 0; padding:0; color:#47afdf; font-size:15px;}
+#content-1-3 div.txtArea002 .item{margin:0 10px 10px 0; padding:0; width:225px; height:auto; float:left;}
+#content-1-3 div.txtArea002 .item span{color:#666}
+#content-1-3 div.txtArea002 .item span.img{display:block; margin:0 10px 0 0; padding:0; width:59px; min-height:65px; float:left;}
+#content-1-3 div.txtArea002 .item span.img img{border:none; max-width:59px}
+#content-1-3 div.txtArea002 .item span.nome{float:left; font-size:11pt; width:130px;}
+#content-1-3 div.txtArea002 .item span.tel{float:left; font-size:9pt; margin:2px 0 0 0; width:130px;}
+#content-1-3 div.txtArea002 .item span.site{float:left; margin:2px 0 0 0; width:130px;}
+#content-1-3 div.txtArea002 .item span.site a:link,
+#content-1-3 div.txtArea002 .item span.site a:visited{color:#666; text-decoration:none; font-size:8pt;}
+#content-1-3 div.txtArea002 .item span.site a:hover{color:#47afdf}
+
+

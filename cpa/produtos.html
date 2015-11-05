@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="css/style.css"/>
+      <link rel="shortcut icon" href="imagens/favicon.ico" />
+      <title>CPA Force</title>
+      <meta name="description" content="Nosso objetivo é entregar conversão e volume">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   </head>
+
+    <body class="home">
+   	<div class="main">
+	    <header>
+	     	<h1><img src="imagens/cpa-logo.png" alt="CPA Force" /></h1>
+	     	<nav>
+	     		<ul class="menu">
+	     			<li>
+	     				<a href="index.html">Home</a>
+	     			</li>
+	     			<li>
+	     				<a href="quem-somos.html">Quem Somos</a>
+	     			</li>
+	     			<li>
+	     				<a class="selected" href="produtos.html">Produtos</a>
+	     			</li>
+	     			<li>
+	     				<a href="contato.php">Fale Conosco</a>
+	     			</li>
+	     		</ul>
+	     	</nav>
+	     </header>
+
+	     <div class="clearboth"></div>
+
+	     <section class="content-home">
+		     <div class="banner">
+		     	<img src="imagens/banner-produtos.jpg" />
+		     	<div class="banner-content">
+		     		<h3>Seja visto por quem importa</h3>
+		     	</div>
+		     </div>
+
+		     <div class="clearboth"></div>
+
+		     <div class="sec-scroll prod">
+
+		     	<article class="news-call">
+		     		<h5><strong>Links</strong> Patrocinados</h5>
+		     		<img src="imagens/produtos-1.jpg" />
+		     		<p>Experiência em Search Engine Marketing para alavancar o melhor ROI para os nossos clientes. Foco total em performance para aumentar as vendas, a visibilidade da marca e um tráfego altamente qualificado. Mensuração completa das campanhas, analisando todos os fatores para um melhor resultado.</p>
+		     	</article>
+
+		     	<article class="news-call">
+		     		<h5><strong>Afiliação</strong></h5>
+		     		<img src="imagens/produtos-2.jpg" />
+		     		<p>Somos uma fonte de tráfego muito qualificada para as principais redes de afiliação do mercado. Trabalhamos com todos os modelos comerciais: CPA, CPC e CPM.</p>
+		     	</article>
+
+		     	<article class="news-call last">
+		     		<h5><strong>E-mail</strong> Marketing</h5>
+		     		<img src="imagens/produtos-3.jpg" />
+		     		<p>Trabalhamos com disparos em cima de bases próprias que se enquadram dentro das necessidades dos nossos anunciantes, englobando todo o tipo de segmentação.</p>
+		     		<p>Grande volume de entrega atrelado a uma excelente taxa de conversão. Soma-se a isso toda a mensuração de dados feita após cada disparo, visando sempre o melhor resultado.</p>
+		     	</article>
+
+		     	<div class="clearboth"></div>
+
+		     </div>
+
+		     <hr class="inside-hr" />
+
+	     </section>
+
+
+		 <div class="width-all footer">
+		     <footer>
+		     	<img src="imagens/cpa-logo.png" class="logo" width="176" />
+
+		     	<div class="area">
+			     	<h5><strong>Mapa do site</strong></h5>
+			     	<div class="clearboth"></div>
+			     	<ul>
+			     		<li>
+			     			<a href="index.html">&#62; Home</a>
+			     		</li>
+			     		<li>
+			     			<a href="quem-somos.html">&#62; Quem Somos</a>
+			     		</li>
+			     		<li>
+			     			<a href="produtos">&#62; Produtos</a>
+			     		</li>
+			     		<li>
+			     			<a href="contato.php">&#62; Fale Conosco</a>
+			     		</li>
+			     	</ul>
+
+			     	<address>
+			     		PHONE: 21 98828 8222<br />
+			     		<strong>E-mail: contato@cpaforce.com.br</strong>
+			     	</address>
+			     	<div class="clearboth"></div>
+		     	</div>
+		     </footer> 
+	     </div>
+	   </div>
+
+
+	   <script type="text/javascript">
+	   		$( document ).ready(function() {
+			    
+			    $(".carousel .arrow-left").hide();
+	   			var step = 109;
+				var numItems;
+				var marginLeftSlider;
+				numItems = $(".carousel div ul li").length;
+				marginLeftSlider = 0;
+				larguraSlider = numItems * -120;
+				$(".carousel .arrow-right").click(function() {
+					$(".carousel .arrow-left").fadeIn("fast");
+					if (marginLeftSlider >= ((larguraSlider + 630))) {
+						marginLeftSlider -= step;
+						$(".carousel ul").animate({
+							marginLeft : marginLeftSlider,
+						}, 300, function() {
+						});
+						if (marginLeftSlider <= ((larguraSlider + 630))) {
+							$(".carousel .arrow-right").fadeOut("fast");
+						}
+					}
+				});
+				$(".carousel .arrow-left").click(function() {
+					$(".carousel .arrow-right").fadeIn("fast");
+					if (marginLeftSlider < (0)) {
+						marginLeftSlider += step;
+						$(".carousel ul").animate({
+							marginLeft : marginLeftSlider,
+						}, 300, function() {
+						});
+						if (marginLeftSlider == (0)) {
+							$(".carousel .arrow-left").fadeOut("fast");
+						}
+					}
+				});
+
+			});
+	   </script>
+
+
+   </body>
+</html>

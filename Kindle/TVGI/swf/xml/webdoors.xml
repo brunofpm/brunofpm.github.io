@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webdoors>
+	
+	<webdoor tempo="4" thumb="images/thumbs/thumb1.jpg" movie="movies/webdoor-caminhoIndias1.swf" />
+	<webdoor tempo="6" thumb="images/thumbs/thumb2.jpg" movie="movies/webdoor-caminhoIndias2.swf" />
+	<webdoor tempo="5" thumb="images/thumbs/thumb3.jpg" movie="movies/webdoor-caminhoIndias3.swf" />
+	<webdoor tempo="4" thumb="images/thumbs/thumb4.jpg" movie="movies/webdoor-caminhoIndias4.swf" />
+		
+</webdoors>

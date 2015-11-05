@@ -1,0 +1,1755 @@
+/* CSS Document */
+
+/* ================================== GLOBAL ELEMENTS ================================== */
+
+html{
+	font-size: 0.7em;
+	height: 100%;
+}
+
+html, body{
+	font-family: Verdana, Tahoma, Geneva, Arial, helvetica, sans-serif;
+	color:#575757;
+	background-color:#FFFFFF;
+	margin:0px;
+	padding:0px;
+	border:none;
+}
+
+
+h1, h2, h3, h4{
+	font-family: Arial Narrow, Tahoma, Geneva, Arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #FF0066;	
+}
+
+h1{
+	font-size: 2.1em;
+	margin: 0.2em 0px 0px;
+}
+
+h2 {
+	font-size: 1.8em;
+	color: #999999;
+	margin: 0px;
+}
+
+h3 {
+	font-size: 1.7em;
+	margin: 0px 0px 5px 0px;
+}
+
+a{
+	text-decoration:none;
+	color:#FF0066;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+img{
+	border:0px;
+	margin:0px;
+	padding:0px;
+	vertical-align: middle;
+}
+
+
+img.leftslash {
+	position: absolute;
+	left: 160px;
+	top: 18px;
+	height: 3px;
+	width: 8px;
+}
+
+img.fixedlaunchpad {
+	top: 98px;
+}
+
+img.rightslash {
+	position: absolute;
+	right: -7px;
+	top: 48px;
+	height: 8px;
+	width: 7px;
+}
+
+img.appicon{
+	padding: 4px;
+	border: 1px solid #E5E5E5;
+	margin: 6px;
+}
+
+a img{
+	margin-left: 5px;
+}
+
+ul{
+	padding:0px;
+	margin:0px;
+}
+
+form{
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset{
+	border: none;
+	padding: 5px;
+	margin: 0px 10px 0px 0px;	
+}
+
+
+input, textarea, select{
+	font-size: 1em;
+	font-family: Verdana, Tahoma, Geneva, Arial, helvetica, sans-serif;
+	font-weight: normal;
+	padding: 2px;
+	margin-bottom: -2px;
+}
+
+input.field, textarea.field{
+	border: 1px solid #CCCCCC;
+	padding: 3px;
+	margin-bottom: 20px;
+}
+
+input.button{
+	margin-bottom: 0px;
+	margin-top: 2px;
+}
+
+select.field{
+	border: 1px solid #CCCCCC;
+	padding: 2px;
+	margin-bottom: 20px;
+}
+
+select.field option{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+label{
+	font-weight: bold;
+	clear: both;
+	display: block;
+	margin-bottom: 3px;
+}
+
+label.checkradio{
+	display: inline;
+	margin-right: 5px;
+	font-weight: normal;
+}
+
+
+label.inline{
+	display: inline;
+	clear: none;
+	margin-right: 10px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	width: 99%;
+	border-collapse: collapse;
+}
+
+
+th {
+	background-color: #ECECEC;
+	height: 3.8em;
+	color: #FF0066;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	padding: 0px 5px;
+	line-height: 1.3em;
+}
+
+td{
+	height: 2.6em;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	padding: 0px 5px;
+	line-height: 1.3em;
+}
+
+
+/* ================================== LAYERS AND THEIR ELEMENTS  ================================== */
+
+/*  LEFT ================================== */
+#left{
+	font-size: 0.8em;
+	position: absolute;
+	width: 150px;
+	left: 5px;
+	top: 0px;
+}
+
+#left a, #left p{
+	clear: both;
+	margin: 0px;
+	border-bottom: 1px dotted #CCCCCC !important;
+	border-bottom: 1px solid #CCCCCC;
+	width: 148px;
+	display: block;
+	text-align: right;
+	padding-right: 2px;
+}
+
+
+#left a:hover{
+	background-color: #F0F0F0;
+	text-decoration: none;
+}
+
+#left #permanent, #left #menu{
+	margin: 0px;
+	padding: 0px;
+}
+
+#left #permanent, #left #menubottom{
+	margin: 0px;
+	padding: 0px;
+}
+
+#left #permanent a, #left #permanent p{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+#left #permanent.launchpadfixed a, #left #permanent.launchpadfixed p {
+	border-color: #E0E0E0 !important;
+	padding-top: 7px;
+	padding-bottom: 7px;	
+}
+
+#left #permanent.launchpadfixed a.last, #left #permanent.launchpadfixed p.last {
+	border-bottom: none !important;
+}
+
+#left #permanent p.trial{
+	padding-top: 0.2em;
+	padding-bottom: 0.3em;
+	color: #0099FF;
+	font-size: 1.7em;
+	font-weight: bold;
+	background-color: #E1F3FF;
+}
+
+#left #permanent p.trial img{
+	margin-left: 5px;
+	margin-right: 3px;
+}
+
+#left #permanent b{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#left #menu{
+	margin-top: 4.5em;
+}
+
+#left #menu.launchpadfixed {
+	margin-top: 1.7em;
+}
+
+#left #menubottom{
+	position: absolute;
+	float: left;
+	bottom: 0px;
+}
+
+#left #menu a{
+	font-size: 1.2em;
+	padding-top: 0.9em;
+	padding-bottom: 0.8em;
+}
+
+#left #menubottom a{
+	font-size: 1.2em;
+	padding-top: 0.9em;
+	padding-bottom: 0.8em;
+}
+
+
+/*  MIDDLE ================================== */
+#middle{
+	border-right-width: 6px;
+	border-left-width: 6px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #FF0066;
+	border-left-color: #FF0066;
+	margin-right: 80px;
+	margin-left: 160px;
+	padding-right: 5px;
+	padding-left: 12px;
+	position: relative;
+	margin-top: 0px;
+	padding-top: 15px;
+}
+
+
+/*  MIDDLE HEADER ================================== */
+#middle #header{
+	margin-bottom: 15px;	
+}
+
+#middle #header img{
+	margin-left: 0px;
+}
+
+
+/*  MIDDLE LOGIN ================================== */
+#middle #login{
+	border: 1px solid #EBEBEB;
+	background-color: #F6F6F6;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1.3em;
+	width: 18em;
+}
+
+#middle #login label{
+	font-size: 0.9em;
+}
+
+#middle #login input.field{
+	width: 17em;
+}
+
+#middle #login select.field{
+	width: 17.6em;
+}
+
+#middle #login input.button{
+	margin-left: 5.5em;
+	width: 6.5em;
+}
+
+#middle #login p.newuser{
+	padding: 8px;
+	background-color: #FFFFFF;
+	border: 1px solid #EBEBEB;
+	margin-top: 27px;
+	text-align: center;
+}
+
+#middle #login p.newuser img{
+	margin-right: 2px;
+	padding-bottom: 1px;
+}
+
+/*  MIDDLE LEGEND ================================== */
+#middle #legend{
+	margin-bottom: 5px;
+	font-size: 0.8em;
+	color: #ACACAC;
+	text-align: right;
+	margin-right: 5px;
+	margin-top: -5px;
+}
+
+#middle #legend img{
+	margin-left: 10px;
+}
+
+#middle #legend a.control{
+	margin-left: 4em;
+}
+
+/*  MIDDLE INTERNAL LINKS ================================== */
+#middle #internalLinks{
+	margin-bottom: 5px;
+	font-size: 0.8em;
+	color: #ACACAC;
+	text-align: center;
+	margin-right: 5px;
+	margin-top: -10px;
+	border-bottom: solid 1px #EBEBEB;
+	padding-bottom: 5px;
+	line-height: 1.5em;
+}
+
+#middle #internalLinks.form{
+	margin-bottom: 15px;
+}
+
+/*  MIDDLE PAGINATION ================================== */
+#middle #pagination{
+	font-size: 0.8em;
+	color: #999999;
+	line-height: 2em;
+	margin: 0px 0px 10px 0px;
+	position: relative;
+	text-align: center;
+}
+
+
+/*  MIDDLE SUGGESTION ================================== */
+#middle #suggestion{
+	width: 60%;
+}
+
+#middle #suggestion input.field, #middle #suggestion textarea.field{
+	width: 100%;
+}
+
+
+/*  MIDDLE REVIEW PANE ================================== */
+#middle #reviewpane table{
+	margin-left: 0px;
+	width: 70%;
+}
+
+#middle #reviewpane table td{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	line-height: 1.2em;
+}
+
+#middle #reviewpane table tr td.leftpane{
+	width: 30%;
+}
+
+#middle #reviewpane table tr td.leftcell img{
+	margin-top: 3px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+}
+
+
+/*  MIDDLE FILTER ================================== */
+#middle #filter{
+	border: 1px solid #EBEBEB;
+	background-color: #F6F6F6;
+	margin-left: 3px;
+	margin-right: 4px;
+	margin-bottom: 10px;
+	width: auto;
+	padding: 0.7em;
+}
+
+#middle #filter fieldset{
+	display: inline;
+	padding: 0px;
+}
+
+
+#middle #filter .field{
+	margin-bottom: 0px;
+}
+
+#middle #filter label{
+	font-size: 0.9em;
+}
+
+#middle #filter p{
+	width: 100%;
+	font-size: 0.9em;
+	margin-bottom: 0px;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	background-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #E0E0E0;
+}
+
+#middle #filter a.buttonlink {
+	font-size: 0.9em;
+}
+
+/*  REPORTS TABLE =========================== */
+#middle table.reports {
+	margin-bottom: 20px;
+}
+
+#middle table.reports tr th {
+	text-align: left;
+	font-size: 1.2em;
+	height: 2.8em;
+	vertical-align: middle;
+	padding-top: 4px;
+}
+
+#middle table.reports tr th img {
+	margin-right: 7px;
+}
+
+#middle table.reports tr td {
+	width: 33.33%;
+	font-size: 1.1em;
+	vertical-align: top;
+	padding: 0px;
+	margin: 0px;
+}
+
+#middle table.reports tr td.empty {
+	background: none;
+}
+
+#middle table.reports tr td.empty:hover, #middle table.reports tr td.nocontent:hover {
+	background-color: #FFFFFF;
+}
+
+#middle table.reports tr td.nocontent {
+	background: none;
+	font-size: 0.9em;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+	color: #A1A1A1;
+	height: 4em;
+	vertical-align: middle;
+}
+
+#middle table.reports tr td, #middle table.reports tr th {
+	border-left: none;
+	border-right: none;
+}
+
+#middle table.reports tr td a{
+	display: block;
+	width: auto;
+	padding-top: 0.4em;
+	padding-bottom: 0.2em;
+	padding-left: 20px;
+	margin-left: 5px;
+}
+
+#middle table.reports tr td a.description {
+	font-size: 0.8em;
+	padding-bottom: 1em;
+	padding-left: 2px;
+	line-height: 1.2em;
+	color: #A1A1A1;
+	visibility: hidden !important; visibility: visible;
+}
+
+#middle table.reports tr td a.description:hover {
+	text-decoration: none;
+}
+
+#middle table.reports tr td:hover a {
+	text-decoration: underline;
+}
+
+#middle table.reports tr td:hover a.description {
+	visibility: visible !important;
+	text-decoration: none;
+}
+
+#middle table.reports tr td:hover {
+	background-color: #F2F2F2;
+}
+
+/*  ITEMS TABLE =========================== */
+#middle table.items {
+	border-bottom: 1px solid #DDDDDD;
+}
+
+#middle table.items tr {
+	border: none;
+}
+
+#middle table.items tr td label {
+	font-weight: normal;
+	color: #575757;
+}
+
+#middle table.items tr td label strong {
+	font-size: 0.9em;
+}
+
+#middle table.items tr td label.child {
+	color: #0099FF;
+	padding-bottom: 3px;
+}
+
+#middle table.items tr th label.child {
+	color: #0099FF;
+}
+
+#middle table.items tr th label.deaditem {
+	color: #A1A1A1;
+}
+
+#middle table.items tr td label.alert {
+	font-weight: bold;
+}
+
+#middle table.items tr th{
+	border-left: none;
+	border-right: none;
+	text-align: left;
+	height: 1em;
+	width: 33.33%;
+	vertical-align: middle;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 1.2em;
+}
+
+#middle table.items tr th.checkradio {
+	font-size: 0.9em;
+	color: #575757;
+}
+
+#middle table.items tr th.checkradio label {
+	display: inline;
+	white-space: nowrap;
+}
+
+#middle table.items tr th img {
+	margin-bottom: 3px;
+}
+
+#middle table.items tr td {
+	border-left: none;
+	border-right: none;
+	padding-top: 7px;
+	background-color: #FFFFFF;
+	width: 33.33%;
+	border-bottom: 1px solid #DDDDDD;
+	vertical-align: top;
+}
+
+#middle table.items tr td.nocontent {
+	font-size: 0.9em;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+	color: #A1A1A1;
+	vertical-align: middle;
+	border-bottom: none;
+	padding-bottom: 15px;
+}
+
+#middle table.items tr td.deaditem {
+	font-size: 0.9em;
+	font-weight: normal;
+	color: #A1A1A1;
+	border-bottom: none;
+	padding-bottom: 7px;
+}
+
+#middle table.items tr td.deaditem label {
+	color: #A1A1A1;
+}
+
+#middle table.items tr td.deadborder {
+	border-top: 1px solid #DDDDDD;
+}
+
+
+/*  SERVICES TABLE =========================== */
+#middle table.services {
+	margin-bottom: 2px;
+}
+
+#middle table.services tr th {
+	text-align: left;
+	font-size: 1.2em;
+	height: 2.8em;
+	vertical-align: middle;
+	padding-top: 4px;
+}
+
+#middle table.services tr th img {
+	margin-right: 7px;
+	margin-bottom: 2px;
+}
+
+#middle table.services tr th img.double {
+	margin-right: 0px;
+}
+
+#middle table.services tr td {
+	width: 50%;
+	font-size: 1.1em;
+	vertical-align: top;
+	padding: 0px;
+	margin: 0px;
+}
+
+#middle table.services tr td.empty {
+	background: none;
+}
+
+#middle table.services tr td.empty:hover, #middle table.services tr td.nocontent:hover {
+	background-color: #FFFFFF;
+}
+
+#middle table.services tr td.nocontent {
+	background: none;
+	font-size: 0.9em;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+	color: #A1A1A1;
+	height: 4em;
+	vertical-align: middle;
+}
+
+#middle table.services tr td, #middle table.services tr th {
+	border-left: none;
+	border-right: none;
+}
+
+#middle table.services tr td a{
+	display: block;
+	width: auto;
+	padding: 0.2em;
+}
+
+#middle table.services tr td a.description {
+	font-size: 0.8em;
+	padding-bottom: 1em;
+	padding-left: 2px;
+	line-height: 1.2em;
+	color: #A1A1A1;
+	visibility: hidden !important; visibility: visible;
+}
+
+#middle table.services tr td a.description:hover {
+	text-decoration: none;
+}
+
+#middle table.services tr td:hover a {
+	text-decoration: underline;
+}
+
+#middle table.services tr td:hover a.description {
+	visibility: visible !important;
+	text-decoration: none;
+}
+
+#middle table.services tr td:hover {
+	background-color: #F2F2F2;
+}
+
+
+/*  TABLE SERVICES=========================== */
+
+table#services {
+	width: 400px;
+}
+
+table#services td{
+	position: static;
+	border-bottom-style: dotted !important;
+	border-bottom-style: solid;
+	border-right-style: dotted !important;
+	border-right-style: solid;
+	border-left-style: dotted !important;
+	border-left-style: solid;
+	text-align: center;
+	vertical-align: middle;
+	width: 33.33%;
+	height: 130px;
+	padding: 0px;
+}
+
+
+table#services td div.activated {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #F2F2F2;
+	top: 0px;
+	left: 0px;
+}
+
+table#services td div.activated a.icon {
+	display: block;
+	position: relative;
+	height: 55px;
+	vertical-align: middle;
+}
+
+table#services td div.activated a.icon img {
+	margin: 10px 0px 5px 0px;
+}
+
+table#services td div.activated a.description {
+	display: block;
+	position: relative;
+	height: 65px;
+	vertical-align: middle;
+	color: #A1A1A1;
+	background-color: #F2F2F2;
+	font-size: 0.9em;
+	line-height: 1.2em;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+table#services td:hover div.activated a.description, table#services td:hover div.activated a.icon, table#services td:hover div.suspended a.icon {
+	text-decoration: underline;
+}
+
+table#services td div.suspended {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+table#services td div.suspended a.icon {
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+table#services td div.suspended a.icon img {
+	margin: 35px 0px 5px 0px;
+}
+
+
+/*  ERRORS ================================== */
+#errors{
+	margin-bottom: 15px;
+}
+
+#errors h1{
+	font-size: 1.5em;
+	margin-top: 1em;
+}
+
+#errors ul{
+	color: #FF0066;
+}
+
+#errors ul li{
+	list-style-type: disc;
+	list-style-position: inside;
+	line-height: 1.6em;
+}
+
+
+/*  COPYRIGHT ================================== */
+#copyright{
+	position: relative;
+	border-right-width: 6px;
+	border-left-width: 6px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #FF0066;
+	border-left-color: #FF0066;
+	margin-right: 80px;
+	margin-left: 160px;
+	margin-top: 0px;
+	height: 58px;
+	overflow: auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-right: 5px;
+	padding-left: 12px;
+	color: #A0A0A0;
+	font-size: 0.8em;
+}
+
+#copyright p.links {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+/*  EDITION FORMS ================================== */
+
+#editionforms{
+	position: relative;
+}
+
+#editionforms .formgroup{
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 15px 0px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+#editionforms .bottom{
+	margin-bottom: 0px;
+}
+
+#editionforms .formgroup .leftside{
+	float: left;
+	position: relative;
+}
+
+#editionforms .formgroup .rightside{
+	margin-left: 340px;
+}
+
+#editionforms input.field, textarea.field{
+	margin-bottom: 0px;
+}
+
+#editionforms select.field{
+	margin-bottom: 0px;
+	font-size: 0.8em;
+	padding: 0px;
+}
+
+#editionforms table tr td{
+	border: 0px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+#editionforms table.items tr td{
+	padding-left: 5px;
+}
+
+/*  COUNTER ================================== */
+
+#counter{
+	background-color: #FF0066;
+	color: #FFFFFF;
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+/*  NEWS ================================== */
+#news_background{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 24;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+#news{
+	position: absolute;
+	top: 0px;
+	left: 166px;
+	height: 425px;
+	width: 450px;
+	z-index: 25;
+	border-right: solid 1px #FF0066;
+	border-bottom: solid 1px #FF0066;
+	background-color: #FFFFFF;
+	overflow: auto;
+	cursor: pointer;
+	font-size: 1.2em;
+	font-family: Arial Narrow, Tahoma, Geneva, Arial, helvetica, sans-serif;
+}
+
+div#news div{
+	overflow: auto;
+	margin-top: 15px;
+	margin-right: 6px;
+	height: 380px;
+}
+
+#news img.close{
+	position:absolute;
+	bottom: 6px;
+	right: 5px;
+}
+
+#news h1{
+	margin: 0px 0px 0px 25px;
+}
+
+#news h2{
+	padding-bottom: 3px;
+	padding-top: 2px;
+	padding-left: 1px;
+	color: #0099FF;
+	background-color: #F2F2F2;
+}
+
+#news h2 img{
+	vertical-align: bottom;
+	margin: 0px 2px 0px 4px;
+}
+
+#news p{
+	font-size: 15px;
+	margin: 10px 25px 20px 25px;
+}
+
+#news p.no_content{
+	margin-top: 185px;
+	text-align: center;
+	color: #ACACAC;
+}
+
+
+/*  WAITING SCREEN ================================== */
+#waiting {
+	z-index: 24;
+	position: absolute;
+	background-color: #FFFFFF;
+	text-align: center;
+	top: 0px;
+	left: 0px;
+}
+
+#waitingcontent {
+	z-index: 25;
+	position: absolute;
+	background-color: #FFFFFF;
+	text-align: center;
+	border: solid 1px #CBCBCB;
+	padding: 40px;
+	line-height: 1.6em;
+	color: #FF0066;
+	width: 300px;
+}
+
+#waitingcontent img{
+	position: absolute;
+	bottom: 7px;
+	right: 8px;
+}
+
+
+/*  REPORTS ONLY ================================== */
+#report {
+	text-align: left;
+}
+
+#report table{
+	margin: 5px 0px 0px 0px;
+	border-collapse: collapse;
+}
+
+
+#report h1{
+	color: #FF0066;
+	font-size: 28px;
+	margin-bottom: 5px;
+}
+
+#report th{
+	background-color: #ECECEC;
+	height: 30px;
+	color: #FF0066;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	padding: 0px 5px;
+	line-height: 1.7em;
+	text-align: center;
+	width: 95px;
+	font-size: 9px;
+}
+
+#report tr#provider th{
+	font-size: 13px;
+	border-left: 0;
+	border-right: 0;
+	background-color: #FFFFFF;
+	height: 35px;
+}
+
+#report tr#totals_provider{
+	border-bottom: 2px solid #C1C1C1;
+}
+
+#report tr#totals_provider th,#report tr#totals_provider td{
+	border-left: 0;
+	border-right: 0;
+	background-color: #FFFFFF;
+	height: 35px;
+	font-size: 1em;
+}
+
+#report td{
+	height: 25px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	padding: 0px 5px;
+	line-height: 1.7em;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+
+#report tr#weekend th {
+	background-color: #FFFFB7;
+	color: #000000;
+}
+
+
+#report tr#weekend td {
+	background-color: #FFFFB7;
+}
+
+#report tr#child td {
+	color: #0099FF;
+}
+
+#report tr#totals td,#report tr#totals th {
+	height: 3.8em;
+	font-size: 1em;
+	color: #FF0066;
+	background-color: #ECECEC;
+	font-weight: bold;
+}
+
+#report tr#totals td {
+	height: 3em;
+	color: #000000;
+	background-color: #ECECEC;
+	font-weight: bold;
+}
+
+#report table#segmentation {
+	margin-top: 15px;
+}
+
+
+#report table#segmentation tr#segmentation th {
+	background-color: #E0E0E0;
+	font-size: 14px;
+	text-align: left;
+	text-indent: 20px;
+	border-left: 0px;
+	border-right: 0px;
+	width: 400px;
+}
+
+#report p{
+	margin: 3px 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EAEAEA;
+	padding-bottom: 2px;
+}
+
+#report p.bottom{
+	border-bottom: 0px
+}
+
+#report p b{
+	color: #FF0066;
+}
+
+#report img{
+	margin: 20px 0px 0px 0px;
+}
+
+#report .bold{
+	font-weight: bold;
+}
+
+#report .center{
+	text-align: center;
+}
+
+#report .left{
+	text-align: left;
+}
+
+#report .leftcell{
+	border-left: 0px;
+}
+
+#report .rightcell{
+	border-right: 0px;
+}
+
+#report .doublewidth{
+	width: 150px;
+}
+
+
+/*  LAUNCH PAD ================================== */
+
+#launchpad {
+	position: relative;
+	height: 83px;
+	border-bottom: 1px dotted #E0E0E0 !important; border-bottom: 1px solid #E0E0E0;
+	text-align: center;
+	font-size: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#launchpad.floating {
+	position: absolute;
+	height: 93px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 26;
+	border: none !important;
+	text-align: center;
+	font-size: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	background-image: url(shadow.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+#launchpad a.app {
+	display: block;
+	float: left;
+	position: relative;
+	border-left: 1px dotted #E0E0E0 !important;
+	border-left: 1px solid #E0E0E0;
+	width: 54px;
+	height: 50px;
+	overflow: visible;
+	text-align: center;
+	margin: 0px;
+	padding: 10px 2px 3px 2px;
+	text-decoration: none;	
+}
+
+#launchpad img.logo {
+	display: block;
+	float: left;
+	position: relative;
+	padding: 15px;
+	border-left: 1px dotted #E0E0E0 !important;
+	border-left: 1px solid #E0E0E0;
+	text-align: center;
+	margin-left: 163px !important;
+	margin-left: 81px;
+}
+
+#launchpad a.homefloating {
+	margin-left: 50px !important;
+	margin-left: 25px;
+	margin-right: 55px;
+	font-weight: bold;
+	border: none !important;
+}
+
+#launchpad a img {
+	margin: 0px 0px 2px 0px;
+	padding: 0px;
+}
+
+#launchpad a.app .description {
+	position: absolute;
+	visibility: hidden;
+	width: 320px;
+	top: 63px;
+	left: -130px;
+}
+
+#launchpad a.app div.description span {
+	white-space: nowrap;
+	background-color: #F0F0F0;
+	color: #ACACAC;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	line-height: 20px;
+}
+
+#launchpad a.homefloating div.description span {
+	font-weight: normal;
+}
+
+#launchpad a.app:hover div.description {
+	visibility: visible;
+}
+
+#launchpad a.app:hover {
+	background-color: #F0F0F0;
+}
+
+#launchpad a.app:hover span.link {
+	text-decoration: underline;
+}
+
+a.visibilitycontrols {
+	display: block;
+	float: right;
+	height: 20px;
+	width: 20px;
+	position: relative;
+	overflow: visible;
+	text-align: center;
+	margin: 0px;
+	padding: 5px 0px 0px 0px;
+	text-decoration: none;
+	z-index: 10;
+}
+
+a.visibilitycontrols img {
+	margin: 0px;
+	padding: 0px;
+}
+
+a.first {
+	margin-right: 4px;
+}
+
+a.visibilitycontrols div.description {
+	position: absolute;
+	visibility: hidden;
+	width: 135px;
+	top: 22px;
+	right: 0px;
+	text-align: right;
+}
+
+a.visibilitycontrols div.description span {
+	white-space: nowrap;
+	background-color: #F0F0F0;
+	color: #ACACAC;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	line-height: 20px;
+}
+
+a.visibilitycontrols:hover {
+	background-color: #F0F0F0;
+}
+
+a.visibilitycontrols:hover div.description {
+	visibility: visible;
+}
+
+a#show {
+	position: absolute;
+	z-index: 22;
+	display: block;
+	width: 112px;
+	height: 15px;
+	font-size: 9px;
+	position: absolute;
+	border-top: 1px solid #FF0066;
+	top: 0px;
+	left: 48%;
+	text-align: center;
+}
+
+#launchpad.floating a.hide {
+	display: block;
+	width: 109px;
+	height: 15px;
+	font-size: 9px;
+	position: absolute;
+	border-bottom: 1px solid #FF0066;
+	bottom: 5px;
+	left: 48%;
+	text-align: center;
+}
+
+a#show img {
+	position: absolute;
+	top: 0px;
+	left: 52px;
+	visibility: visible;
+	margin: 0px;
+	border: none;
+	padding: 0px;
+}
+
+
+a#show span {
+	visibility: hidden;
+}
+
+a#show:hover {
+	border-top: none;
+}
+
+a#show:hover img {
+	visibility: hidden;
+}
+
+a#show:hover span {
+	visibility: visible;
+}
+
+#launchpad #hideactivationbar {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 3px;
+	width: 100%;
+	z-index: 25;
+	background-color: #FFFFFF;
+}
+
+div#showactivationbar {
+	position: absolute;
+	z-index: 10;
+	left: 160px;
+	right: 30px;
+	width: auto;
+	height: 7px;
+}
+
+/*  GRID ====================================== */
+#grid {
+	position: relative;
+	height: 500px;
+	left: -2px;
+	width: 100%;
+}
+
+
+#grid .fisheye .fisheyeContainter .fisheyeItem {
+	display: block;
+	border-left: 1px dotted #E0E0E0 !important;
+	border-left: 1px solid #E0E0E0;
+	border-bottom: 1px dotted #E0E0E0 !important;
+	border-bottom: 1px solid #E0E0E0;
+	height: 230px;	
+}
+
+#grid .fisheye .fisheyeContainter .fisheyeItem2 {
+	display: block;
+	border-left: 1px dotted #E0E0E0 !important;
+	border-left: 1px solid #E0E0E0;
+	border-bottom: 1px dotted #E0E0E0 !important;
+	border-bottom: 1px solid #E0E0E0;
+	height: 230px;	
+}
+
+#grid .fisheye .fisheyeContainter .fisheyeItem:hover {
+	background-color: #F0F0F0;
+}
+
+#grid .fisheye .fisheyeContainter .fisheyeItem2:hover {
+	background-color: #F0F0F0;
+}
+
+
+#grid .fisheye .fisheyeContainter .fisheyeItem div.description {
+	position: absolute;
+	visibility: hidden;
+	width: 130px;
+	top: 185px;
+	left: 40px;
+}
+
+#grid .fisheye .fisheyeContainter .fisheyeItem2 div.description {
+	position: absolute;
+	visibility: hidden;
+	width: 130px;
+	top: 185px;
+	left: 40px;
+}
+
+#grid .fisheye .fisheyeContainter .fisheyeItem div.description span {
+	background-color: #F0F0F0;
+	color: #ACACAC;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 14px;
+	font-size: 0.8em;
+}
+
+#grid .fisheye .fisheyeContainter .fisheyeItem2 div.description span {
+	background-color: #F0F0F0;
+	color: #ACACAC;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 14px;
+	font-size: 0.8em;
+}
+
+#grid a.homefloating div.description span {
+	font-weight: normal;
+}
+
+#grid .fisheye .fisheyeContainter .fisheyeItem:hover div.description {
+	visibility: visible;
+}
+
+#grid .fisheye .fisheyeContainter .fisheyeItem2:hover div.description {
+	visibility: visible;
+}
+
+#grid .app:hover {
+	background-color: #F0F0F0;
+	
+}
+
+/*
+#grid .app1:hover {
+	background-image: url(channel_launchpad_big_magenta.gif);
+	background-repeat: no-repeat;
+	background-position: center 5px;	
+}
+#grid .app2:hover {
+	background-image: url(chat_launchpad_big_magenta.gif);
+	background-repeat: no-repeat;
+	background-position: center 5px;	
+}
+#grid .app3:hover {
+	background-image: url(channel_launchpad_big_magenta.gif);
+	background-repeat: no-repeat;
+	background-position: center 5px;	
+}
+#grid .app4:hover {
+	background-image: url(channel_launchpad_big_magenta.gif);
+	background-repeat: no-repeat;
+	background-position: center 5px;	
+}
+#grid .app5:hover {
+	background-image: url(channel_launchpad_big_magenta.gif);
+	background-repeat: no-repeat;
+	background-position: center 5px;	
+}
+#grid .app6:hover {
+	background-image: url(channel_launchpad_big_magenta.gif);
+	background-repeat: no-repeat;
+	background-position: center 5px;	
+}
+#grid .app7:hover {
+	background-image: url(channel_launchpad_big_magenta.gif);
+	background-repeat: no-repeat;
+	background-position: center 5px;	
+}
+#grid .app8:hover {
+	background-image: url(channel_launchpad_big_magenta.gif);
+	background-repeat: no-repeat;
+	background-position: center 5px;	
+}
+*/
+
+
+#grid .app span.link {
+	line-height: 20px;
+	top: 40px;
+}
+
+#grid .app:hover span.link {
+	text-decoration: underline;
+}
+
+	
+/*
+#home_over {
+	position: absolute;
+	visibility: hidden;
+	
+	height: 70px;
+	width: 70px;
+	left: 66px;
+	top: 108px;
+}
+
+#cmt_over {
+	position: absolute;
+	visibility: hidden;
+	
+	height: 70px;
+	width: 70px;
+	left: 246px;
+	top: 108px;
+}
+#cpt_over {
+	position: absolute;
+	visibility: hidden;
+	
+	height: 70px;
+	width: 70px;
+	left: 426px;
+	top: 108px;
+}
+#chat_over {
+	position: absolute;
+	visibility: hidden;
+	
+	height: 70px;
+	width: 70px;
+	left: 606px;
+	top: 108px;
+}
+*/
+
+
+
+/*  CONTROLS ================================== */
+.controls {
+	background-color: #F6F6F6;
+	border-left: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	margin: 18px 0px 3px 0px;
+	padding: 4px 7px 15px 3px;
+	width: auto;
+	font-size: 0.9em;
+}
+
+.controls a {
+	margin-right: 10px;
+}
+
+.aboveTable {
+	margin: 18px 5px 3px 4px;
+}
+
+/* ================================== SPECIFIC STYLES  ================================== */
+
+/* TOOLTIPS ================================== */
+
+a.tooltip{
+    position: relative; /*this is the key*/
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+a.tooltip:hover{
+	background-color:#FF0066;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.tooltip span{
+	display: none;
+}
+
+a.tooltip:hover span{ /*the span will display just on :hover state*/
+    display:block;
+    position: absolute;
+    top:-1em;
+	left:1.6em;
+	width: 35em;
+	padding: 0.8em 1em 1em 0.8em;
+	color: #FFFFFF;
+	background-color: #FF0066;
+	text-decoration: none;
+	line-height: 1.3em;
+	z-index: 25;
+}
+
+a.tooltip:hover span.toleft{
+	left:-36.6em;
+	text-align: right;
+}
+
+
+/* ================================== GLOBAL STYLES  ================================== */
+
+.bold{
+	font-weight: bold;
+}
+
+.center{
+	text-align: center;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
+.leftcell{
+	border-left: 0px;
+}
+
+.rightcell{
+	border-right: 0px;
+}
+
+.bottomcell{
+	border-bottom: 0px;
+}
+
+.fieldtip{
+	font-size: 0.8em;
+	color:#ACACAC;
+	font-weight: normal;
+}
+
+.magenta{
+	color: #FF0066;
+}
+
+.grey{
+	color: #DDDDDD;
+}
+
+.segmentation{
+	font-weight: bold;
+	color: #FF0066;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.invisible{
+	color: #FFFFFF;
+}
+
+.statussent{
+	color:#66FF00;
+	font-size: 10px;
+}
+
+.smaller{
+	font-size: 0.8em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+td.smaller{
+	font-size: 0.8em;
+	line-height: 1em;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.active{
+	color:#66FF00;
+	font-weight: bold;
+}
+
+.notactive{
+	color:#FF0066;
+	font-weight: bold;
+}
+
+.enclosure {
+	clear: both;
+}
+
+.cover {
+	height: 5000px;
+	width: 100%;
+	position: absolute;
+	background-color: #FFFFFF;
+	z-index: 2;
+}
+
+.topLink {
+	display: block;
+	font-size: 9px;
+	font-weight: normal;
+	text-align: right;
+	margin-left: auto;
+	margin-right: 5px;
+}
+
+.green {
+	color:#00FF00;
+}

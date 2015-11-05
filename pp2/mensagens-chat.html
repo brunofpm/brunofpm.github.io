@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+	  <link rel="shortcut icon" href="imagens/favicon.png" />
+	  <title>Site de relacionamento,  encontros e namoro online - ParPerfeito</title>
+	  
+	  <meta property="og:image" content="http://images.parperfeito.com.br/images/logos/parperfeito.com.br/logo_ftime.png"/>
+	  <meta property="og:title" content="Site de relacionamento,  encontros e namoro online  - ParPerfeito" />
+	  
+      <meta name="title" content="Site de relacionamento,  encontros e namoro online  - ParPerfeito" />
+      <meta name="description" content="Comece um namoro, encontre um namorado, namorada ou um amigo no maior site de relacionamento e encontros do Brasil. Faça um cadastro gratuito e comece um relacionamento já." />
+      <meta name="keywords" content="amor, namorada, namorado, namoro, relacionamento, encontros, site relacionamento, ParPerfeito" />
+	  <meta name="author" content="ParPerfeito" />
+
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	  
+	  <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+	  <script type="text/javascript" src="jquery.jqtransform.js"></script>
+	  <script src="js.js" type="text/javascript"></script>
+	  <script src="custom-form.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+	  <link rel="stylesheet" type="text/css" href="jqtransform.css" media="screen" />
+	  <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+	  
+	 
+	  
+	  <script type="text/javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1);}
+	  </script>
+
+	
+  </head>
+  <body>
+  	
+  	<!-- BUSCA -->
+  	
+  	<div class="busca">
+  	
+  	
+	  	<!-- LOGO BAR -->
+	  	<h1 id="site-logo" class="logo-bar">
+	  		<img id="img-site-logo" class="sitelogo retina" border="0" src="images/logo_parperfeito_beta_iPhoneRetina.png" alt="{{i18n app.parperfeitoTitle}}" title="{{i18n app.parperfeitoTitle}}" width="156px" {{action goToMain on="onClick"}}/>
+	  		
+	  		<!-- TOP MENU -->
+	  		<div id="div-menu-closed" class="top-menu-closed" {{action toggleMenu on="onClick"}}>
+	  			<div class="top-menu-closed-photo"><img src="http://images.parperfeito.com.br/pictures/thumbnail/{{model.attributes.mainPhoto.name}}" alt="" width="29px" height="29px" /></div>
+	  			<div class="top-menu-closed-arrow-down"></div>
+	  		</div>
+	  		<div id="user-menu" class="top-menu" {{action toggleMenu on="onClick"}}>
+	  			<div id="user-menu-top"  class="top-menu-header" >
+	  				<div class="top-menu-photo"><img src="http://images.parperfeito.com.br/pictures/thumbnail/{{model.attributes.mainPhoto.name}}" alt="" width="29px" height="29px" /></div>
+	  				<div class="top-menu-midarea">
+	  					<span class="top-menu-name"></span>
+	  					<span class="top-menu-plan {{call planTypeClass}}">{{call planType}}</span>
+	  				</div>
+	  				<div class="top-menu-arrow-up"></div>
+	  			</div>
+	  			<ul class="top-menu-list">
+	  				<li><div id="botaoShowMyProfile" class="link"{{action showMyProfile on="onClick"}}>{{i18n app.viewProfile}}</div></li>
+	  				<li><div class="link" {{action goToSuggestion on="onClick"}}>{{i18n suggestions.suggestions}}<span class="beta">beta</span></div></li>
+	  				<li class="last"><div id="botaoLogoff" class="link" {{action logoff on="onClick"}}>{{i18n app.logoff}}</div></li>
+	  			</ul>
+	  		</div>
+	  		<!-- fim TOP MENU -->
+	  	</h1>
+	  	<!-- FIM LOGO BAR -->
+	  	
+	  	
+	  	<!-- NAVEGAÃ‡ÃƒO PRINCIPAL -->
+	  	<nav id="menuNavigation" class="nav-bar">
+	  		<ul class="menu-principal">
+				<li id="menuBusca" class="busca" {{action goToSearch on="onClick"}}>
+					<div id="menuBuscaLink" class="link active">
+						<span id="buscaIcone" class="icone"></span>
+					</div>
+				</li>
+				<li id="menuCorreio" class="correio" {{action goToMessages on="onClick"}}>
+					<div id="menuCorreioLink" class="link">
+					<span id="correioIcone" class="icone"></span>
+					
+						<span id="messagesCount" class="numero">4</span>
+					
+					</div>
+				</li>
+				<li id="menuAtividades" class="atividades" {{action toggleActivities on="onClick"}}>
+					<div id="menuAtividadesLink" class="link">
+						<span id="atividadesIcone" class="icone"></span>
+						
+					</div>
+					<!-- POP ATIVIDADES NOVO -->
+					<div id="activitiesMenu" class="content-sub-menu-atividade pop-menu-principal">
+						<div class="sub-menu-arrow"></div>
+						<div class="atividade-sub-menu-transp">
+							<div class="atividade-sub-menu">
+								<ul>
+									<li class="head">
+										<div>{{i18n activities.activity}}</div>
+									</li>
+									<li  {{action goToProfileViewed on="onClick"}}>
+										<div class="link2">
+											<span class="icone quem-me-viu"></span>
+											<span class="texto">{{i18n activities.whoLookedAtMe}}</span>
+											{{#if viewsCount}}
+											<span id="viewsCount" class="dado">{{viewsCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+									<li {{action goToWinks on="onClick"}}>
+										<div class="link2">
+											<span class="icone piscadinhas"></span>
+											<span class="texto">{{i18n activities.winks}}</span>
+											{{#if winksCount}}
+											<span id="winksCount" class="dado">{{winksCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+									<li {{action goToFavorites on="onClick"}}>
+										<div class="link2">
+											<span class="icone prediletos"></span>
+											<span class="texto">{{i18n activities.myFavorites}}</span>
+											{{#if favoritesCount}}
+											<span class="dado">{{favoritesCount}}</span>
+											{{/if}}
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- FIM POP ATIVIDADES NOVO -->
+				</li>
+				
+			</ul>
+	  	</nav>
+	  	<!-- FIM NAVEGAÃ‡ÃƒO PRINCIPAL -->
+	  	
+
+	  	<!-- Navegacao Contextual Com Icone -->
+	  	<ul class="nav-bar-withicon-messages">
+	  		<li>
+	  			<div id="botaoProfileBack" {{action goBack on="onClick"}} class="link messages-nav-bar-back left">
+	  				<div class="center-box">
+		  				<span class="icon back"></span>
+	  				</div>
+	  			</div>
+	  		</li>
+	  		<li>
+	  			<div class="chat-name">
+	  				<span class="online-msg"></span>
+	  				<span class="name">cariocaacariocaa1</span>
+	  				<span class="last-access">último acesso: 16/04/2012</span>
+	  			</div>
+	  		</li>
+	  	</ul>
+	  	<!-- FIM Navegacaoo Contextual Com icone -->
+
+
+	  	<!-- MENSAGENS CHAT -->
+	  	
+	  	<div class="chat">
+
+		  	<div class="taskbar-slide" style="display:none;">
+		  		<div class="place-age">Rio de Janeiro - RJ | 33 anos</div>
+
+		  		<div class="taskbar">
+		  			<div class="bt-view-profile">
+		  				<span class="ico"></span>
+		  				<span class="txt">Ver perfil</span>
+		  			</div>
+		  			<div class="bt-add-favorites">
+		  				<span class="ico"></span>
+		  				<span class="txt">Adicionar prediletos</span>
+		  			</div>
+		  			<div class="bt-block"></div>
+		  			<div class="bt-report"></div>
+		  		</div>
+		  	</div>
+
+
+	  		<div class="arrow-slide">
+	  			<span class="arrow up"></span>
+	  		</div>
+
+	  		<!-- INÍCIO DA THREAD -->
+
+	  		<div class="thread">
+	  			
+		  		<div class="day-line"><span>Hoje</span></div>
+
+		  		<!-- BOLHA -->
+		  		<div class="chat-line you">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+			  			<div class="bubble">
+			  				<span class="arrow"></span>
+			  				<p>Olá!<br>Seu perfil me encantou. Assinarei o site para podermos conversar. Por favor, me aguarde!<span class="time">às 14:50</span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA -->
+		  		<div class="chat-line you no-photo">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+		  				<div class="bubble">
+		  					<span class="arrow"></span>
+			  				<p>Um beijo!<br>cariocaa<span class="time">às 14:52</span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA COM O QUE "EU" FALO -->
+		  		<div class="chat-line me">
+		  			<div class="bubbles-container">
+			  			<div class="bubble">
+			  				<p>Claro! Espararei ansioso! =*<span class="time"><span class="time-in">às 15:12&nbsp;&nbsp;&nbsp;|</span><span class="letter"></span></span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<div class="chat-line you">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<span class="online-msg"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+			  			<div class="bubble">
+			  				<span class="arrow"></span>
+			  				<p>Pronto! Agora podemos conversar! =P<span class="time">às 15:43</span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA COM LOADING -->
+		  		<div class="chat-line you no-photo">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<span class="online-msg"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+			  			<div class="bubble">
+			  				<div class="loading"></div>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA -->
+		  		<div class="chat-line you no-photo">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+		  				<div class="bubble">
+		  					<span class="arrow"></span>
+			  				<p>Um beijo!<br>cariocaa<span class="time">às 14:52</span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA -->
+		  		<div class="chat-line you no-photo">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+		  				<div class="bubble">
+		  					<span class="arrow"></span>
+			  				<p>Um beijo!<br>cariocaa<span class="time">às 14:52</span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA -->
+		  		<div class="chat-line you no-photo">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+		  				<div class="bubble">
+		  					<span class="arrow"></span>
+			  				<p>Um beijo!<br>cariocaa<span class="time">às 14:52</span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA -->
+		  		<div class="chat-line you no-photo">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+		  				<div class="bubble">
+		  					<span class="arrow"></span>
+			  				<p>Um beijo!<br>cariocaa<span class="time">às 14:52</span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA -->
+		  		<div class="chat-line you no-photo">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+		  				<div class="bubble">
+		  					<span class="arrow"></span>
+			  				<p>Um beijo!<br>cariocaa<span class="time">às 14:52</span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA -->
+		  		<div class="chat-line you no-photo">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+		  				<div class="bubble">
+		  					<span class="arrow"></span>
+			  				<p>Um beijo!<br>cariocaa<span class="time">às 14:52</span></p>
+			  			</div>
+		  			</div>
+		  		</div>
+
+		  		<!-- BOLHA COM BOTÃO DE ASSINE -->
+		  		<div class="chat-line you">
+		  			<div class="box-foto">
+		  				<img src="images/foto.jpg" alt="Cariocca - 23 anos - Rio de Janeiro, RJ" />
+		  				<span class="assinatura ouro"></span>
+		  				<span class="online-msg"></span>
+		  			</div>
+		  			<div class="bubbles-container">
+			  			<div class="bubble">
+			  				<span class="arrow"></span>
+			  				<div>
+			  					<div class="bt-assine">Assine e leia agora ></div>
+			  					<span class="time">às 15:43</span>
+			  				</div>
+			  			</div>
+		  			</div>
+		  		</div>
+
+	  		</div>
+
+	  		<!-- fim DA THREAD -->
+
+
+	  		<div class="bottom">
+	  			<div class="new-message"><p>Nova mensagem de cariocaacariocaa1</p></div>
+	  			<div class="info-report" style="display: none;">
+	  				<span class="ico"></span>
+	  				<div class="txt">O ParPerfeito nunca pede informações como senhas, dados bancários ou cartão de crédito por e-mail. <a href="#">Denuncie!</a></div>
+	  			</div>
+	  			<div class="sendbar">
+	  				<!-- <textarea class="input-send-msg"></textarea> -->
+	  				<select class="select-send-msg">
+	  					<option>Escolher template</option>
+	  					<option>Enviar mensagem</option>
+	  				</select>
+	  				<div class="bt-send-msg active">Enviar</div>
+	  			</div>
+	  		</div>
+	  		
+	  	</div>
+
+	  	<!-- fim MENSAGENS CHAT -->
+	  	
+  	</div>
+
+  	
+
+  </body>
+</html>

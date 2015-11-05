@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>MyHANZO : Login</title>
+	
+	<meta http-equiv="Cache-control" content="no-cache" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+	<link type="text/css" href="files/styles_v2.css" rel="stylesheet" />
+	<link href="files/hanzo.ico" rel="shortcut icon" />
+	
+	<script type="text/javascript" src="files/prototype.js"></script>
+	<script type="text/javascript" src="files/validator.js"></script>
+	<script type="text/javascript" src="files/resizer.js"></script>
+	<script type="text/javascript" src="files/scriptaculous.js"></script><script type="text/javascript" src="files/effects.js"></script>
+	<script type="text/javascript">
+		function show_news() {
+			new Effect.Appear('news_background', { duration: 0.6, from: 0.0, to: 0.9 });
+			new Effect.SlideDown('news', { duration: 1.5 });
+		}
+		function hide_news() {
+			new Effect.SlideUp('news');
+			new Effect.Fade('news_background', { duration: 1.5 });
+		}
+	</script>
+	
+			<script type="text/javascript" language="Javascript1.1"> 
+
+<!-- Begin 
+
+     var bCancel = false; 
+
+    function validateLoginForm(form) {                                                                   
+        if (bCancel) 
+      return true; 
+        else 
+ var formValidationResult;
+       formValidationResult = validateRequired(form); 
+     return (formValidationResult == 1);
+   } 
+
+    function loginForm_required () { 
+     this.a0 = new Array("username", "Por favor preencha o campo \'Usuário\'.", new Function ("varName", " return this[varName];"));
+     this.a1 = new Array("password", "Por favor preencha o campo \'Senha\'.", new Function ("varName", " return this[varName];"));
+     this.a2 = new Array("errorForward", "Por favor preencha o campo \'Error forward\'.", new Function ("varName", " return this[varName];"));
+     this.a3 = new Array("successForward", "Por favor preencha o campo \'Success forward\'.", new Function ("varName", " return this[varName];"));
+    } 
+
+
+//End --> 
+
+</script>
+</head>
+
+<body onload="resizer();document.loginForm.username.focus();" onresize="resizer();">
+
+<!-- START MIDDLE DIV: This DIV displays the main content of the page  ===== -->
+<div id="middle">
+
+<!-- START HEADER: This DIV display HANZO logo and headers' text  ========== -->
+<div id="header">	
+	<img src="files/hanzologo_rgb_120px.gif" alt="HANZO Logo" />	</a>
+	<h1>MyHANZO : Login </h1>
+			
+	<!-- START ERROR REPORT: This velocity macro prints any server-side errors   -->
+	
+	
+	<!-- END ERROR REPORT  ===================================================== -->
+</div>
+<!-- END HEADER ============================================================ -->
+
+
+<!-- START PAGE CONTENT: Insert here the page content  ===================== -->
+<!-- ======================================================================= -->
+
+	<div id="login">
+		
+		<form name="loginForm" method="post">
+			<input name="successForward" value="toolListFwd" type="hidden" />
+			<input name="errorForward" value="indexFwd" type="hidden" />
+
+			<label for="username">User</label>
+			<input id="username" tabindex="1" class="field" size="25" maxlength="50" name="username" type="text" />
+							
+			<label for="password">Password</label>
+			<input id="password" tabindex="2" class="field" size="25" maxlength="25" name="password" type="password" />
+			
+			<br />
+
+			<input name="submit" tabindex="3" class="button" value="Login &gt;&gt;" type="button" onmouseup="window.location='hp.html';" />
+			
+		</form>
+		
+		<p class="newuser">
+			<img src="files/info_small_magenta.gif" alt="&iacute;cone alerta" />
+			Not a MyHANZO user yet? <a href="#" title="Register new user">Register now to get a<br /><strong>Free Trial!</strong></a>
+		</p>
+	</div>
+	
+
+
+
+<!-- START RIGHT SLASH GIF: This white image represents the slash in the vertical railroad tracks  -->
+<img class="rightslash" src="files/slash.gif">
+<!-- END RIGHT SLASH GIF ========================================================================== -->
+</div>
+
+<!-- START COPYRIGHT: This velocity macro prints the Copyright content ===== -->
+<div id="copyright">
+
+	<p class="links">
+		| <a href="http://www.hanzo.com.br" target="_blank">About HANZO</a> | <a href="#">Bokuto: the Mobile Services Platform</a> |
+	</p>
+	
+	<p>© Copyright 2007, HANZO.</p>
+	
+</div>
+<!-- END COPYRIGHT ========================================================= -->
+
+<!-- START LEFT SLASH GIF: This white image represents the slash in the vertical railroad tracks  -->
+<img class="leftslash" src="files/slash.gif">
+<!-- END LEFT SLASH GIF ========================================================================== -->
+
+<!-- END MACRO VELOCITY "COPYRIGHT" ===== -->
+
+</body>
+</html>

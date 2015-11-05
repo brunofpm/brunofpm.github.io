@@ -1,0 +1,84 @@
+/*
+-------------------------------------------------------------------------
+################################ CRÉDITOS ###############################
+
+Site: 
+Cliente: Mercatto
+Origem: Agência Kindle
+Versão: 1.0
+
+Desenvolvimento XHTML e CSS: 
+
+--------------------------------------------------------------------------
+*/
+
+
+/* ############################### GLOBAL ############################# */
+
+/* ---- Regras Gerais ---- */
+
+* {margin:0; padding:0; outline:0; text-decoration:none; list-style-type:none;}
+
+p {line-height:18px; margin:0 0 10px;}
+img, fieldset {border:0;}
+hr, h1 a span, h2 span, a span, .hide, legend, label span {display:none;}
+
+h3 {font-size:21px; font-weight:bold; margin:0 0 20px 0;}
+
+.clear {clear:both !important;}
+.noborder {border:0 !important;}
+.nopadding {padding:0 !important;}
+.nomargin {margin:0 !important;}
+.nobg {background:none !important;}
+
+body  {	font: 100% Verdana, Arial, Helvetica, sans-serif; background: #FFFFFF; font-size:11px; color: #666666; background:url(../images/bg.jpg) repeat;}
+
+#area {width: 1000px; margin:0 0 0 -500px; left:50%; position:absolute;}
+
+#master {background:url(../images/bg-geral.jpg) center top no-repeat; width: 100%; height:2366px; margin:0 auto; text-align:left; } 
+#master-resposta {background:url(../images/bg-resposta.jpg) center top no-repeat; width: 100%; height:1000px; margin:0 auto; text-align:left; } 
+
+#topo {height:315px; margin:0;}
+#topo a.logo {width:226px; height:133px; margin:90px 0 0 154px; display:block; text-indent:-9999px; position:absolute;}
+#topo ul.redes-sociais {position:absolute; margin:40px 0 0 695px;}
+#topo ul.redes-sociais li {display:inline; margin:0 14px 0 0; float:left;}
+
+#conteudo .texto-principal {margin:-41px 0 0 0; width:874px; height:136px; text-indent:-9999px;}
+#conteudo .video {margin:20px 0 0 34px;}
+#conteudo .passo1 {margin:50px 0 0 0; width:960px; height:145px; text-indent:-9999px;}
+
+#conteudo ul.modelos {margin:50px 0 0 14px;}
+#conteudo ul.modelos li {display:inline; margin:0 8px 0 0; float:left;}
+#conteudo ul.modelos li img {width:187px; height:397px;}
+#conteudo ul.modelos li div.look {width:121px; height:29px; padding:10px 0 0 50px; margin:23px 0 0 7px; color:#FFF; font-family:"Times New Roman"; font-size:16px; font-style:italic;}
+#conteudo ul.modelos li div input {margin:0 10px 0 -32px;}
+
+#conteudo .formulario2 textarea.resposta {margin:55px 0 0 40px; width:882px; height:123px; background:none; border:0; font-family:Georgia; color:#FFF; font-size:14px; font-weight:bold; overflow:hidden;}
+#conteudo .formulario2 input {font-family:Georgia; font-size:14px; background:none; border:0; color:#FFF; font-style:italic; font-weight:bold;}
+#conteudo .formulario2 input#nome {margin:179px 0 0 40px; width:230px;}
+#conteudo .formulario2 input#telefone {margin:235px 0 0 -233px; position:absolute; width:230px;}
+#conteudo .formulario2 input#email {margin:0 0 0 97px; width:230px;}
+#conteudo .formulario2 input.confirme {margin:424px 0 0 -220px; position:absolute;}
+#conteudo .formulario2 div.msg {background:url("../images/bg-msg.png") no-repeat left top; color:#FF0000; font-family:Georgia; font-size:12px; height:30px; margin:231px 0 0 67px; padding-top:11px; text-align:center; width:285px; font-style:italic; font-weight:bold;}
+
+#conteudo .formulario2 label {display:block; position:absolute; padding:5px 0 0 6px; font-family:Georgia; font-size:14px; background:none; border:0; color:#FFF; font-style:italic; font-weight:bold;}
+#conteudo .formulario2 label.nome{margin:174px 0 0 230px;}
+#conteudo .formulario2 label.telefone{margin:34px 0 0 230px;}
+#conteudo .formulario2 label.email{margin:-21px 0 0 559px;}
+
+#conteudo a.regulamento {width:123px; height:15px; margin:-17px 0 0 780px; position:absolute; text-indent:-9999px;}
+#conteudo div.box-regulamento {display:none; background-color:#FFFFFF; left:50%; margin:-166px 0 0 -487px; padding:20px; position:absolute; width:849px; z-index:9999; cursor:pointer;}
+#conteudo div.box-regulamento .fechar {float:right; margin:0 0 0 740px; font-size:18px; color:#f47920; font-weight:bold;}
+
+
+
+    .focusField{  
+        border:solid 2px #73A6FF;  
+        background:#EFF5FF;  
+        color:#000;  
+    }  
+    .idleField{  
+        background:#EEE;  
+        color: #6F6F6F;  
+        border: solid 2px #DFDFDF;  
+    }
