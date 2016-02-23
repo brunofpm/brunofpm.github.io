@@ -33,5 +33,12 @@ $(document).ready(function(){
 	});
 
 
+	/* CMS - Selecionar */
+
+	$(".enviadas li").click(function () {
+		$(this).toggleClass("clicada");
+	});
+
+
 
 });

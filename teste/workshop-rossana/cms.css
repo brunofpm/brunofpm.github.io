@@ -1,0 +1,191 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Início */
+
+body {
+	background: #7B186C;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #fff;
+}
+
+* {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.topo {
+	width: 100%;
+	overflow: hidden;
+	background: #9E348E;
+	text-align: center;
+}
+
+.topo .logo {
+	width: 40%;
+    margin-top: 15px;
+}
+
+.topo .curvas {
+	width: 150%;
+	margin: 0 0 0 -16%;
+}
+
+.conteudo {
+	margin-top: -85px;
+    width: 84%;
+    background: #7B186C;
+    padding: 0 8%;
+}
+
+.conteudo .tit {
+	color: #fff;
+	width: 95%;
+    font-weight: 300;
+    font-size: 21px;
+    padding: 0 0 10px 10px;
+    display: inline-block;
+}
+
+.conteudo .tit i {
+	background-image: url(images/estrela.png);
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 29px;
+    background-size: 90%;
+    display: inline-block;
+    float: left;
+}
+
+.conteudo .tit div {
+	float: left;
+	margin: 4px;
+}
+
+.conteudo .tit span {
+	color: #fa9d1c;
+}
+
+.lista {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.lista ul {
+	background-color: #9E348E;
+    height: 280px;
+    overflow-y: scroll;
+    padding: 0 20px;
+    border-top: 20px solid #9E348E;
+    border-bottom: 20px solid #9E348E;
+
+}
+
+.lista ul li {
+	padding: 10px 15px;
+    border-bottom: 1px solid #5b185b;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 300;
+    width: calc(100% - 30px);
+    transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+}
+
+
+.lista ul li.clicada {
+	background-color: #7B186C;
+	transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+}
+
+.lista ul.enviadas li {
+	cursor: pointer;
+}
+
+
+
+
+@media (min-width: 770px) {
+
+	.topo .logo {
+		width: 25%;
+	}
+
+	.conteudo {
+	    width: 80%;
+	    background: #7B186C;
+	    padding: 0 10%;
+	    margin: -25% auto 0;
+	    position: relative;
+	    z-index: 2;
+	}
+
+	.lista {
+	    width: 46%;
+	    margin: 0 2% 70px;
+	    float: left;
+	}
+
+	.lista ul {
+		height: 400px;
+	}
+
+}
+
+
