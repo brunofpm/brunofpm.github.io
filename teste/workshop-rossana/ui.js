@@ -1,28 +1,37 @@
 $(document).ready(function(){
-  
-	setTimeout(function() {
-		$(".area-1").addClass("animated bounceInDown");
-	}, 800);
 
-	setTimeout(function() {
-		$(".duplas").addClass("animated bounceInUp");
-	}, 1600);
+	/* Animação de envio de mensagem */
 
+	$(".enviar").click(function () {
+		$(".pergunta").addClass("animated zoomOutUp");
+		$(".form .grupo label").hide();
+		$(".enviar").hide();
+		setTimeout(function() {
+			$(".feedback").show();
+		}, 1000);
 
-	/* Eliminada */
-
-	setTimeout(function() {
-		$(".dupla.um").addClass("eliminada animated shake");
-	}, 4000);
-
-
-	/* Encontrar eliminado */
-
-	$('.dupla .participante:last-child').each(function () {
-		if( $(this).text()) {
-	        $(this).addClass("txt-eliminada");
-	        $(this).parent(".dupla").addClass("eliminada");
-	    }
+		setTimeout(function() {
+			location.reload();
+		}, 6000);
 	});
+
+
+	/* Download Android */
+
+	$(".dispositivos .android").click(function () {
+		$(".botoes").addClass("animated slideOutLeft");
+		$(".selecione").addClass("animated slideOutLeft");
+		$(".instrucoes.android").show().addClass("animated slideInRight");
+	});
+
+	/* Download iOS */
+
+	$(".dispositivos .ios").click(function () {
+		$(".botoes").addClass("animated slideOutLeft");
+		$(".selecione").addClass("animated slideOutLeft");
+		$(".instrucoes.ios").show().addClass("animated slideInRight");
+	});
+
+
 
 });

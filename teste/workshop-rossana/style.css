@@ -128,6 +128,81 @@ body {
 }
 
 
+.feedback {
+	background-color: #7B186C;
+	color: #FF9D01;
+	z-index: 4;
+	text-align: center;
+	font-size: 23px;
+	display: none;
+}
+
+.feedback div {
+	display: inline-block;
+}
+
+
+/* Página de download */
+
+.conteudo .texto {
+	color: #fa9d1c;
+	width: 95%;
+    font-weight: 300;
+    font-size: 21px;
+    padding: 0 0 10px 10px;
+    display: inline-block;
+}
+
+.conteudo .dispositivos a {
+	width: 100%;
+    height: 50px;
+    background-color: #fa9d1c;
+    color: #6a1e6a;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 13px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.conteudo .dispositivos a i {
+	display: block;
+	float: left;
+	width: 36px;
+	height: 36px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.conteudo .dispositivos a.android i {
+	background-image: url(images/android.png);
+    margin: 7px 12px;
+}
+.conteudo .dispositivos a.ios i {
+	background-image: url(images/ios.png);
+    margin: 7px 12px;
+}
+.conteudo .dispositivos a.outro i {
+	background-image: url(images/outro.png);
+    margin: 7px 12px;
+}
+
+.conteudo .dispositivos a span {
+    margin: 12px 4px;
+    float: left;
+}
+
+.conteudo .instrucoes {
+	display: none;
+	margin-top: -270px;
+}
+
+.instrucoes p {
+	font-size: 17px;
+    margin-top: 15px;
+    line-height: 22px;
+}
+
 
 
 @media (min-width: 770px) {
