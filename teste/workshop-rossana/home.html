@@ -10,20 +10,26 @@
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 	</head> 
 	<body>
+
+	<div class="erro">Sua pergunta não foi enviada.</div>
 		
 	<div class="topo">
 		<img src="images/logo.jpg" class="logo">
 		<img src="images/bg-curvas.png" class="curvas">
 	</div>
 
-	<div class="conteudo login">
+	<div class="conteudo">
 		<div class="form">
-			<div class="grupo input">
-				<input type="text" class="usuario" placeholder="Usuário"></input>
-				<input type="password" class="senha" placeholder="Senha"></input>
+			<div class="grupo">
+				<div class="feedback">
+					<div>Pergunta enviada!<br><br>Obrigado!</div>
+				</div>
+				<label>Envie sua pergunta:</label>
+				<textarea class="pergunta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus ultrices aliquet?
+				</textarea>
 			</div>
 			<div class="grupo">
-				<input type="submit" value="Entrar" class="enviar"></input>
+				<input type="submit" value="Enviar" class="enviar"></input>
 			</div>
 
 		</div>

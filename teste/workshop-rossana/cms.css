@@ -49,7 +49,7 @@ table {
 /* Início */
 
 body {
-	background: #7B186C;
+	background: #005CA2;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #fff;
 }
@@ -65,7 +65,7 @@ body {
 .topo {
 	width: 100%;
 	overflow: hidden;
-	background: #9E348E;
+	background: #FF9E01;
 	text-align: center;
 }
 
@@ -82,7 +82,7 @@ body {
 .conteudo {
 	margin-top: -85px;
     width: 84%;
-    background: #7B186C;
+    background: #005CA2;
     padding: 0 8%;
 }
 
@@ -103,6 +103,7 @@ body {
     background-size: 90%;
     display: inline-block;
     float: left;
+    margin: 0;
 }
 
 .conteudo .tit div {
@@ -119,31 +120,57 @@ body {
 	margin-bottom: 40px;
 }
 
-.lista ul {
-	background-color: #9E348E;
+.lista table {
+	background-color: #FF9E01;
     height: 280px;
     overflow-y: scroll;
-    padding: 0 20px;
-    border-top: 20px solid #9E348E;
-    border-bottom: 20px solid #9E348E;
-
+    padding: 0 15px;
+    border-top: 20px solid #FF9E01;
+    border-bottom: 20px solid #FF9E01;
+    display: inline-block;
 }
 
-.lista ul li {
-	padding: 10px 15px;
-    border-bottom: 1px solid #5b185b;
-    display: inline-block;
+.lista tr td {
+	padding: 10px 3px;
+    border-bottom: 1px solid #fff;
     line-height: 18px;
     font-size: 15px;
-    font-weight: 300;
-    width: calc(100% - 30px);
-    transition: background-color 0.5s ease;
-	-webkit-transition: background-color 0.5s ease;
-    -moz-transition: background-color 0.5s ease;
-    -o-transition: background-color 0.5s ease;
-    -ms-transition: background-color 0.5s ease;
+    vertical-align: top;
+    width: 100%;
+    color: #005CA2;
 }
 
+.lista .enviadas tr td:first-child {
+	
+}
+
+.lista tr td img {
+	height: 20px;
+    border: 1px solid #fff;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lista tr.editando td img.editar {
+	background-color: #FF9E01;
+}
+
+.lista tr td span {display: inline-block;}
+.lista tr td textarea {
+	display: none;
+    width: calc(100% - 16px);
+    height: 70px;
+    line-height: 16px;
+    padding: 6px;
+}
+.lista tr.editando td span {display: none;}
+.lista tr.editando td textarea {display: inline-block;}
+
+.lista tr td .salvar {display: none;}
+.lista tr td .editar {display: block;}
+.lista tr.editando td .salvar {display: block;}
+.lista tr.editando td .editar {display: none;}
 
 .lista ul li.clicada {
 	background-color: #7B186C;
@@ -154,11 +181,59 @@ body {
     -ms-transition: background-color 0.5s ease;
 }
 
-.lista ul.enviadas li {
+
+/* Confirmação */
+
+.confirmacao {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.75);
+	display: none;
+	z-index: 6;
+}
+
+.confirmacao .modal {
+	width: 60%;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	margin-left: calc(-30% - 30px);
+	background-color: #005CA2;
+	border: 2px solid #fff;
+	padding: 15px;
+	border-radius: 8px;
+	line-height: 19px;
+}
+
+.confirmacao .modal .botoes {
+	text-align: center;
+}
+
+.confirmacao .modal .botoes div {
+	display: inline-block;
+	margin: 15px 5px;
+	background-color: #FF9E01;
+	color: #005CA2;
+	padding: 12px 18px;
 	cursor: pointer;
 }
 
 
+/* Limpar lista */
+
+.limpar-lista {
+    display: inline-block;
+    background-color: #FF9E01;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    margin: 6px 0 20px;
+    float: right;
+    cursor: pointer;
+}
 
 
 @media (min-width: 770px) {
@@ -169,7 +244,6 @@ body {
 
 	.conteudo {
 	    width: 80%;
-	    background: #7B186C;
 	    padding: 0 10%;
 	    margin: -25% auto 0;
 	    position: relative;
@@ -184,6 +258,7 @@ body {
 
 	.lista ul {
 		height: 400px;
+		padding: 0 20px;
 	}
 
 }

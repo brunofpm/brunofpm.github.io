@@ -33,10 +33,23 @@ $(document).ready(function(){
 	});
 
 
-	/* CMS - Selecionar */
+	/* CMS - Edit */
 
-	$(".enviadas li").click(function () {
-		$(this).toggleClass("clicada");
+	$(".editar").click(function () {
+		$(this).parent().parent().addClass("editando");
+	});
+	$(".salvar").click(function () {
+		$(this).parent().parent().removeClass("editando");
+	});
+
+	/* CMS - Confirmação de Exclusão */
+
+	$(".recusar").click(function () {
+		$(".confirmacao").fadeIn("fast");
+	});
+
+	$(".confirmacao .cancelar").click(function () {
+		$(".confirmacao").fadeOut("fast");
 	});
 
 
